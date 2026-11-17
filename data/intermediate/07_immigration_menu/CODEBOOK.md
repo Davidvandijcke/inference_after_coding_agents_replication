@@ -2,7 +2,8 @@
 
 Aggregates computed from the restricted ISSP analysis file (`issp_clean.csv`, see `data/raw/issp/SOURCE.md`). No
 respondent-level data. `code/07_immigration_menu/run.sh` reads them; the scripts in
-`code/07_immigration_menu/data_generation/` regenerate them into a folder the user names.
+`code/07_immigration_menu/data_generation/` regenerate `bank_anti.csv.gz` and `menu_full_data.csv` into a folder the
+user names.
 
 The menu is the 108 country-level OLS specifications of `data/agent_runs/issp_menu_anti/inputs/CATALOGUE.json`:
 the respondent data are averaged to country-years and then to countries, and the outcome's country mean is regressed
@@ -11,9 +12,10 @@ on the immigrant-stock measure (and controls), with HC3 standard errors and a t 
 ## bank_anti.csv.gz and bank_pro.csv.gz
 
 The same 20,000 subsets of 13 of the 46 countries (drawn with `numpy.random.default_rng(2026103021)`), with the
-programmatic result of each workflow's rule on each subset. Written by `data_generation/prepare_anti.py` and
-`prepare_pro.py` (about one minute each, each as `bank.csv.gz` in the folder the user names), which reproduce their
-decompressed content exactly. Their compressed bytes are not reproduced: the gzip header stores a file name
+programmatic result of each workflow's rule on each subset. Written by `data_generation/prepare_anti.py` (about one
+minute, as `bank.csv.gz` in the folder the user names), which reproduces the decompressed content of
+`bank_anti.csv.gz` exactly, and for `bank_pro.csv.gz` by a version of it adapted to the pro arm's two targets. Their
+compressed bytes are not reproduced: the gzip header stores a file name
 (`bank.csv`) and the time of writing (30 October 2026 in the shipped files).
 
 | Column | File | Meaning |

@@ -3,8 +3,10 @@
 Original sessions of GPT-6.1-Sol, Claude Sonnet 5.5 and Claude Opus 5.5 on the 100 open-ended null datasets
 (`data/raw/pathways/main-00.csv` to `main-99.csv`, every treatment effect zero), their final reports, and the blind
 reads of those 300 reports and of GPT-6-Luna's 100 reports on the same datasets. One session per agent and dataset,
-no replays, 30 October 2026. Built by `code/10_self_correction/data_generation/extract_records.py`; the run code is
-in `code/10_self_correction/data_generation/four_agent_null_run/`. GPT-6-Luna's sessions are in
+no replays, 30 October 2026, under module 02's prompts and codebook, at high effort: GPT-6.1-Sol through Codex CLI
+0.165 on a ChatGPT Pro login and the two Claude models through Claude Code CLI 2.1.314 on Claude Max, with no API.
+Built by `code/10_self_correction/data_generation/extract_records.py`; the run code is in
+`code/10_self_correction/data_generation/four_agent_null_run/`. GPT-6-Luna's sessions, on the OpenAI API, are in
 `data/agent_runs/open_ended_luna/` (module 02).
 
 ## sessions.csv

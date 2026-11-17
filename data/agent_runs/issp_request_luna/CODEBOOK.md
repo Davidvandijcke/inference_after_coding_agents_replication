@@ -5,7 +5,9 @@ The realistic request of the immigration application (main text, "Realistic sele
 API route through a cost-capped relay, 27-28 October 2026. Every session received the research prompt, the codebook
 and a data file (`inputs/`): the originals the full corrected ISSP file (154,921 respondents, 46 countries) in a
 seeded row order, the replays a subsample of 16 whole countries. After its analysis each session received the
-commitment prompt; each replay then received the comparison prompt with the original's commitment.
+commitment prompt; each replay then received the comparison prompt with the original's commitment. The data file and
+codebook carried the same timestamp in every workspace, and the prompt's `{{OUT_DIR}}` was the same folder,
+`results/brief/run_01`, in every session.
 
 The first replay jobs completed 536 replays before the OpenAI account ran out of credit; a rerun job ran the other
 464 from scratch on the same subsamples (`completed_in_rerun_job`; `retried_after_usage_limit` marks the 201 that a
@@ -21,13 +23,13 @@ original's workspace copy (`output/issp-application-20261028/original/emitted-an
 
 - `inputs/`: `research_prompt.txt`, `CODEBOOK.md` (the agent-facing codebook), `commitment_prompt.txt`,
   `comparison_prompt.txt`.
-- `originals.csv`: the three full-data originals; slot 0 is the original the paper corrects.
+- `originals.csv`: the three full-data originals; slot 0 is the original the paper corrects (all three led with the
+  same analysis).
 - `replays.csv`: the 1,000 replays, one row each (fields below).
 - `declarations.jsonl.gz`: per session, `session_id`, `role`, the `commitment` (declared `model`, `null`,
   `outcome`, `population`, `sample_restrictions`) and, for replays, the `comparison` (`model_null_match`, `reason`).
 - `review_candidates.csv`: the 495 nonmatching replays that the second reading's keyword rules picked as
-  candidates, of which 86 were read (below) (`i` is the index used by
-  `code/06_immigration_request/data_generation/review/build_reviewed.py`; `session_id`; `stratum`).
+  candidates, of which 86 were read (below) (`i`, the reading's index; `session_id`; `stratum`).
 - `original/`: the selected original's records, described below.
 
 ## The original's records

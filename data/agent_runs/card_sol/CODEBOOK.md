@@ -1,6 +1,9 @@
 # card_sol: Card-Krueger replays with GPT-6.1-Sol
 
 One cohort, never pooled with another. All files are author-generated records of agent sessions.
+GPT-6.1-Sol at high reasoning effort through Codex CLI 0.165.0 on the cluster, on two ChatGPT Pro logins, run from
+29 October to 3 November 2026 and reviewed from 31 October to 3 November. Each replay ran in its own folder with its
+own `/tmp`, inside an outer sandbox that hid the cluster's shared file systems.
 
 ## replays.csv.gz
 
@@ -80,7 +83,8 @@ errors and one earlier run that was rerun). Fields: session_id; archive (the arc
 millisecond start time); final (`True` for the run whose records count); stratum; reasoning_summary_text (any
 reasoning-summary text saved; none is); decline_messages and decline_reasoning_summaries (patterns of the decline
 rule, `code/09_card_agents/declines.py`, `|`-separated); name_messages, name_reasoning_summaries, name_tool_calls
-(commands and patches the agent wrote), name_tool_output ("krueger" found, `True`/`False`).
+(commands and patches the agent wrote), name_tool_output ("krueger" found, `True`/`False`). The flags read the
+session logs of all three turns, including command output.
 
 ## keyword_counts.json
 

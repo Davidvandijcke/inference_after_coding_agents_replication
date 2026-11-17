@@ -17,7 +17,4 @@ tail and body matches and replay intervals for each dataset and budget; see its 
 
 ## Monte Carlo (`data_generation/simulate.R`, not rerun)
 
-`Rscript code/01_fixed_design/data_generation/simulate.R 1 400 replay_draws.csv 2` regenerates the input exactly
-(about 5,800 CPU-seconds), with R's default generator and seeds 2026102200 + offset + dataset (one offset per
-random step), and 2026172200 + dataset and 2026182200 + dataset for the subsamples added where a bank of 50,000
-held fewer than 1,000 tail members.
+`simulate.R` regenerates the input exactly in about 5,800 CPU-seconds; its seeds are set in the script.

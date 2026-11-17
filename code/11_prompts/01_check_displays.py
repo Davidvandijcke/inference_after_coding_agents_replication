@@ -19,11 +19,10 @@ RUNS = "data/agent_runs/"
 MENU = RUNS + "issp_menu_anti/inputs/"
 PLACEBO = "code/03_placebo/data_generation/runtime/"
 # every shipped copy of the commitment and comparison prompts
-SHARED = ["code/02_open_ended/data_generation/prompts/", PLACEBO, RUNS + "card_luna/packet/",
+SHARED = ["code/02_open_ended/data_generation/prompts/", RUNS + "card_luna/packet/",
           RUNS + "card_sonnet_masked/packet/", MENU, RUNS + "issp_request_luna/inputs/"]
 SOURCES = {  # page: the files that hold the displayed prompt
-    1: ["code/02_open_ended/data_generation/prompts/research_prompt.txt",
-        "code/10_self_correction/data_generation/four_agent_null_run/frozen/research_prompt.txt"],
+    1: ["code/02_open_ended/data_generation/prompts/research_prompt.txt"],
     2: ["data/raw/pathways/CODEBOOK.md"],
     3: [MENU + "developer-instructions.txt"],
     5: [MENU + "prompts/frontier-anti-analysis.txt"],

@@ -4,8 +4,8 @@
 
 One row per reference subsample of each of the 102 placebo originals (470,000 rows), written by
 `code/03_placebo/data_generation/export_cluster_records.py` from the cohort's bank files
-(`make_references.py`, run on the cluster). `code/03_placebo/03_replay_counts.py` reads it to rebuild each
-original's tail and body strata.
+(a version of module 02's `cluster/make_references.py`, run on the cluster). `code/03_placebo/03_replay_counts.py`
+reads it to rebuild each original's tail and body strata.
 
 | Field | Content |
 |---|---|

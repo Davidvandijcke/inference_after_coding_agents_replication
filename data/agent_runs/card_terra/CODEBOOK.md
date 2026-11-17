@@ -1,6 +1,8 @@
 # card_terra: Card-Krueger replays with GPT-6.1-Terra
 
 One cohort, never pooled with another. All files are author-generated records of agent sessions.
+GPT-6.1-Terra at high reasoning effort through the Codex CLI (0.164.0-alpha.11.1 on a laptop for 368 replays, 0.165.0
+on the cluster for 2,632) on two ChatGPT subscription logins, run on 29 October 2026 and reviewed on 30 October.
 
 ## replays.csv.gz
 
@@ -52,8 +54,9 @@ The material each review pair carried besides the two declarations (identical in
 rules in these data; in the masked cohort with the masked column names), `target_declaration` (the original's
 declaration, the review target, with keys model, null, population, outcome, sample_restrictions) and
 `public_context` (a list of the agents' `DESIGN.md` and `CODEBOOK.md`, each with keys name, sha256, text). The
-reviewer's session wrapper is in `code/09_card_agents/data_generation/terra/`. The Terra review read every pair
-once, so this cohort has no `review_repeats.csv`.
+reviewer's session wrapper is in `code/09_card_agents/data_generation/terra/`. An earlier review of the same pairs
+without `data_facts` was superseded by this one. The Terra review read every pair once, so this cohort has no
+`review_repeats.csv`.
 
 ## original.json
 

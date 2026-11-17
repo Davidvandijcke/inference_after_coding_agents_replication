@@ -14,7 +14,8 @@ cost-capped relay; spend $2.04 by the relay's estimate. All 60 completed on the 
 - `analysis_paths.jsonl.gz`: one JSON object per session: `session_id`, `analysis_paths` (the session's
   append-only analysis log, `ANALYSIS_PATHS.jsonl`, as text: plans, results with estimates, standard errors and
   p-values, corrections, next-step choices and the final choice) and `results_final` (the session's final result
-  file, as text). `code/06_immigration_request/03_mvalue.py` reads every estimated analysis from these logs.
+  file, as text). `code/06_immigration_request/03_mvalue.py` reads every estimated analysis from these logs; the
+  m-value leaves out results that a logged correction names but does not replace.
 
 ## Fields of sessions.csv
 

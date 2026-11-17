@@ -9,8 +9,8 @@ rows, without replacement), scored on the cluster by `code/04_power/data_generat
 subsamples 0 to 3,999 of each bank by the runner's standard scorer, one sandbox per subsample (706,000 rows),
 and the rest by the pre-loaded scorer `fast_guest.py` (7,520,000 rows), which reproduced the standard scorer
 exactly on the first 2,000 subsamples of every program. The bank starts at 2,000 subsamples and doubles until
-it holds 40 tail and 200 body subsamples, up to 128,000 (`make_references.py`). `extract_records.py` wrote this
-file from the bank files.
+it holds 40 tail and 200 body subsamples, up to 128,000 (module 02's `cluster/make_references.py`).
+`extract_records.py` wrote this file from the bank files.
 
 | Field | Description |
 |---|---|

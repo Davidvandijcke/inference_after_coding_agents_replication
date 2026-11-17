@@ -7,7 +7,7 @@ Built by `code/10_self_correction/data_generation/extract_records.py`. The datas
 `data/raw/pathways_sol_common/`.
 
 - **Planted** (`planted_sessions.csv`, 60): datasets with a moderate effect on employment at 12 months (latent
-  shift 0.28 in `frozen/generate.py`), 30 in cohort `twin-panel-sol` (seeds 9,990,000 + slot, primary login) and 30
+  shift 0.28 in module 04's `generate.py`), 30 in cohort `twin-panel-sol` (seeds 9,990,000 + slot, primary login) and 30
   in `twin-panel2-sol` (seeds 9,990,030 + slot, second login), 1 November 2026. The second 30 were added after the
   first cohort's originals had been read and before any conditional-correction verdict existed.
 - **Reference** (`reference_sessions.csv`, 100, cohort `reference-null`): fresh null datasets (seeds 12,020,000 +
@@ -37,8 +37,8 @@ Built by `code/10_self_correction/data_generation/extract_records.py`. The datas
 
 | Field | Meaning |
 |---|---|
-| `common_procedure` | `True` when program and declaration select employment at 12 months, all participants, treatment main effect with site indicators only, HC2 errors and a Student-t test (`reference_runs/collect_and_score.py`) |
-| `reader_label`, `reader_reason` | for those sessions, a blind GPT-6.1-Sol reader's verdict (`MATCH`, `NONMATCH`, `AMBIGUOUS`) on whether the declaration is that analysis without a stronger model assumption (`reference_runs/READER_PROMPT_FROZEN.txt`); the reader saw the declaration and facts coded from the program |
+| `common_procedure` | `True` when program and declaration select employment at 12 months, all participants, treatment main effect with site indicators only, HC2 errors and a Student-t test: the program is coded by the choice coder `four_agent_null_run/code_choices.py` and by the rule of `procedure` in `extract_records.py`, and the declaration must name the participants, a zero treatment coefficient and site |
+| `reader_label`, `reader_reason` | for those sessions, a blind GPT-6.1-Sol reader's verdict (`MATCH`, `NONMATCH`, `AMBIGUOUS`) on whether the declaration is that analysis without a stronger model assumption (`reference_runs/READER_PROMPT_FROZEN.txt`); the reader saw the declaration and facts coded from the program, in batches of up to 20 per session mixed with declarations of other runs (20 of them controls with a known label) |
 
 ## reports.jsonl.gz and programs/
 

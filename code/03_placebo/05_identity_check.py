@@ -1,7 +1,7 @@
 """Searches every placebo session for words that would identify a source study or show the agent noticed the placebo.
 
-Reruns the cohort's check (data_generation/runtime/identity_check.py), with its patterns, on each session's final
-report, commitment and, for replays, comparison verdict and reason.
+Runs the cohort's four patterns on each session's final report, commitment and, for replays, comparison verdict
+and reason.
 
 Inputs:  data/agent_runs/placebo_luna/sessions.jsonl.gz
 Outputs: data/derived/03_placebo/identity_check.json

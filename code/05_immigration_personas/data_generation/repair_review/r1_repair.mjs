@@ -1,6 +1,5 @@
 // ALIGNED-PIPELINE COPY (4 November 2026) of Miao et al.'s codes/Round1_reviewer.mjs at commit 7c8925f
-// (shipped unmodified as data/raw/miao2026/repository/codes/Round1_reviewer.mjs; MIT License, Copyright (c) 2026
-// Jiacheng Miao, data/raw/miao2026/repository/LICENSE). Every change from the original is marked "ALIGN:"; the
+// (MIT License, Copyright (c) 2026 Jiacheng Miao, data/raw/miao2026/LICENSE). Every change from the original is marked "ALIGN:"; the
 // reviewer prompt, system prompt, tools, turn limit, permissions, staging, stripping and file relocation are unchanged.
 // ALIGN: the SDK is loaded from the Great Lakes runtime used for the persona runs (SDK 0.3.197).
 const { query } = await import(process.env.MIAO_RUNTIME

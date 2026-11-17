@@ -9,12 +9,15 @@ Records of the power design (Table 1, Panel D).
   (`code/02_open_ended/data_generation/prompts/`, `data/raw/pathways/CODEBOOK.md`).
 - Data: `data/raw/pathways_power/power-NN.csv`. A replay's dataset is reference subsample `bank_index`
   of its original's dataset: m = 200 rows drawn without replacement in the order
-  `random.Random(f"{seed}-bank-{bank_index}").sample(range(2000), 200)` (`runner.subsample_indices`),
-  m/n = 0.10. `data_sha256` is the hash of the file the session received.
+  `random.Random(f"{seed}-bank-{bank_index}").sample(range(2000), 200)`
+  (`subsample_indices` in module 02's `cluster/runner.py`), m/n = 0.10. `data_sha256` is the hash of the
+  file the session received.
 - Sessions: 200 originals; 198 usable (slots 36 and 47: the agent's own program fails on its own data).
   46,808 replay sessions (7,208 tail, 39,600 body), all classified. 14,905 earlier attempts were cut and rerun on the same subsample:
   201 `cut` records, whose turn did not complete (200 of them in a provider outage on 4 November), and
-  14,704 `rate_limited` records.
+  14,704 `rate_limited` records. Each usable original has 40 tail and 200 body replays, except at +9.6 points
+  (odd slots), where 31 banks held fewer than 40 tail subsamples and 3 (slots 29, 71 and 121) none, which
+  leaves their bounds vacuous.
 - Extraction: `code/04_power/data_generation/extract_records.py` from the run's per-node result files.
   Answer texts, the replays' reports, account names and meter readings are dropped; full transcripts are
   not shipped.

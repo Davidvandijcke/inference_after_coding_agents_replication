@@ -6,8 +6,9 @@ datasets and then 160 more (`stage`). The prompt
 (`code/10_self_correction/data_generation/card_placebo/frozen/research_prompt.txt`) is the Card prompt plus a
 program-output paragraph: `p_value` must be the unadjusted p-value of the chosen main test, and a
 multiplicity-adjusted p-value goes in a separate field and is explained in the report. The codebook differs from the
-Card codebook only in describing the store identifiers as anonymous. Built by
-`code/10_self_correction/data_generation/extract_records.py`; the run code is in
+Card codebook only in describing the store identifiers as anonymous, and the packet also held the Card study
+description `data/agent_runs/card_luna/packet/DESIGN.md`. Built by
+`code/10_self_correction/data_generation/extract_records.py`; the inputs are in
 `code/10_self_correction/data_generation/card_placebo/`.
 
 ## sessions.csv (200 rows)

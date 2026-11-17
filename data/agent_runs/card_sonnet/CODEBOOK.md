@@ -1,6 +1,10 @@
 # card_sonnet: Card-Krueger replays with Claude Sonnet 5.5
 
 One cohort, never pooled with another. All files are author-generated records of agent sessions.
+Claude Sonnet 5.5 at high reasoning effort through Claude Code CLI 2.1.314 on the cluster, on one Claude subscription
+login, run from 3 to 4 November 2026 and reviewed from 5 to 6 November; each replay ran in its own sandbox with its
+own `/tmp`. A session cut by the weekly usage meter or a killed job counted as not done and was run again from the
+start in a later launch; all 3,000 replays completed.
 
 ## replays.csv.gz
 
@@ -52,7 +56,7 @@ decline_messages, decline_report (patterns of the decline rule, `code/09_card_ag
 visible thinking, all messages and the final report; `|`-separated), and name_thinking, name_messages,
 name_tool_calls (commands and file contents written), name_report ("krueger" found, `True`/`False`). A replay
 declines when its thinking or messages match, and names the study when any of thinking, messages or tool calls
-does.
+does. The flags read the analysis turn only.
 
 ## programs/original-analysis.R, original/
 

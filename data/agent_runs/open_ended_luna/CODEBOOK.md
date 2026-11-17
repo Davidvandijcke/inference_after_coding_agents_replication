@@ -3,8 +3,9 @@
 Records of the open-ended agent design (Table 1 Panel B, Figure 3): one original session per dataset in
 `data/raw/pathways/` (100 sessions, 99 usable), and replay sessions on subsamples of 200 of each usable original's
 2,000 participants: 40 tail and 200 body replays per original (`base`), then 200 and 200 more (`ext1`), drawn after
-the first results were seen. Model, harness, route and prompts are in `code/02_open_ended/README.md`. Extracted by
-`code/02_open_ended/data_generation/extract_records.py`. Author-generated, CC BY 4.0.
+the first results were seen. The agent is GPT-6-Luna at high reasoning effort through Codex CLI 0.157.0 in a
+bubblewrap sandbox on a Linux cluster, 27 to 30 October 2026, on the OpenAI API (the second batch at the flex tier
+and through OpenRouter). Prompts: `code/02_open_ended/data_generation/prompts/`. Author-generated, CC BY 4.0.
 
 ## `originals.csv` (100 rows)
 

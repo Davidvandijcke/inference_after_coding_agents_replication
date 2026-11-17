@@ -3,9 +3,10 @@
 One cohort, never pooled with another: one original run of GPT-6-Luna (OpenAI, high reasoning effort, Codex CLI
 0.157.0, through the OpenAI API) on all 410 stores, 16 October 2026, and 3,000 replays of the same agent on reference
 subsets of 150 stores (1,142 tail, 1,858 body), 17 October 2026, on the University of Michigan's Great Lakes cluster.
-The files are author-generated records of agent sessions, written by
-`code/08_card/data_generation/extract_records.py`, except `packet/data.csv`, which holds Card and Krueger's records in
-another format and keeps the status of `data/raw/card_krueger/`. Modules 09 and 11 read these files.
+The tail and body counts follow a Neyman allocation from the match rates of 743 earlier replays of the same original,
+which serve only this purpose and are not shipped. The files are author-generated records of agent sessions, written
+by `code/08_card/data_generation/extract_records.py`, except `packet/data.csv`, which holds Card and Krueger's records
+in another format and keeps the status of `data/raw/card_krueger/`. Modules 09 and 11 read these files.
 
 Every session started from the files in `packet/` (with `data.csv` replaced by the replay's subset), an empty home
 folder and a fixed Codex configuration (model `gpt-6-luna`, reasoning effort high, default service tier, no approval
@@ -60,7 +61,7 @@ One row per rostered replay, in run order (gzip-compressed CSV, UTF-8). All 3,00
 | review_label | The fact label: `match`, `nonmatch` or `unresolved`, from GPT-6.1-Sol (high effort, Codex CLI 0.165.0, ChatGPT Pro subscription logins, 30 October 2026), which compared the two declarations in batches of 60 blinded pairs, without stratum, results or verdicts, and with the data facts in `review_prompt.json` (two sample rules that select the same 391 stores with the same values are the same restriction). The correction uses these labels; unresolved pairs (7 tail, 8 body) are excluded. |
 | review_reason | The reviewer's one-sentence reason. |
 | review_session | Opaque id of the reviewer session that labeled the pair (one session per batch). |
-| first_review_status | `classified` or `unresolved` in the first declaration review (the same comparison without the data facts, 17 October 2026), whose labels are superseded. Its 2,989 classified replays are those the soundness review covered and the descriptive displays use. |
+| first_review_status | `classified` or `unresolved` in the first declaration review (the same comparison without the data facts, by GPT-6.1-Sol subagents at high effort in a Codex Desktop session, 17 October 2026), whose labels are superseded. Its 2,989 classified replays are those the soundness review covered and the descriptive displays use. |
 
 ## review_prompt.json
 
@@ -73,7 +74,8 @@ The reviewer's session wrapper is `code/09_card_agents/data_generation/terra/rer
 The coded final choices of each replay's declaration (3,000 rows), from GPT-6.1-Sol helper sessions working on
 blinded packets (rule-based candidates, reviewed against each declaration's text; no strata, results or verdicts), 18
 October 2026. The coding rules are in `code/08_card/data_generation/descriptive_coding/` (`choice-coding-schema.md`,
-`choice-coding-clarifications.md`); this file holds the schema's display codes.
+`choice-coding-clarifications.md`); this file holds the schema's display codes. Later checks of the coding changed 162
+of its 9,000 codes.
 
 | Field | Values |
 |---|---|
@@ -102,7 +104,12 @@ The methodological review behind Table 7, for the 2,989 replays classified by th
 reviewer saw the design, the codebook, the replay's declaration and its final `analysis.R` with comments removed, and
 no results (`prompts/soundness-review-prompt.txt`); the auditor saw the same material, facts about the data and the
 reviewer's verdict and reason (`prompts/soundness-audit-prompt.txt`). For the 6 replays without a recovered program
-the reviewer saw the declaration alone and passed all six; the table and the audit leave them out.
+the reviewer saw the declaration alone and passed all six; the table and the audit leave them out. Table 7's
+"Reviewer + audit" column keeps the reviewer's verdicts, except that 41 of its 46 failures pass, which a check of the
+code and data found to be no error (reruns of 21 of them are in
+`code/08_card/data_generation/soundness/failure-audit.csv` and `fallback-trace.txt`), and 9 of its passes fail, which
+report a p-value adjusted for undeclared multiple testing, the error type the audit surfaced;
+`code/08_card/08_replay_figure.py` applies these rules.
 
 | Field | Meaning |
 |---|---|
@@ -141,10 +148,10 @@ compressed), as Codex emitted it: messages, shell commands with their output, an
 and coding used; null for the original), `is_original`, `schema`, `eventstream_bytes` and `eventstream_sha256` (of
 the stream before redaction) and `analysis_events_jsonl` (the stream, one JSON event per line).
 
-Redaction (`code/08_card/data_generation/redact.py`): every path in the cluster's software tree is replaced by
-`<cluster-software-path>`, every line naming one of its administrative folders by `<redacted host folder>`, and the
-owner and group fields of every `ls -l` line, which showed the numeric ids of the account that ran the sessions, by
-`<owner>` and `<group>`. Nothing else changed; streams without such text keep their exact bytes.
+Redaction: every path in the cluster's software tree is replaced by `<cluster-software-path>`, every line naming one
+of its administrative folders by `<redacted host folder>`, and the owner and group fields of every `ls -l` line, which
+showed the numeric ids of the account that ran the sessions, by `<owner>` and `<group>`. Nothing else changed; streams
+without such text keep their exact bytes.
 
 ## replay-requests/
 
@@ -153,8 +160,8 @@ characters) of its final model request, which carries the whole conversation; fo
 `case_id` (the runtime's internal case key), `job_id` (the session id above), `request_id` (the runtime ledger's id of
 that final request, 32 hex characters), `items` (`t`: `custom_tool_call` with `name` and `input`, or `user` with
 `text`; the extractor also defines `function_call` and `compaction`, which occur in no record). Extracted read-only on
-the cluster from the replays' closed case packs by `data_generation/replay_reruns/gl_extract_calls.py`, with the
-streams' redaction applied (the extracts hold no command output, so only the software-tree rule changes anything).
+the cluster from the replays' closed case packs, with the streams' redaction applied (the extracts hold no command
+output, so only the software-tree rule changes anything).
 
 ## prompts/
 

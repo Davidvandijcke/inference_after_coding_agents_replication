@@ -9,8 +9,7 @@ Figure `fig:self_correction_verdicts`. Author-generated data, CC BY 4.0. No thir
 - `panel-NNN.csv.gz` (seed 9,990,000 + NNN) and `panel2-NNN.csv.gz` (seed 9,990,030 + NNN), NNN = 000 to 029: a
   moderate effect, latent shift tau = 0.28 on employment at 12 months, the power design's moderate effect.
 - `reference-NNN.csv.gz` (seed 12,020,000 + NNN), NNN = 000 to 099: no effect (tau = 0).
-- Generator: `code/10_self_correction/data_generation/sol_common_analysis/frozen/generate.py`, called as
-  `generate(seed, 2000, tau)`. It is the power design's generator (`code/04_power/data_generation/generate.py`,
-  which differs only in a slot count that these seeds do not use).
+- Generator: the power design's, `code/04_power/data_generation/generate.py`, called as
+  `generate(seed, 2000, tau)`.
 - Regeneration: `code/10_self_correction/data_generation/extract_records.py` rewrites the files from their seeds
   and checks each against the SHA-256 the session recorded when it was served.

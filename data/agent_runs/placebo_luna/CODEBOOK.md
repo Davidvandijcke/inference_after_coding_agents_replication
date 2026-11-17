@@ -3,8 +3,11 @@
 Agent records of Table 1, Panel C. GPT-6-Luna (high reasoning effort, Codex CLI 0.157.0, signed in with two
 ChatGPT Pro logins) analyzed 102 placebo datasets built from three published experiments (34 per study),
 then was replayed on 40 tail and 200 body subsamples of each dataset at m/n = 0.10 (24,440 replays). Slots
-0-50 ran on 30 October 2026 and slots 51-101 on 31 October 2026. Prompts and
-codebooks: `code/03_placebo/data_generation/runtime/`. `code/03_placebo/data_generation/export_cluster_records.py`
+0-50 ran on 30 October 2026 and slots 51-101 on 31 October 2026. Banks and replays ran only after a gate fixed
+before any original ran had passed: at least 7 of the first 51 originals significant at 5%. The research prompt
+and codebooks are in `code/03_placebo/data_generation/runtime/`, and each session received its study's
+`codebooks/<study>.md` as `CODEBOOK.md`; the commitment and comparison prompts are those of
+`code/02_open_ended/data_generation/prompts/`. `code/03_placebo/data_generation/export_cluster_records.py`
 extracted these files from the cohort's run folder. All values were written by the agents or by the cohort's
 runner; nothing was relabeled.
 

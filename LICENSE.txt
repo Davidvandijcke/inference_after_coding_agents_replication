@@ -35,14 +35,10 @@ The package contains material under different terms.
    - data/raw/issp/cri_macro.csv and its codebook: CC0 1.0 (Crowdsourced Replication
      Initiative).
    - data/raw/miao2026/paper/: a page of Miao, Pritchard and Zou (2026), arXiv, CC BY 4.0.
-   - data/raw/miao2026/repository/, the modified copies of its prompts in
-     code/05_immigration_personas/data_generation/analysts/prompts/ and the modified copy of
-     its codes/Round1_reviewer.mjs,
-     code/05_immigration_personas/data_generation/repair_review/r1_repair.mjs: MIT License,
-     Copyright (c) 2026 Jiacheng Miao (data/raw/miao2026/repository/LICENSE).
-   - code/05_immigration_personas/data_generation/analysts/luna_miao_file/prompts/
-     10round_7axis_paper.md: the round instructions as printed in Appendix A of Miao et al.
-     (2026), CC BY 4.0.
+   - code/05_immigration_personas/data_generation/repair_review/r1_repair.mjs and
+     analysts/prompts/issp_paper.md, modified copies of codes/Round1_reviewer.mjs and
+     prompts/data/issp.md in the repository of Miao, Pritchard and Zou (2026): MIT License,
+     Copyright (c) 2026 Jiacheng Miao (data/raw/miao2026/LICENSE).
    - code/05_immigration_personas/data_generation/repair_review/prompts/: the review prompt
      and example summaries of Miao et al.'s Appendix B, CC BY 4.0.
    - code/00_lens_figure/fonts/: the Inter typeface, SIL Open Font License 1.1
