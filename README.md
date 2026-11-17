@@ -1,6 +1,8 @@
 # Replication package for "Inference After Coding Agents"
 
-Florian Gunsilius, David Van Dijcke and Kaspar Wüthrich
+Florian Gunsilius, David Van Dijcke and Kaspar Wüthrich.
+
+Please cite as Gunsilius, Florian, David Van Dijcke, and Kaspar Wüthrich. 2026. “Inference After Coding Agents.” Working paper.
 
 ## Overview
 
