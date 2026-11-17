@@ -1,0 +1,12 @@
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+ & Original & Tail & Body & Multiplier & Corrected \\
+Agent & $p$-value & matches & matches & $\lambda$ & $p$-value \\
+\midrule
+GPT-6-Luna & 0.025 & 143/1,135 (12.6\%) & 133/1,850 (7.2\%) & 1.72 ($\geq$ 1.43) & 0.043 ($\leq$ 0.052) \\
+GPT-6.1-Terra & 0.028 & 251/1,073 (23.4\%) & 243/1,909 (12.7\%) & 1.79 ($\geq$ 1.57) & 0.051 ($\leq$ 0.058) \\
+GPT-6.1-Sol & 0.027 & 270/1,493 (18.1\%) & 133/1,493 (8.9\%) & 1.98 ($\geq$ 1.68) & 0.053 ($\leq$ 0.062) \\
+Claude Sonnet 5.5 & 0.041 & 1,348/1,494 (90.2\%) & 1,351/1,494 (90.4\%) & 1.00 ($\geq$ 0.98) & 0.041 ($\leq$ 0.042) \\
+\quad masked data & 0.040 & 1,155/1,487 (77.7\%) & 1,151/1,490 (77.2\%) & 1.01 ($\geq$ 0.97) & 0.041 ($\leq$ 0.042) \\
+\bottomrule
+\end{tabular}

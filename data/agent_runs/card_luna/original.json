@@ -1,0 +1,19 @@
+{
+  "session_id": "01a1461f-fa1c-7f42-b43a-233911e3196c",
+  "cohort": "card_luna",
+  "role": "original",
+  "model": "gpt-6-luna",
+  "effort": "high",
+  "route": "api",
+  "p_value": 0.02516931664290065,
+  "estimate": 2.9656505083391833,
+  "se": 1.319506892590778,
+  "commitment": {
+    "model": "For each store i, the conditional mean model is ΔFTEᵢ = α + τ·NJᵢ + γ₂·KFCᵢ + γ₃·RoyRogersᵢ + γ₄·Wendy'sᵢ, with Burger King as the reference chain. ΔFTE is the wave-two minus wave-one outcome. The NJ coefficient τ is a common additive difference-in-differences effect across chains; the model has no state-by-chain interactions. Errors are treated as independent across stores, including within each state, and their variances are unrestricted. No full observation distribution or known population variance is specified. State assignment and wave timing are fixed by the study design: NJᵢ = 1 for New Jersey, where the minimum wage rose from $4.25 to $5.05 on April 1, 1992; NJᵢ = 0 for Pennsylvania, where it did not change. Wave one is pre-increase and wave two is post-increase. The intercept, common NJ effect, and chain change shifts are unknown parameters.",
+    "null": "H₀: τ = 0, meaning the conditional mean change in FTE employment in New Jersey equals that in Pennsylvania at each chain level.",
+    "population": "Fast-food stores in the supplied study population from the four surveyed chains in New Jersey and eastern Pennsylvania. The estimand pertains to stores with complete two-wave employment and recorded chain and state; it does not assert generalization to other sectors or locations.",
+    "outcome": "Store-level change in nonmanager full-time-equivalent employment: (empft2 + 0.5 × emppt2) − (empft + 0.5 × emppt). Managers and assistant managers are excluded; no log or other transformation is used.",
+    "sample_restrictions": "Use complete cases for state, chain, empft, emppt, empft2, and emppt2; require the retained data to contain both state codes 0 and 1, with no other state codes. No restriction is imposed by wave-two status, ownership, or location within the study areas; stores with observed zero employment after permanent closure remain eligible."
+  },
+  "final_report": "## Main result\n\nThe chain-adjusted two-wave DID estimates a relative increase of **2.97 FTE employees per New Jersey store** versus Pennsylvania (HC2 SE 1.32; 95% CI 0.37 to 5.56; *p* = 0.025; 391 complete pairs). The baseline-employment-adjusted estimate is smaller and includes zero; the report records the other outcome and specification results.\n\n## Files\n\n- [analysis.R](/workspace/analysis.R) defines the sourceable `analysis(data)` function. It returns `estimate`, `se`, and `p_value` and uses its argument rather than reading a file.\n- [analysis_report.md](/workspace/analysis_report.md) contains the abstract, alternative analyses, and limitations.\n- [explore.R](/workspace/explore.R) separately inspects the supplied data and verifies the main function result.\n\n`Rscript explore.R` completed, and sourcing `analysis.R` produced no analysis or file reads. The report notes that inference uses store-level standard errors; with only one treated and one comparison state, it cannot account for state-level shocks. It also records that the p-values are nominal across the explored specifications."
+}

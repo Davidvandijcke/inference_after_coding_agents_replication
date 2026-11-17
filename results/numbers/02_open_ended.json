@@ -1,0 +1,172 @@
+[
+ {
+  "id": "oe_datasets",
+  "main_tex_line": 1127,
+  "quote": "we simulate 100 datasets from an imaginary randomized control trial",
+  "value": 100
+ },
+ {
+  "id": "oe_participants",
+  "main_tex_line": 1127,
+  "quote": "The program has $2{,}000$ participants",
+  "value": 2000
+ },
+ {
+  "id": "oe_sites",
+  "main_tex_line": 1127,
+  "quote": "participants at four sites",
+  "value": 4
+ },
+ {
+  "id": "oe_half_treated",
+  "main_tex_line": 1127,
+  "quote": "with half of each site's participants assigned to the program at random",
+  "value": true
+ },
+ {
+  "id": "oe_m",
+  "main_tex_line": 1131,
+  "quote": "of size $m=200$, giving $m/n=0.1$",
+  "value": [
+   200,
+   0.1
+  ]
+ },
+ {
+  "id": "oe_budgets",
+  "main_tex_line": 1131,
+  "quote": "We draw $40+200$ and $240+400$ tail and body subsamples respectively",
+  "value": [
+   [
+    9,
+    200
+   ],
+   [
+    43,
+    400
+   ]
+  ]
+ },
+ {
+  "id": "oe_agent_reject",
+  "main_tex_line": 1141,
+  "quote": "reporting a $p$-value of less than $0.05$ for nearly every original analysis",
+  "value": 0.9797979797979798
+ },
+ {
+  "id": "oe_replay_reject",
+  "main_tex_line": 1143,
+  "quote": "5.1\\% for the open-ended agents",
+  "value": 0.050505050505050504
+ },
+ {
+  "id": "oe_median_lambda",
+  "main_tex_line": 1145,
+  "quote": "a multiplier $\\widehat \\lambda$ of 19, our median estimated multiplier",
+  "value": 19.125828611231256
+ },
+ {
+  "id": "oe_hollow_diamond",
+  "main_tex_line": 1145,
+  "quote": "as in the hollow red diamond on the plot",
+  "value": 1
+ },
+ {
+  "id": "oe_neither_match",
+  "main_tex_line": 1145,
+  "quote": "In 19 out of 99 analyses, there is neither a tail nor a body match",
+  "value": [
+   19,
+   99
+  ]
+ },
+ {
+  "id": "oe_figure_design",
+  "main_tex_line": 1151,
+  "quote": "2) the open-ended design (99 datasets ... $m/n=0.10$) with 240 tail and 400 body replays",
+  "value": [
+   99,
+   0.1,
+   240,
+   400
+  ]
+ },
+ {
+  "id": "oe_figure_median_lambda",
+  "main_tex_line": 1151,
+  "quote": "the dash-dotted line marks the median multiplier of 19 over the analyses re-selected in both strata",
+  "value": 19.125828611231256
+ },
+ {
+  "id": "oe_usable",
+  "main_tex_line": 1157,
+  "quote": "so we dropped it and report the results from the remaining 99",
+  "value": 99
+ },
+ {
+  "id": "oe_agent_reject_count",
+  "main_tex_line": 1157,
+  "quote": "rejecting in 97/99 (98.0\\% rounded)",
+  "value": [
+   97,
+   99
+  ]
+ },
+ {
+  "id": "oe_replay_reject_row2",
+  "main_tex_line": 1157,
+  "quote": "Panel B, row 2, shows ... with enough replays (5.1\\%)",
+  "value": 0.050505050505050504
+ },
+ {
+  "id": "oe_width",
+  "main_tex_line": 1157,
+  "quote": "The fairly large width of $0.71$",
+  "value": 0.7135090888301029
+ },
+ {
+  "id": "oe_width_both",
+  "main_tex_line": 1157,
+  "quote": "the mean width drops to $0.44$ at 640 replays",
+  "value": [
+   0.4407838763612689,
+   640
+  ]
+ },
+ {
+  "id": "oe_body_reselect",
+  "main_tex_line": 1157,
+  "quote": "(only 0.29\\% of body replays)",
+  "value": 0.0028789332794585585
+ },
+ {
+  "id": "oe_median_lambda_range",
+  "main_tex_line": 1157,
+  "quote": "with median multipliers of $17$--$19$",
+  "value": [
+   17.122823795240933,
+   19.125828611231256
+  ]
+ },
+ {
+  "id": "oe_lambda_lower_range",
+  "main_tex_line": 1157,
+  "quote": "(lower confidence bounds $6.9$--$7.2$)",
+  "value": [
+   6.8560754294211215,
+   7.231269753185631
+  ]
+ },
+ {
+  "id": "oe_appendix_n",
+  "main_tex_line": 2106,
+  "quote": "Each dataset has $n = 2{,}000$ participants",
+  "value": 2000
+ },
+ {
+  "id": "oe_appendix_half",
+  "main_tex_line": 2111,
+  "quote": "Treatment $T$ equals one for exactly half of each site's participants",
+  "value": true
+ }
+]

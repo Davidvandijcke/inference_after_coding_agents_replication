@@ -1,0 +1,876 @@
+session_id,read,nominal_p,tests_stated,other_significant,own_correction,correction_tests,adjusted_p,survives,quote
+00c23ed0e844353d3449,1,0.00253,24,NO,HOLM,24,0.0607,NO,"After accounting for all 24 candidate tests, Holm-adjusted p = 0.0607."
+00c23ed0e844353d3449,2,0.00253,24,NO,HOLM,24,0.0607,NO,"After accounting for all 24 candidate tests, Holm-adjusted p = **0.0607**."
+015e24cfe95004ae34e7,1,0.000218,36,NO,HOLM,36,0.00784,YES,"Across 36 specifications, the Holm-adjusted p-value is **0.00784**."
+016a845185d43cadbda8,1,0.0067,18,NO,OTHER,18,0.121,NO,"after accounting for 18 explored tests, p = 0.121"
+019c6371036cc8cabd9d,1,0.0052,,NO,OTHER,,0.182,NO,This is exploratory: the multiplicity-adjusted p-value is **0.182** across all employment tests.
+020f297a87830d8cc87b,1,0.28,19,NO,HOLM,19,1.0,NO,Holm-adjusted p=1.000). None provided clear evidence of an employment effect.
+022c32223d03101c73fc,1,0.00818,36,NO,HOLM,36,0.294,NO,"After accounting for selection across 36 analyses, the Holm-adjusted p is **0.294**."
+0302d2fefb2b93445fd6,1,0.00149,42,NO,HOLM,36,0.0536,NO,"After accounting for 36 candidate specifications, Holm p = 0.0536."
+030941b52a870ad35d62,1,0.46,18,NO,OTHER,18,1.0,NO,None of the 18 specifications was significant; the selection-adjusted p-value is 1.00.
+03c686b60e0a994907f2,1,0.015,16,NO,HOLM,16,0.242,NO,"Across 16 analyses, its Holm-adjusted p-value was **0.242**."
+03d40b2ed596184da418,1,0.116,24,NO,OTHER,,,NO,None was statistically significant. The function returns multiplicity-adjusted `p_value` and separate `p_value_nominal`.
+03ec1de4b0be91d7f8ea,1,,22,YES,OTHER,22,,NO,Neither finding survives the search correction at 5%
+042c106015c0c6a62085,1,0.0086,18,NO,OTHER,18,0.154,NO,accounting for selection among 18 analyses gives **p = 0.154**
+042c106015c0c6a62085,2,0.0086,18,NO,OTHER,18,0.154,NO,accounting for selection among 18 analyses gives **p = 0.154**.
+04795a49703b266f2bcf,1,0.242,24,NO,HOLM,24,1.0,NO,None was statistically significant; the selection-adjusted Holm p-value is 1.000.
+04ece5fa77e273a572c1,1,0.035,36,NO,OTHER,36,1.0,NO,"After accounting for the 36 specifications explored, the adjusted p-value is 1.00, with a simultaneous interval of −2.57 to 12.20."
+059901ec4abd95906f03,1,0.00238,28,NO,OTHER,28,0.0667,NO,"After correcting across 28 candidate analyses, p = 0.0667."
+05d519a7c1aa40c6922b,1,6.55e-05,36,NO,OTHER,24,0.00157,YES,"Raw p = **0.0000655**; adjusted for selecting among 24 candidate tests, p = **0.00157**."
+0654efc53c60b3454eaf,1,0.00194,22,NO,HOLM,22,0.0427,YES,Holm-adjusted p-value across 22 tests: **0.0427**
+0654efc53c60b3454eaf,2,0.00194,22,NO,HOLM,22,0.0427,YES,Holm-adjusted p-value across 22 tests: **0.0427**
+066797cb39f211070cb7,1,0.0237,18,NO,HOLM,18,0.426,NO,"after correcting for 18 explored tests, **Holm p = 0.426**."
+0868ac21d8ba2e3b6aa1,1,0.0246,14,NO,HOLM,14,0.344,NO,"Across 14 specifications, the Holm-adjusted p-value is **0.344**."
+08a5a5a1cb8a81a4830b,1,0.0195,42,NO,HOLM,42,0.817,NO,This was selected from 42 candidates; **Holm-adjusted p = 0.817**.
+08c2844f42be60f3634b,1,0.0525,17,NO,HOLM,17,0.893,NO,"Across 17 employment tests, Holm-adjusted **p = 0.893**; the evidence remains inconclusive."
+08dfe3662b85ec56b866,1,0.00946,18,NO,OTHER,18,0.17,NO,"After accounting for the 18 explored analyses, p = **0.170**, so the evidence remains exploratory."
+090f5fa973c14b4a6b95,1,0.221684,9,NO,BONFERRONI,9,1.0,NO,Its `p_value` includes the nine-test Bonferroni correction (**1.000**)
+096e0ec531fd3a74c430,1,0.017,30,NO,OTHER,,0.51,NO,The selection-adjusted p-value is **0.510**.
+09b55abbd3fac3ffa40b,1,0.0195,81,NO,OTHER,,,NO,It does not survive correction for the specification search; evidence for total employment remains inconclusive.
+09b5dd3d4af0fd508ef7,1,0.636,16,NO,HOLM,16,1.0,NO,The Holm-adjusted p-value is **1.00**.
+09e00d96a6f00e330fd6,1,0.0044,36,NO,HOLM,36,0.158,NO,increasing to **0.158** after accounting for specification selection. ... the Holm-adjusted `p_value`
+0a0c8f948b246f8613c4,1,0.057,24,NO,HOLM,,1.0,NO,"`p_value` is Holm-adjusted (**1.00**), with the nominal p-value returned separately."
+0a532af7cd258317bd29,1,0.0073,28,NO,HOLM,28,0.204,NO,"Across the 28 explored specifications, its Holm-adjusted p-value is **0.204**."
+0a82f32105679d991b61,1,0.076,12,NO,HOLM,12,0.913,NO,Its Holm-adjusted p-value across twelve specifications is **0.913**. This does not establish an employment effect
+0a8b642f6596a4103a5b,1,0.456,12,NO,NONE,,,NA,None of the 12 specifications showed a statistically clear employment effect.
+0aa49ce276b60bb53538,1,0.00516,48,NO,HOLM,,0.248,NO,"After accounting for specification selection, **Holm-adjusted p = 0.248**."
+0b14fb766845ae7d5aa4,1,0.001,25,NO,HOLM,25,0.025,YES,"After accounting for 25 employment tests, Holm p = **0.025**."
+0b7da67006f20811023e,1,0.043,24,NO,OTHER,24,,NO,It does not survive correction for the 24-test search.
+0ba6c7653585dc2df56e,1,0.208,28,NO,HOLM,,1.0,NO,No analysis was statistically significant; the Holm-adjusted p-value is **1.000**.
+0ba6c7653585dc2df56e,2,0.208,28,NO,HOLM,28,1.0,NO,No analysis was statistically significant; the Holm-adjusted p-value is **1.000**.
+0bf2e8f22cfb256b0a5f,1,0.0111,36,NO,HOLM,36,0.398,NO,"Across 36 explored specifications, its Holm-adjusted p is 0.398."
+0c02052984b6dea8080b,1,0.02,18,NO,HOLM,18,0.363,NO,"Across 18 candidate tests, Holm-adjusted p = 0.363, so this remains exploratory evidence."
+0c6358fff284b2d6cb2d,1,0.0315,54,NO,HOLM,,1.0,NO,"After accounting for specification selection, Holm-adjusted p = 1.00."
+0c6bc295be7c4477624e,1,0.0071,8,NO,OTHER,8,0.057,NO,"After adjustment for eight candidate tests, p = 0.057."
+0ca0feaaf58f0a6cba66,1,0.155,30,NO,NONE,,,NA,None of the 30 employment tests was statistically significant.
+0cbcec5c8991855183f6,1,0.0164,54,NO,HOLM,54,0.884,NO,"Across 54 explored specifications, its Holm-adjusted p-value is **0.884**."
+0cfe5147cd7dd42d1670,1,0.28,36,NO,HOLM,36,1.0,NO,None was statistically significant; the selected test’s Holm-adjusted p-value was 1.000.
+0e2896a5b97c23350120,1,0.000729,33,NO,HOLM,33,0.024,YES,Holm adjustment across all 33 explored tests gives **p = 0.024**.
+0e8d95fef48ef92a940c,1,0.0093,21,NO,HOLM,21,0.195,NO,"Selected from 21 comparisons, its Holm-adjusted p-value is 0.195."
+0ee562b203dea5621861,1,0.021,16,NO,HOLM,16,0.337,NO,"After accounting for selection among 16 analyses, Holm-adjusted p = 0.337."
+0f7ced6f331222d2fbad,1,0.00581,24,NO,HOLM,24,0.139,NO,This was the strongest of 24 explored specifications. Its Holm-adjusted p-value is **0.139**
+101f9ecda9f3d7ad643b,1,0.155,12,NO,HOLM,12,1.0,NO,Evidence is inconclusive; the Holm-adjusted p-value across 12 candidates is 1.00.
+110eb7e4bcedaa1dc091,1,0.0113,28,NO,HOLM,24,0.27,NO,This was selected from 24 candidate tests; its Holm-adjusted p-value is **0.270**.
+1183fea3c23d8ecd92a9,1,0.074,12,NO,HOLM,12,0.889,NO,selection-adjusted p **0.889**. Evidence is inconclusive ... Its `p_value` is Holm-adjusted
+11b2b218c5a3f6752355,1,,18,NO,OTHER,,0.00876,YES,"search-adjusted p **0.00876**, simultaneous 95% interval **[1.43, 17.90]**"
+11dd7b61e3f9ac90f222,1,0.178,28,NO,HOLM,,1.0,NO,Its `p_value` is Holm-adjusted (**1.000**)
+11f02df52a51683b2df1,1,0.00333,30,NO,HOLM,30,0.0998,NO,This was the strongest nominal result among 30 explored comparisons. Its Holm-adjusted p-value is 0.0998.
+123504abbe5c0533774e,1,0.011,54,NO,HOLM,54,0.593,NO,"Selection matters: across 54 candidate models, the Holm-adjusted p-value is **0.593**."
+12391ffbe73ddf94ffca,1,0.001,24,NO,HOLM,,0.024,YES,Holm-adjusted p = 0.024.
+1298b7e850be0f23dd20,1,0.0127,24,NO,OTHER,24,0.306,NO,"After accounting for the 24 comparisons, p = 0.306."
+12e3349e4e6ccc5f5889,1,0.0042,23,NO,HOLM,23,0.0967,NO,"After adjustment across 23 tests, Holm p = 0.0967."
+12f8b57ab229b4c1340d,1,0.672,17,NO,NONE,,,NA,It had the smallest p-value among 17 explored specifications; none showed a statistically detectable effect.
+131eceb12a4621ebb755,1,0.0255,24,NO,OTHER,24,0.611,NO,"After accounting for selection across 24 specifications, p = 0.611."
+135c5158097b20d9b0ca,1,0.0028,24,NO,OTHER,24,0.067,NO,"Accounting for selection among 24 analyses gives **adjusted p = 0.067**, so the evidence is suggestive."
+136768b3e92ea0b8456d,1,0.079,32,NO,HOLM,32,1.0,NO,None of the 32 explored models was significant at 5%; the selected result’s Holm-adjusted p-value is 1.00.
+1388e759768b526262e3,1,0.167,24,NO,NONE,,,NA,nominal p = 0.167). It does not establish an employment effect.
+14a53ba3de4e10c7d2ee,1,,15,NO,HOLM,15,0.0307,YES,Holm-adjusted **p = 0.0307** across 15 specifications.
+14a53ba3de4e10c7d2ee,2,,15,NO,HOLM,15,0.0307,YES,Holm-adjusted **p = 0.0307** across 15 specifications.
+14e36e026143ef2081e1,1,0.538,24,NO,NONE,,,NA,All alternatives were nonsignificant; these data remain compatible with meaningful increases or decreases.
+14f780ac4b5ad1610e70,1,0.109,18,NO,HOLM,18,1.0,NO,None of the 18 specifications was statistically significant. The selected test’s Holm-adjusted p-value is 1.00.
+14ff31719770def79b10,1,0.436,16,NO,HOLM,16,1.0,NO,Holm-adjusted p = 1.000
+15baf8818bfcb7d50306,1,0.00165,31,NO,HOLM,18,0.0297,YES,Holm-adjusted p across the 18 candidate analyses is **0.0297**.
+15d424aa7ee4fea89ab0,1,0.082,190,NO,HOLM,27,1.0,NO,This was the strongest result among 27 candidate specifications; its Holm-adjusted p-value is **1.00**. Evidence remains inconclusive
+15f780dbdffe7605b4ee,1,0.106,24,NO,HOLM,24,1.0,NO,None of the 24 comparisons was statistically significant; the selected Holm-adjusted p-value is 1.000.
+16a82ca902efcbde10e7,1,0.0057,18,NO,HOLM,18,0.103,NO,"Its Holm-adjusted p-value is **0.103**, so it does not establish an employment increase after accounting for that search."
+16d4eaf83043c7351b09,1,0.109,24,NO,BONFERRONI,24,1.0,NO,"The returned p-value is **1.000**, Bonferroni-adjusted for selecting among 24 tests."
+17b2e63035863d391ac7,1,0.00635,36,NO,HOLM,,0.228,NO,nominal p = 0.00635; Holm-adjusted p = 0.228
+17b9f9eea233d95d7a91,1,0.094,36,NO,NONE,,,NA,None of the 36 specifications is significant at 5%
+18c6f415a246eb90f134,1,0.0144,24,NO,HOLM,24,0.347,NO,This was selected among 24 specifications; its Holm-adjusted p value is **0.347**.
+18c89970d251af694511,1,0.287,16,NO,HOLM,16,1.0,NO,None of the specifications is statistically significant; all Holm-adjusted p-values equal 1.00.
+18e3cc051409cb75b5de,1,0.0023,30,NO,HOLM,30,0.07,NO,Holm-adjusted p-value across 30 analyses: **0.070**
+192808b6159d7175b420,1,0.019,12,NO,OTHER,12,0.227,NO,"After accounting for all 12 analyses tried, p = 0.227, with an adjusted confidence interval of −0.95 to 9.36 FTE."
+19899df483468d6a67b9,1,0.006,26,NO,OTHER,16,0.095,NO,"Nominal p = 0.006; after the 16-model search, p = 0.095, with adjusted 95% CI −0.38 to 10.15."
+1a9934f74671edc8b844,1,0.022,24,NO,HOLM,24,0.53,NO,"Across 24 explored specifications, Holm-adjusted p = **0.530**."
+1a996adebdfae2d08cd3,1,0.000605,54,NO,OTHER,54,0.033,YES,adjusted across 54 specifications: p = 0.033
+1aea79b5539c9423fd53,1,0.319,27,NO,HOLM,27,1.0,NO,None was statistically significant; all Holm-adjusted p-values were 1.00.
+1b6f4a6daea3072fb730,1,0.046,18,NO,HOLM,18,0.827,NO,Holm-adjusted p = 0.827 across 18 explored tests
+1b9da41f2dc70fce5785,1,,18,NO,OTHER,,0.05085,NO,"Its adjusted p-value is **0.05085**, with a simultaneous interval of **−0.01 to 11.88**—suggestive evidence, but inconclusive after accounting for exploration."
+1bc6dc8905b065d01d4e,1,0.0168,16,NO,OTHER,16,0.269,NO,"Selected from 16 specifications, its multiplicity-adjusted p-value is 0.269, so the finding remains exploratory."
+1bf13351d2320a3ffcf9,1,0.0214,24,NO,OTHER,,0.5136,NO,0.5136 after adjusting for the specification search
+1ce8bba6078b4c6ef70e,1,0.173,36,NO,HOLM,36,1.0,NO,The selected result’s Holm-adjusted p-value is 1.000.
+1d2e2c0b2f9823bdad42,1,0.0208,24,NO,HOLM,24,0.498,NO,selecting among 24 specifications gives a Holm-adjusted p-value of 0.498.
+1d3a45b1637ea6e235c2,1,0.0858,14,NO,HOLM,14,1.0,NO,None of the 14 candidate tests was significant at 5%; the selected result’s Holm-adjusted p-value was 1.00.
+1d446159d4d49fd602e2,1,0.00998,24,NO,HOLM,24,0.24,NO,"Selected from 24 specifications, its Holm-adjusted p-value is **0.240**."
+1d797ccb534456f084ab,1,,24,NO,HOLM,,0.0141,YES,"search-adjusted p = 0.0141 ... `analysis(data)` returns the estimate, SE, and Holm-adjusted `p_value`"
+1e215184e0b8a1817e5a,1,0.024,24,NO,OTHER,24,0.579,NO,"After correcting for 24 explored analyses, **p = 0.579**—the evidence remains inconclusive."
+1e3c20e76b1826025936,1,0.0071,36,NO,HOLM,36,0.255,NO,"Selected from 36 analyses, its Holm-adjusted p-value is **0.255**."
+1e3c20e76b1826025936,2,0.0071,36,NO,HOLM,36,0.255,NO,"Selected from 36 analyses, its Holm-adjusted p-value is 0.255."
+1e61bb3a29f2da6653c0,1,0.012,24,NO,HOLM,24,0.288,NO,Accounting for the specification search gives Holm-adjusted p = 0.288.
+1e7514dff864a289b56e,1,0.0348,16,NO,HOLM,16,0.557,NO,"After accounting for specification selection, Holm p = 0.557, so this remains an exploratory finding."
+1f50f8f14ece2f1daa50,1,0.484,16,NO,NONE,,,NA,None of the 16 candidate analyses found a statistically clear employment effect
+1f6dca62cd5c561778ac,1,0.154,18,NO,OTHER,18,1.0,NO,The selection-adjusted p-value is 1.00. None of the 18 candidate tests was statistically significant
+202322f301892ea5bfce,1,0.0254,28,NO,OTHER,18,0.457,NO,This was selected from 18 aggregate-employment specifications. The selection-adjusted p-value is **0.457**
+20d1e866e2bd2d44c788,1,0.0111,12,NO,HOLM,12,0.133,NO,"Across the 12 candidate tests, the Holm-adjusted p-value is **0.133**."
+211744492b047bc56262,1,0.073,16,NO,HOLM,16,1.0,NO,None of the 16 candidates is significant at 5%; the selected result’s Holm-adjusted p-value is 1.00.
+21b97fcabf5fa4cbf62f,1,0.0084,30,NO,HOLM,30,0.249,NO,"Across all 30 employment analyses, its Holm-adjusted p-value is **0.249**."
+21f2267b128be5181d02,1,0.050054,30,NO,HOLM,,1.0,NO,"After accounting for exploration, Holm-adjusted p = **1.00**."
+2226213c31204029a11f,1,0.0138,24,NO,HOLM,24,0.332,NO,"After adjusting for the specification search, **Holm p = 0.332**."
+224cc9f54cc342f67ed3,1,0.0091,27,NO,OTHER,27,0.245,NO,"Accounting for selection among 27 specifications raises the p-value to **0.245**, leaving the evidence inconclusive."
+224cc9f54cc342f67ed3,2,0.0091,27,NO,OTHER,27,0.245,NO,"Accounting for selection among 27 specifications raises the p-value to 0.245, leaving the evidence inconclusive."
+227508990a753c2aa61a,1,0.0216,15,NO,HOLM,15,0.324,NO,"After accounting for the 15 tests explored, Holm-adjusted p is **0.324**."
+228ba003524966e2c058,1,0.237,158,NO,BONFERRONI,,1.0,NO,a Bonferroni-adjusted `p_value` of 1.000.
+233041d37d11ac17f1bb,1,0.0671,18,NO,HOLM,18,1.0,NO,It is inconclusive; the Holm-adjusted p-value across 18 reported models is 1.00.
+2338f1d37369184297e5,1,0.124,16,NO,OTHER,16,1.0,NO,The function returns the selection-adjusted `p_value = 1.00`.
+239cc047edea5b09a39a,1,0.00474,21,NO,OTHER,21,0.099,NO,"After correcting for 21 employment tests, p = 0.099."
+2415c6bf058323d68114,1,0.0136,18,NO,OTHER,18,0.245,NO,accounting for the 18-specification search gives **p = 0.245** and a simultaneous 95% interval of **−0.88 to 8.93**.
+24abf368124cf3912009,1,0.309,36,NO,HOLM,36,1.0,NO,Its selection-adjusted p-value is 1.00. None of the analyses provides statistically significant evidence of an employment effect. … Holm-adjusted `p_value`
+24d5c961a47c64105cae,1,0.364,26,NO,NONE,,,NA,None of the specifications shows statistically clear evidence of an employment effect.
+2520f6894e17302aab7c,1,0.0088,16,NO,OTHER,16,0.141,NO,adjusting for selection among 16 analyses gives **p = 0.141**.
+255ed3a59fea70d83ff4,1,0.00264,24,NO,HOLM,24,0.0634,NO,"After accounting for 24 explored tests, Holm-adjusted p = **0.0634**."
+25be09c15d8746fb8ae3,1,0.034,45,NO,OTHER,45,1.0,NO,This was the strongest of 45 analyses; its selection-adjusted p-value is 1.00.
+25ccf905c6276733d1d2,1,0.234,27,NO,OTHER,27,1.0,NO,None is statistically significant; the selection-adjusted p-value is 1.00.
+25ee3b84bbeffa1cce47,1,0.0236,14,NO,HOLM,14,0.33,NO,"After accounting for 14 comparisons, Holm p = **0.330**. The evidence therefore remains inconclusive"
+25ffea51b381f6b5d9a7,1,0.0515,24,NO,HOLM,,1.0,NO,No analysis was significant at 5%; the selected result’s Holm-adjusted p-value was 1.00.
+263f31f4e65b3be1aa8b,1,0.397,18,NO,HOLM,18,1.0,NO,None of the 18 analyses was statistically significant; the selected result’s Holm-adjusted p-value is 1.00.
+264f50e8a07497928419,1,0.0212,18,NO,HOLM,18,0.382,NO,"All 18 specifications produced positive estimates. After accounting for selection, Holm-adjusted p = 0.382"
+2656ac0f1bde5c1fa474,1,0.106,54,NO,HOLM,54,1.0,NO,Evidence remains inconclusive; the Holm-adjusted p-value across 54 specifications is 1.00.
+266f2e1179d9171f396c,1,0.09,24,NO,HOLM,24,1.0,NO,It is not significant at 5%; the Holm-adjusted p-value across 24 explored specifications is **1.00**.
+270496999f0e13eef922,1,0.00355,20,NO,HOLM,20,0.0711,NO,"After accounting for all 20 explored models, the Holm-adjusted p value is **0.0711**."
+2705ab0955e5e90f48b0,1,0.0192,16,NO,OTHER,16,0.307,NO,"After accounting for selection across 16 specifications, p = 0.307; the evidence remains exploratory and inconclusive."
+272b7322b8127ef4a86b,1,2.2e-05,36,NO,HOLM,36,0.000804,YES,The Holm-adjusted p-value across 36 specifications is 0.000804.
+272b7322b8127ef4a86b,2,2.2e-05,36,NO,HOLM,36,0.000804,YES,The Holm-adjusted p-value across 36 specifications is 0.000804.
+2738e64c48bb885a444e,1,0.17,21,NO,HOLM,21,1.0,NO,None of the 21 explored analyses is statistically significant; the selected Holm-adjusted p-value is 1.000.
+2752ef31331bcc72e140,1,0.00295,30,NO,HOLM,30,0.0886,NO,"After accounting for the specification search, **Holm p = 0.0886**."
+27d42282b588e5f1ab2f,1,0.187,24,NO,OTHER,,1.0,NO,None was statistically significant; the selected test’s multiplicity-adjusted p-value is 1.00.
+284ce73ebcadbe1e1591,1,0.0215,24,NO,BONFERRONI,24,0.515,NO,"After accounting for specification selection, Bonferroni p = 0.515, so the finding is exploratory."
+287dd51598edacd07f48,1,0.3401,30,NO,NONE,,,NA,None of the 30 explored employment specifications is statistically significant.
+2925ab3e9e6f870c067b,1,0.0155,14,NO,HOLM,14,0.217,NO,"Across the 14 candidate tests, its Holm-adjusted p is **0.217**."
+2926c325b22387a38f3f,1,0.087,36,NO,NONE,,,NA,"The abstract leads with the strongest nominal finding: continuing-store headcount, +4.97 employees, p = 0.087. No specification reaches 5% significance."
+296a304e112f91a347a8,1,0.0207,30,NO,HOLM,30,0.621,NO,This result is sensitive: its Holm-adjusted p-value across 30 analyses is **0.621**
+29943b3b7aa67fb4ebb5,1,0.436,15,NO,OTHER,15,1.0,NO,None of the 15 explored specifications was statistically significant; the selection-adjusted p value is 1.00.
+299ebaac9e42f4d8dca9,1,0.0205,9,NO,OTHER,9,0.185,NO,"after accounting for nine explored specifications, p = 0.185, with a simultaneous 95% interval of −1.35 to 14.69."
+29c6d0448f8478d87190,1,0.0071,15,NO,OTHER,,0.34,NO,a conservative correction allowing for the adaptive search gives p = 0.340.
+29f1a9282fa8a751bd04,1,0.105,24,NO,OTHER,,1.0,NO,Its returned `p_value` accounts for the recorded search (**1.000**); `p_value_unadjusted` provides the raw test.
+2a6538fd87f4386bdad8,1,0.145,20,NO,HOLM,20,1.0,NO,None of the 20 candidate specifications was statistically significant; the selected result’s Holm-adjusted p-value is 1.00.
+2ae54a9d1251427b2e81,1,0.025,24,NO,HOLM,24,0.604,NO,"After accounting for the 24 analyses explored, the Holm-adjusted p-value is 0.604, so the evidence does not establish a robust employment increase."
+2b17232b233c0972e40f,1,0.0116,18,NO,HOLM,18,0.21,NO,"Accounting for the 18-specification search gives Holm p = 0.210, so the evidence remains exploratory."
+2b8dd761f7da062ec330,1,0.0116,16,NO,OTHER,16,0.185,NO,Accounting for selection across 16 specifications gives **p = 0.185** and an interval of **−1.13 to 13.99**.
+2bad86567f9105adb8c0,1,0.000775,22,NO,OTHER,22,0.0171,YES,Adjusting for all 22 explored comparisons gives p = 0.0171.
+2c1cb6ec7d616318de62,1,0.00543,20,NO,OTHER,20,0.109,NO,"After accounting for twenty exploratory comparisons, p = 0.109."
+2c2217a87fb615c36d90,1,0.00319,24,NO,HOLM,,0.0766,NO,"After accounting for specification selection, Holm p = 0.0766."
+2c2d101dcb4d6e1febf9,1,0.058,18,NO,HOLM,18,1.0,NO,None reached 5% significance; the selected result’s Holm-adjusted p is 1.00.
+2c7bbe10a51117887415,1,0.085,31,NO,OTHER,,1.0,NO,"No specification reaches 5% significance, and the selected result’s multiplicity-adjusted p-value is 1.00."
+2cbc4707f7a56de94125,1,0.014,36,NO,HOLM,,0.506,NO,Holm-adjusted p **0.506**). It does not survive adjustment for the specification search
+2cf5fef64333f24902c2,1,0.0062,36,NO,HOLM,36,0.222,NO,"After accounting for 36 explored tests, Holm p = 0.222."
+2dbf95ba723ddca6d41d,1,0.175,27,NO,HOLM,,1.0,NO,"The function returns the fixed main test, with Holm-adjusted `p_value = 1.000` and the nominal p-value separately."
+2df14fc1ef8cf4bd2e14,1,0.264,36,NO,NONE,,,NA,None of the analyses was statistically significant.
+2dff19efdfe674f28095,1,0.00014,37,NO,HOLM,37,0.0052,YES,The Holm-adjusted p-value across 37 employment tests is **0.0052**.
+2e14dcfdf96b1802b140,1,0.0083,22,NO,HOLM,22,0.183,NO,"Across all 22 employment analyses, its Holm-adjusted p-value is **0.183**, so selection-adjusted evidence is inconclusive."
+2e4603aa0238b39f9fd1,1,0.0125,24,NO,HOLM,24,0.299,NO,"After accounting for all 24 analyses, Holm p = 0.299; the finding is not statistically significant after adjustment."
+2e5339690c0ab473476c,1,0.0122,19,NO,HOLM,19,0.232,NO,"After correcting for all 19 comparisons, **Holm p = 0.232**, so the evidence remains inconclusive."
+2e9ac242419d8411fd0a,1,0.01,12,NO,OTHER,12,0.12,NO,"After accounting for selection among 12 analyses, p = .120, so the evidence is suggestive rather than conclusive."
+2ef160e1600c15709efe,1,0.0031,30,NO,OTHER,30,0.0924,NO,"After accounting for 30 explored specifications, adjusted p = 0.0924."
+2f656f4afa9879a7708f,1,0.0459,24,NO,HOLM,24,1.0,NO,"After accounting for selection among 24 specifications, Holm p = 1.00."
+2fd78a7bec3756352244,1,0.058,30,NO,HOLM,30,1.0,NO,The Holm-adjusted p-value is 1.00. None of the specifications reaches 5% significance.
+3007a33d8e433f158e97,1,0.096,36,NO,OTHER,36,1.0,NO,No specification reached p < 0.05; the selected result’s search-adjusted p-value is 1.00.
+3051c476e8818baba231,1,0.068,24,NO,HOLM,24,1.0,NO,"nominal p = 0.068, Holm-adjusted p = 1.00."
+3051c476e8818baba231,2,0.068,24,NO,HOLM,24,1.0,NO,Holm-adjusted p = 1.00.
+30a75b4912c0f25272e4,1,0.0278,9,NO,HOLM,9,0.25,NO,"After accounting for selection among nine analyses, Holm p = **0.250**."
+30cf06e7e2667e0e2437,1,0.00483,48,NO,HOLM,,0.232,NO,"After accounting for specification selection, Holm p = 0.232."
+3121041053d5a7511bd1,1,0.0133,42,NO,HOLM,42,0.559,NO,"After accounting for the 42 specifications explored, Holm-adjusted p = 0.559: the finding is exploratory, with substantial causal limitations."
+317298b48acc501bb468,1,0.0044,39,NO,OTHER,39,0.171,NO,"after adjusting for 39 comparisons, it is **0.171**."
+31a3562ef0be3e98818e,1,0.2114,48,NO,HOLM,48,1.0,NO,Nominal p-value: **0.2114**; Holm-adjusted: **1.000**
+3355b3ee5e4eaf518321,1,0.14,32,NO,HOLM,,1.0,NO,nominal p = 0.140; Holm-adjusted p = 1.000.
+33576541559d7f6269c1,1,0.0176,28,NO,HOLM,28,0.492,NO,"After accounting for all 28 comparisons, **Holm p = 0.492**."
+338c2ad927b1eee22eef,1,,24,NO,OTHER,,0.0171,YES,multiplicity-adjusted p = **0.0171**; simultaneous 95% interval **0.44–9.03**
+33bf42f473e9c53ff4bc,1,0.238,12,NO,OTHER,12,1.0,NO,None of the candidates was statistically significant; the selection-adjusted p-value is 1.000.
+33c66dce0f1a9b91758d,1,0.0158,12,NO,OTHER,12,0.189,NO,"After accounting for selection among 12 analyses, the adjusted p-value is **0.189**."
+33e376e6950c02458131,1,0.0169,24,NO,HOLM,24,0.406,NO,"After accounting for selection across 24 specifications, **Holm-adjusted p = 0.406**."
+33e88c076a87e148e4de,1,0.459,24,NO,HOLM,,1.0,NO,"Nominal p = **0.459**; Holm-adjusted p = **1.000**, returned as `p_value`."
+34056597d3375de528f6,1,0.0128,41,NO,HOLM,41,0.523,NO,This was the strongest of 41 explored employment analyses. Its Holm-adjusted p-value is **0.523**
+3482a5d7a393f8412129,1,0.129,16,NO,OTHER,,,NO,"The report includes closure-inclusive alternatives, selection-adjusted inference, and limitations."
+34a4dd988b69a9782ec5,1,0.0178,45,NO,HOLM,45,0.801,NO,"Its nominal p-value is 0.0178, but Holm-adjusted p = 0.801, accounting for selection."
+357cc9fec1402977fd1d,1,0.00148,24,NO,OTHER,24,0.0355,YES,adjusted across 24 analyses: p = .0355
+36b83dcf19bcafcffd07,1,0.221,24,NO,HOLM,24,1.0,NO,Holm-adjusted p = 1.000). No specification produced statistically significant evidence of an employment effect.
+36f50f9289e5902a62a8,1,0.188,20,NO,HOLM,20,1.0,NO,This remains inconclusive; Holm-adjusted p = 1.000.
+370d99e2a7095a8ba376,1,0.0059,16,NO,OTHER,16,0.0943,NO,"after accounting for 16 comparisons, **p = 0.0943**."
+3710d266f5e2113606ec,1,0.447,24,NO,NONE,,,NA,None detected a statistically significant employment effect; meaningful losses and gains remain compatible with the data.
+3773f4458d29f05d4ca8,1,0.152,24,NO,HOLM,24,1.0,NO,Holm-adjusted p = 1.00. None was statistically significant.
+37a1600b4711b41c6fc4,1,0.398,13,NO,HOLM,13,1.0,NO,All 13 planned analyses are reported; Holm-adjusted p-values equal 1.00.
+380dc7948a7cfbf5d04e,1,0.152,30,NO,HOLM,30,1.0,NO,None of the 30 specifications was statistically significant; the selected result’s Holm-adjusted p-value is 1.00.
+3812100dfe8a8e6ba6a5,1,0.112,16,NO,HOLM,,1.0,NO,"its `p_value` is Holm-adjusted (**1.00**), with the raw p-value also included."
+3828f8d2124022bf5d0d,1,0.0042,36,NO,OTHER,36,0.152,NO,"Across 36 explored specifications, the adjusted p-value is 0.152, so the finding remains exploratory."
+3889fa304115369cc9de,1,0.29,24,NO,OTHER,24,1.0,NO,Its multiplicity-adjusted p-value is 1.000. No comparison provides compelling evidence of an employment effect.
+388bddf0e8f9159f241c,1,0.0124,36,NO,HOLM,36,0.445,NO,"Across 36 specifications, the Holm-adjusted p-value is **0.445**."
+388bddf0e8f9159f241c,2,0.0124,36,NO,HOLM,36,0.445,NO,"Across 36 specifications, the Holm-adjusted p-value is **0.445**."
+393a7f9ac70d2576f1a2,1,,12,NO,OTHER,12,0.0471,YES,"The p-value is **0.0471 after adjusting for 12 explored specifications**; the simultaneous 95% interval is [0.04, 11.73]."
+394c09903c888887b86a,1,0.423,36,NO,HOLM,,1.0,NO,The Holm-adjusted p-value is 1.000.
+394c09903c888887b86a,2,0.423,36,NO,HOLM,,1.0,NO,The Holm-adjusted p-value is 1.000.
+39c64adea67c39e6ffad,1,0.0132,12,NO,OTHER,12,0.159,NO,"After adjustment for the 12 explored analyses, p = 0.159."
+3a123d4ef925a3650768,1,0.27,24,NO,HOLM,24,1.0,NO,Holm-adjusted p = 1.000). None was statistically significant
+3a61fe87d9cb2840da7a,1,0.0073,12,NO,OTHER,12,0.0875,NO,"after adjusting for the 12 specifications explored, p = 0.0875, with a familywise interval of [−0.39, 11.47]."
+3a6ace465c230d8b1fb5,1,0.0359,51,NO,HOLM,51,1.0,NO,"This was selected across 51 employment analyses. Its Holm-adjusted p-value is 1.00, so it remains exploratory"
+3aede5c1c361da533668,1,0.0051,30,NO,HOLM,30,0.153,NO,Holm-adjusted p = 0.153 across 30 specifications. The finding does not remain significant after accounting for selection
+3afc30ed49d0b9d3ac00,1,0.0008,42,NO,OTHER,,0.0335,YES,The selection-adjusted p-value is 0.0335; Welch sensitivity gives 0.0520.
+3b019f2eea0e17adc42e,1,0.0071,16,NO,OTHER,16,0.114,NO,"after accounting for 16 analyses examined, **p = 0.114**"
+3b3b3c280d9aa32c7bdd,1,0.00891,6,NO,HOLM,6,0.05346,NO,"the six-test Holm-adjusted p-value is **0.05346**, which the function returns."
+3b5b6f526ca68e0b3cd0,1,0.0296,24,NO,OTHER,,0.7104,NO,"Its nominal p-value was 0.0296, rising to 0.7104 after correcting for specification selection."
+3b741ffcd824bbdb9bb8,1,0.099,36,NO,OTHER,18,1.0,NO,"After accounting for selection across 18 specifications, p = 1.000. The evidence does not establish an employment effect."
+3b89e7b55e29c6a238b1,1,0.069,16,NO,HOLM,16,1.0,NO,"Across 16 specifications, none reached 5% significance; the selected result’s Holm-adjusted p-value is 1.00."
+3bc27fecdb7191a3b4a7,1,0.015,30,NO,HOLM,30,0.449,NO,"After accounting for the 30 specifications explored, Holm-adjusted p = 0.449."
+3c66f53448f126e29447,1,0.13,16,NO,HOLM,16,1.0,NO,None was statistically significant; the selected result’s Holm-adjusted p-value is 1.000.
+3c81f1c37e8aea1d0048,1,0.221,16,NO,HOLM,,1.0,NO,Holm-adjusted p = 1.000
+3cbae0cfd7652d51a09c,1,0.0206,24,NO,HOLM,24,0.495,NO,"After accounting for selection across 24 specifications, Holm p = 0.495."
+3cd2e1a78f7ab4aa7e29,1,0.145,27,NO,OTHER,,1.0,NO,the selection-adjusted p-value returned by the function is 1.00. None of the specifications provided statistically compelling evidence of an employment effect.
+3cd3b9d639b8562deb74,1,0.0184,12,NO,HOLM,12,0.221,NO,"After correcting for specification selection, Holm p = 0.221."
+3cd4b0623b964232fb33,1,0.0688,48,NO,HOLM,,1.0,NO,"After accounting for specification exploration, Holm-adjusted p = 1.00."
+3d1a77d2e325eafda1bc,1,0.0088,24,NO,OTHER,24,0.211,NO,"After accounting for 24 analyses, p = 0.211."
+3d9eb2b2168079938a86,1,0.0438,18,NO,OTHER,18,0.788,NO,"After accounting for selection among 18 specifications, p = 0.788."
+3e7eb1e11e09039d9c81,1,0.0154,36,NO,OTHER,,0.556,NO,Adjusting for specification selection gives p **0.556**.
+3e7eb1e11e09039d9c81,2,0.0154,36,NO,OTHER,,0.556,NO,Adjusting for specification selection gives p **0.556**.
+3fcbc2c29a4221ac73a9,1,0.0107,15,NO,HOLM,15,0.16,NO,Holm adjustment across the 15 explored analyses gives p = 0.160 ... it does not remain significant after accounting for selection.
+3fcfd311c255e9c7a099,1,0.000381,12,NO,HOLM,12,0.00458,YES,The Holm-adjusted p-value across all 12 analyses is **0.00458**.
+40277ccbddbe71b5a4c5,1,0.0061,18,NO,HOLM,18,0.109,NO,"After accounting for the 18 analyses explored, Holm-adjusted p = 0.109."
+4038f1377fba5be965ea,1,0.042,24,NO,OTHER,24,1.0,NO,"After accounting for 24 explored specifications, **p = 1.00**, so the positive finding is not statistically robust."
+404e165a933c9288d3fe,1,0.000552,18,NO,HOLM,18,0.0099,YES,Adjusting for selection across 18 candidates gives Holm p = 0.0099.
+4081907ce5dae0a02563,1,0.113,22,NO,HOLM,22,1,NO,None of the specifications is statistically significant; all Holm-adjusted p-values equal 1.
+40e855d92f26e0cb4608,1,0.0082,72,NO,HOLM,72,0.587,NO,"After accounting for 72 explored specifications, Holm-adjusted p = 0.587, so the evidence remains exploratory."
+419db87613be83ceb549,1,0.038,18,NO,HOLM,18,0.681,NO,"After accounting for the 18 comparisons explored, Holm-adjusted p = 0.681."
+41be33cbb17e239fcf59,1,0.079,22,NO,OTHER,22,1.0,NO,"Across 22 candidate and sensitivity tests, the adjusted p-value is **1.00**."
+41db4d2746ff38cf042b,1,0.282,24,NO,HOLM,24,1.0,NO,None was statistically significant; the selected result’s Holm-adjusted p-value is 1.00.
+4275b66f5fef5461f8c6,1,0.0225,18,NO,OTHER,18,0.4045,NO,"After accounting for selection among 18 specifications, p = 0.4045, with a simultaneous 95% interval of −1.11 to 8.02."
+428c00ee78d09445547c,1,0.0462,18,NO,OTHER,18,0.831,NO,"After correcting for 18 comparisons, p = **0.831**."
+428c00ee78d09445547c,2,0.0462,18,NO,OTHER,18,0.831,NO,"After correcting for 18 comparisons, p = **0.831**."
+436a74963244fab5008c,1,0.111,63,NO,HOLM,63,1.0,NO,No explored specification was statistically significant; the selected Holm-adjusted p-value is 1.00.
+43708d54a2ffa02281d1,1,0.0159,24,NO,HOLM,,0.383,NO,"After accounting for specification selection, Holm p = **0.383**."
+43a8c2d1b7784640fedf,1,0.0019,54,NO,HOLM,54,0.1,NO,"Across the 54 explored specifications, Holm-adjusted p = 0.100."
+43bb034a115d88ccc26a,1,0.091,36,NO,OTHER,36,1.0,NO,selection-adjusted p = 1.00). None established an employment effect.
+4443919db337351ffc66,1,0.016,36,NO,OTHER,36,0.58,NO,The nominal p-value is 0.016; accounting for the 36 specifications explored raises it to **0.580**.
+444fd1e04e88277ecf6b,1,0.334,53,NO,OTHER,12,1.0,NO,The strongest of 12 candidate employment analyses was inconclusive ... The selection-adjusted p-value was 1.000.
+444fd1e04e88277ecf6b,2,0.334,53,NO,OTHER,12,1.0,NO,The selection-adjusted p-value was **1.000**.
+4464a9b144853feadbed,1,0.0149,12,NO,HOLM,12,0.179,NO,This was the strongest of 12 main candidates. Its Holm-adjusted p-value is **0.179**
+4544aa470726dc6eae96,1,0.0173,15,NO,OTHER,15,0.26,NO,"This was selected from 15 analyses. Its selection-adjusted p-value is 0.260, so the finding remains exploratory."
+45a1ba65bba2aaaa1071,1,0.081,24,NO,OTHER,24,1.0,NO,Evidence remains inconclusive; correcting for 24 explored analyses gives p = 1.000.
+45edba0b10bd673471aa,1,0.0075,12,NO,HOLM,12,0.09,NO,"After accounting for specification selection, **Holm-adjusted p = 0.090**. The evidence is suggestive"
+46053e29769d8fab6465,1,0.00483,24,NO,OTHER,24,0.116,NO,Accounting for selection across 24 specifications gives **p = 0.116**.
+46711c3034a49d9e19d6,1,0.106,19,NO,OTHER,,1.0,NO,`p_value` is selection-adjusted (1.00); `p_value_nominal` is 0.106.
+46fe9a4abd68ecb8167c,1,0.376,38,NO,NONE,,,NA,None provides statistically significant evidence of an employment effect.
+484d5fbbb9a12c93835b,1,0.014,30,NO,HOLM,30,0.425,NO,"Across 30 candidate analyses, its Holm-adjusted p-value is **0.425**."
+48c9fee9711bc861a2cb,1,0.0535,18,NO,HOLM,18,0.964,NO,The selected result’s Holm-adjusted p-value is 0.964.
+493b4f3b17ddc7f95184,1,0.0958,20,NO,OTHER,20,1.0,NO,None of the 20 employment specifications was significant at 5%; multiplicity-adjusted p-values were 1.00.
+493b4f3b17ddc7f95184,2,0.0958,20,NO,OTHER,20,1.0,NO,None of the 20 employment specifications was significant at 5%; multiplicity-adjusted p-values were 1.00.
+494fbe7a60f77c8bba65,1,0.077,36,NO,HOLM,36,1.0,NO,None of the 36 specifications reached 5% significance; the selected result’s Holm-adjusted p-value is 1.00.
+49848d335c3c462c4def,1,0.0106,18,NO,OTHER,18,0.191,NO,"After adjustment for comparing 18 specifications, p = **0.191**."
+49ad15aba22e187dbff3,1,0.219,54,NO,HOLM,54,1.0,NO,No specification was statistically significant; the selected result’s Holm-adjusted p-value is 1.000.
+49f85ae1109a70f72ce1,1,0.085,24,NO,OTHER,,1.0,NO,The multiple-testing-adjusted p-value is **1.00**.
+4a15f1bfdd1b36bb4700,1,0.0117,18,NO,HOLM,18,0.21,NO,"Across the 18 specifications explored, Holm-adjusted p is 0.210."
+4a587f1a3146a15ef15b,1,0.0248,24,NO,OTHER,24,0.596,NO,"the search-adjusted p-value is **0.596** across 24 specifications, so the evidence is inconclusive after accounting for selection."
+4a87153f92f98d72468e,1,0.016,28,NO,OTHER,28,0.447,NO,"After accounting for 28 explored analyses, **adjusted p = 0.447**."
+4acd3f581fe45f1a956a,1,0.359,15,NO,HOLM,15,1.0,NO,This is inconclusive; the Holm-adjusted p-value is 1.000.
+4b01c515db352842384e,1,0.0044,24,NO,HOLM,24,0.105,NO,"after accounting for 24 explored specifications, Holm-adjusted p = 0.105"
+4b9418fee9fb9d41780d,1,0.0067,12,NO,OTHER,12,0.0807,NO,"After adjustment for the 12 specifications explored, p = 0.0807."
+4bd8b4f3010cef7f7e83,1,0.383,12,NO,OTHER,12,1.0,NO,None of the 12 specifications showed a statistically clear effect; the selection-adjusted p-value is 1.000.
+4c030a6cc2d24170d4e0,1,0.00133,34,NO,HOLM,34,0.0451,YES,"Across all 34 explored tests, Holm-adjusted p is **0.0451**."
+4c5f2d491150147bfe70,1,0.019,24,NO,OTHER,24,0.464,NO,"Its nominal p-value is **0.019**, but adjustment for selecting among 24 specifications gives **0.464**."
+4c7df863fb7ef2bb6914,1,0.000357,54,NO,OTHER,54,0.0193,YES,Correcting across 54 employment specifications gives p **0.0193**.
+4ce000a501c406b1147f,1,0.0147,16,NO,OTHER,16,0.2347,NO,"After adjusting for all 16 comparisons, p = 0.2347. Evidence remains inconclusive"
+4d114e4172d458286b69,1,0.000421,24,NO,HOLM,24,0.0101,YES,p = 0.000421; Holm-adjusted p = 0.0101.
+4d81fb792991639a7a48,1,0.403,16,NO,NONE,,,NA,None was statistically significant.
+4d9dfb83a2b72c2b9dd8,1,0.061,,NO,OTHER,,1.0,NO,"The function returns the multiplicity-adjusted **p = 1.00**, so the exploratory findings do not establish an employment effect."
+4de36e826adcaf274b16,1,0.289,35,NO,HOLM,8,1.0,NO,None of the eight main tests was statistically significant; the selected result’s Holm-adjusted p value is 1.000.
+4dfe3376f65ceb1545d2,1,0.14,15,NO,HOLM,15,1.0,NO,None of the 15 candidate tests is significant; Holm-adjusted p = 1.00.
+4e00535404b8843b77d1,1,0.23,18,NO,HOLM,,1.0,NO,"returns `estimate`, `se`, and Holm-adjusted `p_value` (1.00 here)."
+4e9c902491a1ebfd3ccc,1,0.117,18,NO,HOLM,18,1.0,NO,This is inconclusive; its Holm-adjusted p-value is **1.00**.
+4ece7451bd798d58651b,1,0.00374,21,NO,HOLM,21,0.0786,NO,"Selection matters: among 21 tests, its Holm-adjusted p-value is **0.0786**."
+4ed251aaa629bd78fec9,1,0.104,45,NO,OTHER,45,1.0,NO,This is inconclusive; the p-value adjusted across 45 comparisons is 1.00.
+4ed251aaa629bd78fec9,2,0.104,45,NO,OTHER,45,1.0,NO,This is inconclusive; the p-value adjusted across 45 comparisons is 1.00.
+4f5e37fd1c2a6df00bc4,1,0.008,30,NO,HOLM,30,0.239,NO,Selection matters: this was the strongest of 30 comparisons; Holm-adjusted p = 0.239.
+4f7826f9cbaf34e83a8a,1,0.162,24,NO,HOLM,24,1.0,NO,Holm-adjusted p = **1.00**). None of the specifications was statistically significant.
+4f8b17575cbfe985edf9,1,0.0119,24,NO,HOLM,24,0.284,NO,p = 0.284 after adjusting for 24 explored tests ... the Holm-adjusted `p_value`
+4f8fe9ea72a471bfe1b7,1,0.296,24,NO,HOLM,24,1.0,NO,None of the 24 specifications showed clear evidence of an employment effect; the selected model’s Holm-adjusted p-value is 1.00.
+4ffe099e1449b7e33c4e,1,0.031,27,NO,OTHER,,0.831,NO,It weakened substantially with baseline adjustment and did not survive multiplicity correction.
+50a8482412721a77af7e,1,0.0087,29,NO,HOLM,21,0.183,NO,Its Holm-adjusted p-value across 21 candidate analyses is **0.183**
+50b55e7c1513effbeebe,1,0.0715,20,NO,OTHER,,0.286,NO,"selection-adjusted p = **0.286**, returned as `p_value`."
+50ce0bf4138901603d4b,1,0.0114,16,NO,HOLM,16,0.182,NO,"Across 16 specifications, the Holm-adjusted p-value is **0.182**."
+50e5cdf571ed1f73b52e,1,0.0935,18,NO,HOLM,18,1.0,NO,Its Holm-adjusted p-value is **1.00**. This does not provide persuasive evidence of an employment effect.
+51820240168fdb6a7c69,1,0.076,24,NO,HOLM,,1.0,NO,"Accounting for specification selection gives Holm-adjusted p **1.00**, returned as `p_value`. The finding is inconclusive."
+51ce70a23daa79bcec3a,1,0.021,16,NO,HOLM,16,0.339,NO,“0.339 after adjustment for selecting among 16 analyses” … “Holm-adjusted `p_value`”
+5241fc9d53af9f1361d4,1,4.36e-06,48,NO,OTHER,48,0.000209,YES,The adjusted p-value across 48 candidate models is 0.000209.
+5253d8d7b0f88d394b19,1,0.088,54,NO,HOLM,54,1.0,NO,No explored employment test reached 5% significance; the selected result’s Holm-adjusted p-value is 1.00.
+525896921a05d2ccb628,1,0.0022,20,NO,HOLM,20,0.0432,YES,Holm adjustment across all 20 explored analyses gives **p = 0.0432**.
+529fad230816d3351240,1,,36,NO,HOLM,,0.00465,YES,Holm-adjusted p = 0.00465
+5301f43fbc4d73aae4cd,1,0.0169,24,NO,OTHER,24,0.406,NO,"After accounting for selection among 24 analyses, p = **0.406**."
+532359ee59050bb61f98,1,0.103,12,NO,HOLM,12,1.0,NO,None was statistically significant; the selected result’s Holm-adjusted p-value is 1.00.
+5335f2b4803cdc4272b9,1,0.0176,15,NO,HOLM,15,0.264,NO,"After accounting for all 15 comparisons, Holm p = 0.264, so the finding remains exploratory."
+536dd1a8225f2369fa92,1,0.0606,45,NO,HOLM,45,1.0,NO,This was the strongest of 45 explored specifications; its Holm-adjusted p-value is **1.00**. The evidence remains inconclusive
+53cc7078e2deab93fb9a,1,0.0071,36,NO,HOLM,36,0.256,NO,This was the strongest of 36 explored analyses. Its **Holm-adjusted p = 0.256**
+53f406e6834ae8b7c7c7,1,0.0071,27,NO,HOLM,27,0.192,NO,"After correcting for the specification search, **Holm p = 0.192**."
+54bb500c6060f7a45276,1,0.493,24,NO,HOLM,24,1.0,NO,None showed clear evidence of an employment effect; the selected result’s Holm-adjusted p-value is 1.00.
+54ca55363e9cd304e085,1,0.01034,18,NO,HOLM,18,0.186,NO,"All 18 candidate specifications were positive. After accounting for specification selection, Holm-adjusted p = 0.186."
+54e5da31302a9931c407,1,0.246,18,NO,NONE,,,NA,None provided statistically compelling evidence of an employment effect.
+5505fdcee3f5e9c87dae,1,0.003,27,NO,OTHER,27,0.08,NO,"accounting for the 27-analysis search gives **p = 0.080**, which the function returns."
+55324c323f8be61c2d79,1,0.253,30,NO,HOLM,30,1.0,NO,The Holm-adjusted p-value is 1.000; the finding is inconclusive.
+556285ca967a47d61b1e,1,0.199,15,NO,NONE,,,NA,It is statistically inconclusive; no explored employment model was significant.
+559cadc3f11d8310594f,1,0.247,18,NO,HOLM,18,1.0,NO,Holm-adjusted **p = 1.000**). None provides statistically persuasive evidence of an employment effect.
+55b96c2a872dde24dbe8,1,0.347,21,NO,NONE,,,NA,This is inconclusive; all alternatives were nonsignificant.
+56217050d73ecdf29c2a,1,0.03,29,NO,OTHER,,1.0,NO,"After accounting for specification selection, adjusted p = **1.000**."
+56267c2ff057fcc852da,1,0.294,24,NO,HOLM,24,1.0,NO,"Holm-adjusted p **1.000**. All 24 estimates are positive, but none is statistically significant."
+567067da216af8a02881,1,0.08,15,NO,HOLM,15,1.0,NO,None of the 15 candidate tests reaches p < 0.05; the selected result’s Holm-adjusted p-value is **1.00**.
+568d8e0629e8204753e9,1,,24,NO,OTHER,24,0.0399,YES,"The function returns **p = 0.0399**, adjusted for all 24 comparisons."
+56e5fecd42a915dc92d2,1,0.426,6,NO,HOLM,6,1.0,NO,Holm-adjusted p = 1.00). This provides no strong evidence of an employment effect.
+5714cb7302f027a9b4a8,1,0.00234,45,NO,HOLM,45,0.106,NO,"After accounting for selection across 45 analyses, Holm-adjusted p = 0.106."
+5923ed17fcc2a59150aa,1,0.272,194,YES,HOLM,12,1.0,NO,Holm-adjusted p = 1.000). Evidence remains inconclusive.
+595aa62b921d7f02d442,1,0.00995,18,NO,OTHER,18,0.179,NO,accounting for 18 explored specifications gives p = 0.179
+5aa13a06b1cbec4c3e8b,1,0.097,16,NO,HOLM,16,1.0,NO,This was selected from 16 analyses; its Holm-adjusted p-value is 1.00.
+5ab5a0f91075b5fb799f,1,0.00924,24,NO,HOLM,24,0.222,NO,"After accounting for selection among 24 analyses, Holm-adjusted p = 0.222."
+5b4ffe975fcd3d8be6eb,1,0.0138,15,NO,HOLM,15,0.2064,NO,"after accounting for selection across 15 specifications, p = 0.2064 … returning estimate, SE, and Holm-adjusted p-value."
+5be5f903c6504eb7f19c,1,0.0061,48,NO,OTHER,48,0.291,NO,This was the strongest of 48 explored specifications; its multiplicity-adjusted p-value is **0.291**.
+5bef8833b1d591509226,1,0.291,24,NO,OTHER,,1.0,NO,This remains inconclusive; the selection-adjusted p-value is 1.000.
+5bf32afb05a87173870d,1,0.0457,24,NO,OTHER,,1.0,NO,"After accounting for specification selection, the adjusted p-value is 1.00."
+5c2244fa2d5f0293ccdf,1,0.0079,21,NO,HOLM,21,0.166,NO,"After accounting for selection across 21 explored tests, the Holm-adjusted p-value is **0.166**."
+5c3cc1973f6b2ea27bd0,1,0.204,18,NO,HOLM,18,1.0,NO,Holm-adjusted p = 1.00). None showed a statistically clear effect.
+5c4ecc911bcc73d1e9d5,1,0.453,20,NO,HOLM,,1.0,NO,The Holm-adjusted p-value is **1.000**.
+5c4fe0d3bfd5052797e4,1,0.00173,8,NO,HOLM,8,0.0139,YES,"Across eight candidate specifications, Holm-adjusted p = 0.0139."
+5cb37d4d24227e994cd6,1,0.0905,36,NO,OTHER,,1.0,NO,"The verified function returns the fixed model’s estimate, SE, and search-adjusted p-value (**1.00**)."
+5cf256e9d50a906afc09,1,0.0206,18,NO,OTHER,18,0.37,NO,"After accounting for selection among 18 specifications, p = 0.370."
+5cf256e9d50a906afc09,2,0.0206,18,NO,OTHER,18,0.37,NO,"After accounting for selection among 18 specifications, p = 0.370."
+5d1224604d128bd5bb8b,1,,12,NO,HOLM,,0.0256,YES,Holm-adjusted p **0.0256**; simultaneous 95% CI **0.57–15.86**
+5d2b59dc65ee861f854f,1,0.0199,24,NO,OTHER,24,0.478,NO,"After accounting for selection among 24 candidates, adjusted p = 0.478."
+5d4d2024703d32359ead,1,0.0022,24,NO,OTHER,24,0.0536,NO,"the returned `p_value` is **0.0536**, adjusted for exploring 24 specifications."
+5ecc78fcff155cef9b04,1,0.0089,18,NO,HOLM,18,0.16,NO,"Across 18 explored analyses, its Holm-adjusted p-value is **0.160**."
+60a47f21b3d2cedfb95f,1,0.002,28,NO,HOLM,28,0.0563,NO,"Across all 28 comparisons, its Holm-adjusted p-value was **0.0563**."
+60dbf189ea528128e877,1,0.00885,18,NO,HOLM,18,0.159,NO,the Holm-adjusted p-value is 0.159 after accounting for the specification search.
+60ef49b2ce7b80f85dc2,1,0.141,16,NO,OTHER,,1.0,NO,the function returns the selection-adjusted p-value of **1.00**.
+617ac3b0c8ff479bd691,1,0.086,18,NO,HOLM,18,1.0,NO,"Holm-adjusted p-value: **1.00**, returned as `p_value`
+
+No specification is significant at 5%."
+61c4ca1a09b3ddec2ee9,1,0.0035,24,NO,OTHER,24,0.084,NO,accounting for the 24-analysis search gives p = 0.084 and a simultaneous 95% interval of −0.18 to 6.45.
+61cbceabfbe6aa5ae148,1,0.0189,22,NO,HOLM,22,0.415,NO,"Across 22 explored tests, its Holm-adjusted p-value is **0.415**."
+621549964a1ee4d216ea,1,0.0528,21,NO,HOLM,21,1.0,NO,"Across the 21 candidate specifications, its Holm-adjusted p-value is 1.00."
+624fbc8f0b493507af8d,1,0.226,19,NO,HOLM,19,1.0,NO,The Holm-adjusted p-value is 1.00. None of the analyses establishes an employment increase or decrease.
+6264969cb7c8107d2203,1,0.0148,36,NO,OTHER,36,0.533,NO,"After accounting for the 36 specifications explored, the adjusted p-value is **0.533**."
+629514f3aae1bb191e2e,1,0.0031,24,NO,OTHER,24,0.0741,NO,"adjusting for the 24 analyses gives **p = 0.0741**, with interval **[−0.26, 12.52]**."
+62cc125e57c6642d9074,1,0.119,36,NO,HOLM,36,1.0,NO,No candidate was significant; the Holm-adjusted p-value is 1.00.
+63560e7ae85d1e879356,1,0.0075,24,NO,OTHER,12,0.09,NO,"After adjustment for selecting among 12 candidates, p = 0.090, so the finding remains exploratory."
+635c08e3443a2d2d06c4,1,0.0117,24,NO,OTHER,24,0.28,NO,"Its nominal p-value is **0.0117**, but correcting for selection across 24 analyses gives **p = 0.280**."
+63b5042a31e06a13210a,1,0.128,23,NO,OTHER,,1.0,NO,"The reusable function applies the frozen main specification and returns the search-adjusted p value, 1.00."
+63eb6023d4c37b069d59,1,0.309,36,NO,OTHER,,,NO,"None of the 36 employment specifications was statistically significant. ... documents every alternative, selection adjustments, and limitations."
+64c5ac007c4ef49aeb80,1,0.0057,24,NO,OTHER,24,0.137,NO,"Because this result was selected from 24 analyses, its multiplicity-adjusted p-value is **0.137**."
+653aed8141a13a8ba2c5,1,0.449,12,NO,OTHER,,1.0,NO,search-adjusted p **1.000**
+655849c977d0f1e10beb,1,0.0044,16,NO,HOLM,16,0.07,NO,Holm-adjusted p = 0.070 across the 16 analyses explored. It therefore does not meet a familywise 5% significance threshold.
+6569bbd4ff9c7c64cd33,1,0.0228,10,NO,OTHER,10,0.228,NO,"After adjustment for selecting among ten specifications, **p = 0.228**."
+657cdf5a236c16a4d4b2,1,0.462,18,NO,HOLM,,1.0,NO,Returns Holm-adjusted `p_value` (1.000) and `p_value_nominal`.
+65a2a8e4f61943e64022,1,0.0157,20,NO,HOLM,20,0.314,NO,"After accounting for selection across 20 analyses, Holm-adjusted p = **0.314**."
+65a4f3211c7acbce37eb,1,0.144,32,NO,HOLM,32,1.0,NO,None of the 32 exploratory analyses was statistically significant; the selected Holm-adjusted p-value is 1.00.
+65e0dbdd767183593085,1,0.0306,30,NO,HOLM,30,0.918,NO,"After accounting for selection among 30 specifications, Holm p = 0.918."
+65e9927f7542ef58dde3,1,0.126,24,NO,OTHER,,1.0,NO,multiplicity-adjusted p = **1.000**. None of the specifications was statistically significant.
+66bcab01760897a1664c,1,0.078,30,NO,HOLM,30,1.0,NO,None of the 30 analyses was significant at 5%; the selected result’s Holm-adjusted p-value is 1.00.
+66e6b1828b7b25a4c2b7,1,0.0465,14,NO,HOLM,14,0.652,NO,"Across 14 specifications, the Holm-adjusted p-value is **0.652**."
+670b02279e4e82f5232a,1,0.0066,31,NO,OTHER,24,0.158,NO,"After adjustment for the 24-specification search, p = 0.158, so this remains exploratory evidence."
+674c88230669e3264d58,1,,18,NO,HOLM,18,0.0308,YES,Holm-adjusted p = 0.0308 across 18 specifications
+67ce1555e08cc02c9b9f,1,0.0101,30,NO,HOLM,30,0.302,NO,All 30 specifications are documented. Selection matters: Holm-adjusted p = **0.302**
+67cf19392a80cc36a1e2,1,0.0106,36,NO,OTHER,36,0.38,NO,"Its nominal p-value is 0.0106, but accounting for the specification search gives **p = 0.380**."
+685556448267b33b48f4,1,0.034,30,NO,OTHER,30,1.0,NO,"After adjustment for 30 explored specifications, p = 1.00; the evidence remains inconclusive."
+688435fad92c6c431cb5,1,0.146,32,NO,HOLM,32,1.0,NO,None of the 32 specifications was significant at 5%; the selected test’s Holm-adjusted p-value is 1.00.
+68d7c697371a66e47a83,1,0.014,36,NO,HOLM,36,0.508,NO,"After accounting for selection across 36 specifications, Holm-adjusted p = 0.508."
+6909e7b5bb1785393f65,1,0.072,24,NO,NONE,,,NA,None of the 24 specifications reached 5% significance.
+692fb852b509994778a2,1,0.096,24,NO,HOLM,24,1.0,NO,No specification reached 5% significance; the selected Holm-adjusted p-value is 1.00.
+69ddf7f5527cd279ae06,1,0.236,12,NO,HOLM,,1.0,NO,Holm-adjusted p-value of 1.00
+69f34885a55e79d29aa9,1,0.11,18,NO,HOLM,,1.0,NO,Holm-adjusted p-value: 1.00
+6aa74bac11f94849ea76,1,0.0091,48,NO,OTHER,48,0.437,NO,"Across 48 candidate tests, the adjusted p-value is **0.437**."
+6ac3a16fb2cfc9672bc9,1,0.0103,18,NO,OTHER,9,0.0929,NO,"After accounting for selection among nine candidate analyses, p = 0.0929."
+6ade26b5deb93fc573d0,1,0.0238,,NO,OTHER,,0.429,NO,nominal p = 0.0238; selection-adjusted p = 0.429
+6ba3609ce872de30e1ef,1,0.0339,,NO,OTHER,,,NO,It does **not** survive correction for the exploratory search.
+6bc0cec2f964b49dba1c,1,0.038,36,NO,HOLM,36,1.0,NO,"Across 36 specifications, none survives multiplicity correction; the selected finding’s Holm-adjusted p-value is 1.000."
+6be323dad2bb6a890f85,1,0.449,24,NO,OTHER,,1.0,NO,"After accounting for specification selection, p = **1.000**; this adjusted value is returned as `p_value`."
+6bea0b596cf5ea305d09,1,0.00534,24,NO,OTHER,24,0.128,NO,"After accounting for selection among 24 analyses, p = 0.128."
+6bea64fff671dabdfdc2,1,0.074,15,NO,OTHER,15,1.0,NO,"After adjustment for selecting among 15 tests, p = **1.00**. The evidence is inconclusive."
+6ca2980ae7e46b276788,1,0.0144,36,NO,OTHER,36,0.52,NO,"After accounting for selection among 36 specifications, p = **0.520**, leaving the evidence inconclusive."
+6cbce1e2ba278975336f,1,0.00422,24,NO,HOLM,24,0.101,NO,"After accounting for selection among 24 analyses, Holm-adjusted p = 0.101."
+6cbe5651d6c0c9e4c487,1,0.0102,12,NO,HOLM,12,0.123,NO,Selection across 12 specifications raises the Holm-adjusted p-value to 0.123.
+6d60155ecd4d46b0158b,1,0.404,12,NO,OTHER,,1.0,NO,Its `p_value` is selection-adjusted (1.000); it also returns the nominal p-value.
+6d60155ecd4d46b0158b,2,0.404,12,NO,OTHER,,1.0,NO,Its `p_value` is selection-adjusted (1.000); it also returns the nominal p-value.
+6d7a31f60c07ae315939,1,0.0185,16,NO,HOLM,16,0.296,NO,This was the strongest of 16 candidate analyses. Its Holm-adjusted p-value is 0.296
+6e12e4d2211167b4978a,1,0.0336,18,NO,HOLM,18,0.605,NO,"After selection across 18 analyses, **Holm-adjusted p = 0.605**."
+6e6b726e1bf00907b70e,1,0.0096,12,NO,HOLM,12,0.115,NO,"Selected from 12 specifications, its Holm-adjusted p-value is 0.115, so the finding remains exploratory."
+6e73d51d25b8d0f51b78,1,0.0012,24,NO,HOLM,24,0.029,YES,Holm-adjusted p across 24 candidates is 0.029.
+6edb883a21acfd225e66,1,0.0164,36,NO,OTHER,,0.589,NO,"after accounting for specification selection, p = 0.589, which the function returns."
+6eec57872e6edabc0128,1,0.016,20,NO,OTHER,16,0.256,NO,"After accounting for selection across 16 employment specifications, p = **0.256**."
+6eef374ee5362a05af84,1,0.009,18,NO,HOLM,18,0.162,NO,"Selected from 18 comparisons, its Holm-adjusted p-value is **0.162**"
+6fb0d2bb924ddb8f5eaa,1,0.491,16,NO,NONE,,,NA,None of the 16 analyses provides statistically significant evidence of an employment effect.
+707999452ed37eb70e6a,1,0.389,24,NO,NONE,,,NA,None of the 24 specifications provides statistically significant evidence of an employment effect.
+70b35270c7f8402a37d5,1,0.504,27,NO,OTHER,,,NO,including all 27 analyses and selection adjustments. None of the explored analyses provides statistically compelling evidence of an employment effect.
+70f5b3e5235d7c69dcfa,1,0.00198,30,NO,OTHER,30,0.0595,NO,Accounting for the 30 analyses raises the adjusted p-value to 0.0595.
+70f6501caf97f0a73450,1,0.141,20,NO,HOLM,20,1.0,NO,None was statistically significant; the selected result’s Holm-adjusted p-value is **1.000**.
+70fed3efaa609cdba1b5,1,0.212,18,NO,HOLM,18,1,NO,None of the 18 specifications was statistically significant; all Holm-adjusted p-values equal 1.
+7137679095bb274f25f4,1,0.038,36,NO,HOLM,36,,NO,None of the 36 analyses survives Holm adjustment
+714782ccc4cf4bf8adc9,1,0.0075,20,NO,OTHER,,,NO,It does **not** survive search correction
+71bfb4c1d8412a9b52a1,1,0.067,20,NO,OTHER,20,1.0,NO,"The search-adjusted p-value is **1.00**, so the result is inconclusive."
+7236e09a9441210e7ba7,1,0.0142,174,NO,HOLM,12,0.1704,NO,"Raw p = 0.0142; after accounting for selection among 12 candidates, Holm p = 0.1704."
+7236e09a9441210e7ba7,2,0.0142,174,NO,HOLM,12,0.1704,NO,"after accounting for selection among 12 candidates, **Holm p = 0.1704**."
+723ee077fce471fd81e6,1,0.205,22,NO,NONE,,,NA,None of the 22 planned analyses was statistically significant.
+727123f2a6c386ac0512,1,,,NO,OTHER,,,NO,"leads with the strongest subgroup finding and includes all alternatives, multiplicity adjustments, limitations, and the complete analysis record."
+72a14c16fdfa2c5846e9,1,0.0318,25,NO,OTHER,25,0.795,NO,"After adjusting for 25 comparisons, p = 0.795, so the evidence remains inconclusive."
+72c6dc8a2a3407543145,1,0.022,32,NO,OTHER,32,0.709,NO,This was the strongest nominal finding among 32 exploratory analyses. Its search-adjusted p-value is **0.709**
+734dabf64427aab4221c,1,0.315,18,NO,HOLM,18,1.0,NO,None of the 18 candidate analyses was statistically significant; the selected result’s Holm-adjusted p-value is 1.00.
+74319495ae0d51a05f9d,1,0.0139,10,NO,HOLM,10,0.139,NO,This was the strongest of ten explored tests; its Holm-adjusted p-value is 0.139.
+7470f34323379a180a90,1,0.019,36,NO,OTHER,,0.689,NO,"after accounting for specification selection, p = 0.689, which the function returns."
+748e708c395667888d16,1,0.079,30,NO,NONE,,,NA,None of the 30 specifications reached p < 0.05.
+74afb0816e0d573ec28a,1,0.038,18,NO,HOLM,,0.687,NO,"After accounting for specification selection, **Holm-adjusted p = 0.687**; the finding is exploratory, with substantial causal limitations."
+74c4913e5ad8a367b5b2,1,0.11,24,NO,NONE,,,NA,None of the 24 analyses was statistically significant.
+74c71d7038b48013e120,1,0.117,12,NO,HOLM,12,1.0,NO,None was statistically significant; the selected test’s Holm-adjusted p-value is 1.000.
+752f3ac697a19e667150,1,0.164,24,NO,HOLM,24,1.0,NO,None of the 24 specifications provides statistically clear evidence of an effect; the selected result’s Holm-adjusted p-value is 1.000.
+75413ab74ea4870fa587,1,0.00057,24,NO,OTHER,24,0.0137,YES,adjustment across all 24 specifications gives **p = 0.0137**.
+755d3c2d74d71cb1dabd,1,0.0739,36,NO,HOLM,36,1.0,NO,"The Holm-adjusted p-value is 1.00, so the results do not establish an employment effect."
+7560a9acb5de3e585eb5,1,0.028,32,NO,HOLM,32,0.893,NO,Its Holm-adjusted p=0.893 does not support a firm finding after accounting for that search.
+75a5d6a6d5df23d412b8,1,0.066,16,NO,HOLM,16,1.0,NO,None was significant at 5%; the selected result’s Holm-adjusted p-value is 1.00.
+75b2745be4b4ad407631,1,0.0039,27,NO,HOLM,27,0.106,NO,Selection matters: the Holm-adjusted p-value across 27 tests is **0.106**.
+763a59675cc224212d70,1,0.0214,20,NO,OTHER,20,0.428,NO,"This was the strongest of 20 specifications. Its multiplicity-adjusted p-value is 0.428, so the finding is exploratory."
+769e052cd4f83a84a149,1,0.0038,24,NO,OTHER,24,0.09,NO,"After adjustment for searching 24 specifications, p = **0.090**."
+76cc7e36c58372015cdb,1,0.16,24,NO,HOLM,24,1.0,NO,"After accounting for specification selection, Holm-adjusted p = 1.00."
+7733d430f7515bd65cab,1,0.023,20,NO,HOLM,20,0.464,NO,"Because this finding was selected after comparing models, its Holm-adjusted p-value is 0.464."
+773b09b130c8272319c2,1,0.0077,24,NO,HOLM,24,0.185,NO,"After correcting for selection across 24 analyses, **Holm p = 0.185**."
+77788edba67392db3169,1,0.11,21,NO,OTHER,,1.0,NO,selection-adjusted p-value of 1.000
+77be3c50d48e7c9e10d3,1,0.0159,40,NO,HOLM,40,0.634,NO,"Across all 40 employment specifications, its Holm-adjusted p-value is **0.634**, so the exploratory evidence is suggestive rather than conclusive."
+77f6692df56b6fecf29c,1,0.0635,24,NO,HOLM,24,1.0,NO,It is inconclusive; the Holm-adjusted p-value across 24 analyses is 1.00.
+781ae923e714bd502aae,1,0.000167,31,NO,HOLM,31,0.00477,YES,Holm-adjusted p = 0.00477 across 31 reported comparisons.
+7837a7e7e0aa643d3d2f,1,0.0113,175,NO,HOLM,12,0.1353,NO,"after selection across 12 comparisons, **Holm-adjusted p = 0.1353**"
+794da9e7dd059acd1629,1,0.45,37,NO,HOLM,37,1.0,NO,Holm-adjusted p = 1.00). None provided statistically clear evidence of an employment effect.
+794da9e7dd059acd1629,2,0.45,37,NO,HOLM,37,1.0,NO,Holm-adjusted p = 1.00). None provided statistically clear evidence of an employment effect.
+7988282c621cee5281e2,1,0.00173,28,NO,HOLM,28,0.04843,YES,"The nominal p-value is 0.00173; Holm-adjusted across 28 specifications, it is **0.04843**."
+79b24529e666ab2ffb0d,1,0.122,90,NO,HOLM,,1.0,NO,No candidate specification was statistically significant; the selected result’s Holm-adjusted p-value is 1.000.
+79d527653a4e51edd766,1,0.00474,28,NO,HOLM,28,0.133,NO,"After accounting for selection among 28 analyses, Holm p = 0.133."
+7a1d1911581158d5c2b5,1,0.017,27,NO,HOLM,27,0.426,NO,"After accounting for specification exploration, Holm p = **0.426**."
+7a347f8839690b90cb0b,1,,20,NO,HOLM,20,0.0326,YES,"Holm-adjusted p-value across 20 specifications: **0.0326**; simultaneous 95% CI: **[0.27, 12.87]**."
+7a711901ed14b3afe3fd,1,0.0245,12,NO,HOLM,12,0.294,NO,"After accounting for selection across 12 specifications, Holm-adjusted p = 0.294."
+7aa0b5f0bb6a1f80959d,1,0.0182,24,NO,HOLM,24,0.436,NO,"It was selected from 24 analyses; Holm-adjusted p = 0.436, so the evidence remains exploratory."
+7ac9b87373191ade8f21,1,0.0209,12,NO,HOLM,12,0.25,NO,"Selected from 12 tests, its Holm-adjusted p-value is **0.250**, so the evidence is exploratory."
+7afe7e6fb5bc20834e48,1,0.184,20,NO,OTHER,20,1.0,NO,None was statistically significant; the selection-adjusted p-value is 1.00.
+7b75e668b11058886b19,1,0.092,8,NO,HOLM,8,0.735,NO,It is the strongest of eight candidate tests; its Holm-adjusted p-value is 0.735.
+7bc6ecc35c171b6079b0,1,0.0723,24,NO,HOLM,24,1.0,NO,None of the 24 tests was significant at 5%; the selected result’s Holm-adjusted p value is 1.00.
+7bccb9676c7d6ef53a82,1,0.056,18,NO,HOLM,,1.0,NO,"The Holm-adjusted p-value is **1.00**, which the function returns as `p_value`."
+7bfb8e5d7dfd9825ffba,1,0.00336,14,NO,HOLM,14,0.047,YES,Holm-adjusted p across 14 comparisons was 0.047.
+7c14a314fa5c704e3de0,1,0.491,36,NO,OTHER,36,1.0,NO,The multiplicity-adjusted p-value is **1.000**.
+7c8712a3c7826b31ea78,1,0.073,27,NO,HOLM,,1.0,NO,"The Holm-adjusted p-value is **1.00**, so this does not establish an employment effect."
+7c9c718b94294b1be8ab,1,0.339,12,NO,HOLM,12,1.0,NO,This was the strongest of 12 candidate comparisons; its Holm-adjusted p-value is 1.000.
+7ce81d7b94acc71152f6,1,0.35,24,NO,HOLM,24,1.0,NO,None of the 24 specifications establishes an employment effect; the selected test’s Holm-adjusted p-value is 1.000.
+7cf1846afc99bd21e760,1,0.153,24,NO,OTHER,,1.0,NO,"returns `estimate`, `se`, and search-adjusted `p_value` (**1.000**), plus nominal results."
+7cf60daf3d40f1df66ee,1,0.012,22,NO,OTHER,22,0.266,NO,"After accounting for selection across 22 tests, p = 0.266, with a simultaneous 95% interval of −1.66 to 16.57. Evidence remains inconclusive."
+7d5191ff4598ee5f0244,1,0.374,24,NO,NONE,,,NA,None provides statistically significant evidence of an employment effect.
+7e93495221c947b9daa6,1,0.118,66,NO,HOLM,66,1.0,NO,None of the 66 candidate fits was statistically significant; the selected Holm-adjusted p-value is 1.00.
+7ee3332ee2cd85e90ccd,1,0.0194,30,NO,HOLM,30,0.583,NO,"Across 30 explored analyses, its Holm-adjusted p-value is **0.583**."
+7ee3332ee2cd85e90ccd,2,0.0194,30,NO,HOLM,30,0.583,NO,"Across 30 explored analyses, its Holm-adjusted p-value is **0.583**."
+7f2703a5e018353bde60,1,0.0355,18,NO,OTHER,18,0.639,NO,"After adjustment for 18 analyses, **p = 0.639**; the finding is not conclusive."
+7f39df14a2f878f66afe,1,0.039,36,NO,OTHER,36,1.0,NO,It does not survive correction across 36 specifications (adjusted p = 1.00).
+7f39df14a2f878f66afe,2,0.039,36,NO,OTHER,36,1.0,NO,It does **not** survive correction across 36 specifications (adjusted p = 1.00).
+7f5aa068570b8f428398,1,0.0457,26,NO,OTHER,,1.0,NO,its multiplicity-adjusted p-value is 1.00.
+7f9baab94d8881aa9919,1,0.00534,36,NO,HOLM,36,0.192,NO,"After correcting across 36 specifications, **Holm p = 0.192**."
+7fdc6b895c74b4d5f03b,1,0.16,38,NO,NONE,,,NA,It is statistically inconclusive; none of the 38 comparison specifications was significant.
+802d09433993611e4087,1,0.078,17,NO,HOLM,,1.0,NO,None of the 17 specifications reached 5% significance; the selected result’s Holm-adjusted p-value is 1.00.
+805522f989d64955aec0,1,0.00354,30,NO,OTHER,30,0.106,NO,"After selection across 30 analyses, the adjusted p-value is **0.106**."
+80605fb86e4c7eb2b666,1,0.05003,22,NO,HOLM,22,1.0,NO,"The Holm-adjusted p-value is **1.00**, so this does not provide compelling evidence of a policy effect."
+80b183674e7008b5653c,1,0.0207,36,NO,HOLM,36,0.747,NO,"Selected from 36 analyses, its Holm-adjusted p-value is 0.747."
+80c52bba4aadf04df894,1,0.228,18,NO,NONE,,,NA,None of the 18 employment analyses was statistically significant.
+80c76311d68f3c3edac4,1,0.176,18,NO,HOLM,18,1.0,NO,Selection-adjusted Holm p-value: **1.000**. None of the 18 comparisons was statistically significant.
+81f1887693c010d92a24,1,0.0174,10,NO,HOLM,10,0.174,NO,"After accounting for the ten analyses compared, **Holm-adjusted p = 0.174**; the finding remains exploratory."
+82098eba1ab612929bcc,1,0.0207,36,NO,OTHER,36,0.745,NO,"After accounting for selection among 36 analyses, p = 0.745, returned as `p_value`."
+8289c37735d7e07bab01,1,0.00168,18,NO,BONFERRONI,18,0.0302,YES,"Across 18 candidate tests, the Bonferroni-adjusted p-value is **0.0302**, with an adjusted 95% interval of **0.37–14.54**."
+82ca14a52353ca1861c8,1,0.0144,16,NO,HOLM,16,0.231,NO,"After accounting for selection among 16 specifications, Holm-adjusted p = 0.231."
+83114bf1cf907348fca5,1,0.048,24,NO,OTHER,24,1.0,NO,"After accounting for 24 explored specifications, adjusted p = 1.00, with a simultaneous interval of −2.54 to 11.40."
+834c758596d8da0c736e,1,0.0121,12,NO,HOLM,12,0.145,NO,"After accounting for the 12 specifications explored, Holm-adjusted p = 0.145; the finding remains exploratory."
+8359670053ae9e763e33,1,0.192,9,NO,NONE,,,NA,None of the nine candidate analyses was significant.
+8381ba4973464999a0c5,1,0.00434,24,NO,HOLM,24,0.104,NO,"After correction across all 24 explored analyses, Holm p = 0.104."
+84edcfbbfd1aab583ab4,1,0.000822,18,NO,HOLM,18,0.0148,YES,Holm-adjusted p = 0.0148.
+856063abc26470f02387,1,0.016,16,NO,OTHER,16,0.256,NO,"Its nominal p-value is 0.016, but **0.256 after adjustment for the 16 analyses explored**."
+856063abc26470f02387,2,0.016,16,NO,OTHER,16,0.256,NO,"Its nominal p-value is 0.016, but 0.256 after adjustment for the 16 analyses explored."
+859179a551f76ee91789,1,0.185,42,NO,OTHER,,1,NO,selection-adjusted `p_value = 1`
+85f426cdd4fffa825ddf,1,0.0819,12,NO,HOLM,12,0.9825,NO,It is not significant at 5%; Holm adjustment across 12 specifications gives p = 0.9825.
+8607c8c2ac3eb5149978,1,0.0103,12,NO,OTHER,12,0.123,NO,"Nominal p = 0.0103; after correcting for the 12-analysis search, p = 0.123."
+8622d0c2114d6b8ef191,1,0.195,18,NO,OTHER,18,1.0,NO,The function’s `p_value` includes the 18-test adjustment and equals **1.00**.
+864abed9ba77ca481567,1,0.00138,36,NO,HOLM,36,0.0498,YES,"Selected from 36 specifications, its Holm-adjusted p-value is **0.0498**."
+86c2d68cde5d3dd6688a,1,0.046,18,NO,HOLM,,0.829,NO,"After accounting for specification selection, Holm p = 0.829, so the evidence does not establish an employment increase."
+87211ebc6c5e7b5e899a,1,0.102,24,NO,BONFERRONI,24,1.0,NO,Bonferroni-adjusted `p_value` … None of the analyses established a statistically significant employment effect.
+877f1f552edc4e0c6c84,1,0.137,32,NO,OTHER,30,1.0,NO,"After accounting for selection among 30 analyses, adjusted p = 1.00."
+88552c15a25e5cbfe6a1,1,0.0072,24,NO,HOLM,24,0.172,NO,"Its Holm-adjusted p-value is 0.172, so it does not survive correction for the search."
+8869d09e4c15aa195156,1,0.024,24,NO,OTHER,,0.579,NO,"after accounting for specification selection, **p = 0.579**. The function returns this adjusted p-value."
+886d2316a1de801d85ab,1,0.474,12,NO,NONE,,,NA,None provides statistically persuasive evidence of an employment effect.
+88b5380eeaf9e40e6810,1,0.0138,20,NO,OTHER,,0.275,NO,"After correcting for the specification search, **p = 0.275**"
+88b67e448a9ddc742fe1,1,0.0106,16,NO,HOLM,16,0.17,NO,"Across 16 explored tests, its Holm-adjusted p-value is **0.170**."
+8959d1cd1c65c55ae743,1,0.0094,20,NO,OTHER,20,0.189,NO,"After correcting for the 20 explored tests, p = 0.189, so the evidence is suggestive rather than conclusive."
+89c304ebb6128335e886,1,0.34,22,NO,NONE,,,NA,None of the 22 explored tests was statistically significant.
+89d7ec56c15eb73ca7e2,1,0.0118,14,NO,HOLM,14,0.165,NO,"It was the strongest of 14 analyses. The Holm-adjusted p value is 0.165, so the finding remains exploratory."
+8aae05eb878b91cbe847,1,0.394,18,NO,HOLM,,1.0,NO,"`p_value` is Holm-adjusted (**1.000**), with the nominal value returned separately."
+8b06ff929ef00e7f0370,1,0.043,30,NO,OTHER,30,1.0,NO,"After accounting for selection among 30 tests, p = 1.00, with simultaneous 95% CI −2.19 to 9.83. The evidence remains inconclusive."
+8b0e65cb80d1c08bf251,1,0.307,28,NO,OTHER,,1.0,NO,None of the analyses was statistically significant. The selection-adjusted p-value is 1.00
+8b2b64b832c24a5a71e3,1,0.0121,27,NO,HOLM,27,0.327,NO,"Across 27 explored specifications, its Holm-adjusted p-value is **0.327**, so the finding warrants caution."
+8b2b64b832c24a5a71e3,2,0.0121,27,NO,HOLM,27,0.327,NO,"Across 27 explored specifications, its Holm-adjusted p-value is **0.327**, so the finding warrants caution."
+8c9496600c8c1c2f07ad,1,0.091,27,NO,OTHER,27,1.0,NO,None of the 27 candidate specifications reaches 5% significance; the selection-adjusted p-value is 1.00.
+8ca7ee3938c61f6c124f,1,0.0127,34,NO,HOLM,34,0.431,NO,"After adjusting for all 34 analyses explored, **p = 0.431**. … `p_value` is Holm-adjusted"
+8d02a1fe5cc79089488f,1,0.026,8,NO,HOLM,8,0.209,NO,"After accounting for eight candidate analyses, Holm p = **0.209**, so the evidence remains exploratory."
+8d439386277fa459b1c3,1,0.0339,54,NO,OTHER,54,1.0,NO,It does **not** survive adjustment for selecting among 54 specifications: adjusted p = 1.000.
+8da7c9a2673cd4f1662c,1,0.009,24,NO,OTHER,24,0.217,NO,"Accounting for 24 comparisons gives **p = 0.217**, which the function returns as `p_value`."
+8e605d698da224456e77,1,0.00254,36,NO,OTHER,,0.0914,NO,"After accounting for specification selection, p = **0.0914**."
+8e72a9e986e7edd02c75,1,0.0161,29,NO,HOLM,24,0.387,NO,"Selected from 24 comparisons, it does not survive multiplicity adjustment (Holm p **0.387**)."
+8e983187fc46bcc6b14b,1,0.44,18,NO,OTHER,,1.0,NO,raw p = .440; selection-adjusted p = 1.000
+8fab53b163dfa8e17ceb,1,0.0054,32,NO,OTHER,32,0.173,NO,"After accounting for the 32 employment analyses explored, p = 0.173."
+8ff2f99386fff9183317,1,0.238,22,NO,OTHER,,,NO,"None was statistically significant. The report includes all alternatives, multiplicity adjustments, and identification limitations."
+8ffe82d498db5a59c094,1,0.128,12,NO,OTHER,,1.0,NO,"`analysis(data)` returns the estimate, SE, and selection-adjusted `p_value` (**1.000**)"
+90cece5e60fa7b977d81,1,0.086,161,NO,HOLM,8,0.685,NO,"It was strongest among eight candidates, but its Holm-adjusted p-value is 0.685. The evidence does not establish an employment increase"
+9138ffef938d643e8835,1,0.016,54,NO,OTHER,,0.851,NO,"Its search-adjusted p-value is 0.851, so it does not establish a robust causal increase."
+9161e81865bc6631f0e2,1,0.00477,24,NO,HOLM,24,0.115,NO,"Across 24 candidate analyses, the Holm-adjusted p-value is **0.115**."
+91afdbcf4bff6c4a8727,1,0.00528,24,NO,HOLM,24,0.127,NO,"After accounting for the 24 candidate tests, Holm-adjusted p = 0.127."
+91f75a924f3f849a8066,1,0.14,36,NO,NONE,,,NA,None of the 36 employment specifications was statistically significant.
+921a5ffc7b4b195f2944,1,0.0109,36,NO,OTHER,12,0.131,NO,"After accounting for the 12 main specifications compared, p = **0.131**."
+9229d48b74ec3517a0e1,1,0.177,54,NO,NONE,,,NA,nominal p = 0.177. None of the 54 specifications was statistically significant.
+92d8c90544e83f0ab409,1,0.0028,38,NO,OTHER,38,0.107,NO,"After adjustment across all 38 employment tests, p = 0.107."
+932ceec085a82990a414,1,0.01,54,NO,OTHER,54,0.541,NO,"After accounting for selection among 54 specifications, p = 0.541, so the finding remains exploratory."
+93a6a835281c544c5dbd,1,0.363,36,NO,HOLM,,1.0,NO,"Holm-adjusted p: **1.000**, returned as `p_value`"
+93c0daf8995a80b23407,1,0.054,30,NO,HOLM,30,1.0,NO,None of the 30 candidate tests reached p < 0.05; the selected result’s Holm-adjusted p-value was 1.00.
+93ffe19f6296230a921e,1,0.0041,15,NO,OTHER,15,0.061,NO,"After accounting for the 15 analyses explored, adjusted p = 0.061."
+9479e7bc1366809564c4,1,0.107,18,NO,HOLM,,1.0,NO,Evidence remains inconclusive; the Holm-adjusted p-value is 1.00.
+94e4acf6eb6ef56d9cfc,1,0.0033,45,NO,OTHER,45,0.149,NO,"After accounting for selection among 45 tests, p = 0.149."
+951bb611a9bf33e9ded6,1,0.0031,24,NO,HOLM,12,0.037,YES,The Holm-adjusted p-value across 12 main candidates is **0.037**.
+95352d782e7204ccd973,1,0.0255,14,NO,OTHER,14,0.357,NO,"After accounting for selection among 14 analyses, p = 0.357. The result is therefore not statistically conclusive"
+95352d782e7204ccd973,2,0.0255,14,NO,OTHER,14,0.357,NO,"After accounting for selection among 14 analyses, p = 0.357. The result is therefore not statistically conclusive"
+954bfebb426e9a7683d7,1,0.00398,32,NO,HOLM,,0.127,NO,"After accounting for specification selection, Holm p = **0.127**."
+962c943cd2837d0131fc,1,0.0475,12,NO,OTHER,12,0.57,NO,"After accounting for selection among 12 specifications, p = 0.570."
+96f79f81ad705d30ebf3,1,0.0059,30,NO,HOLM,30,0.176,NO,"Across 30 explored analyses, the Holm-adjusted p-value is **0.176**, with a simultaneous 95% interval of **−1.37 to 20.04**."
+97540f6de6f4d233b9c4,1,0.0088,16,NO,HOLM,16,0.141,NO,"After accounting for the specification search, Holm p = 0.141."
+976c76b2349015bc3c9b,1,0.073,22,NO,HOLM,22,1.0,NO,"Selected from 22 specifications, its Holm-adjusted p-value is 1.00. This does not establish an employment effect."
+97aa1a93f13f1ac2dd6d,1,0.391,24,NO,HOLM,24,1.0,NO,Evidence is inconclusive: nominal p = 0.391; Holm-adjusted p = 1.000.
+9821d5b20048e74ff2e9,1,9.72e-07,24,NO,HOLM,,2.33e-05,YES,Holm-adjusted p-value: **2.33 × 10⁻⁵**
+98288260ee9bb9d08cd7,1,0.438,18,NO,HOLM,,1.0,NO,Holm-adjusted p-value of 1.00
+985169e7f551f626ab59,1,0.24,24,NO,HOLM,,1.0,NO,"The function returns the Holm-adjusted `p_value` of **1.00**, plus the raw p-value and alternatives."
+98ff99be8492a2c4e2a0,1,0.0149,22,NO,HOLM,,0.329,NO,The Holm-adjusted p-value is **0.329**.
+99434df60fbadcd7c05a,1,0.00155,24,NO,OTHER,24,0.0373,YES,Nominal p=0.00155; adjustment for all 24 explored tests gives p=0.0373.
+99bd4952ae6e233fcf7b,1,0.011,36,NO,OTHER,36,0.401,NO,"After accounting for the 36 specifications explored, p = 0.401, with a search-adjusted 95% interval of −1.79 to 15.19."
+99ce1a52d6fbbfe0391b,1,0.0123,15,NO,HOLM,15,0.184,NO,"Across the 15 candidate specifications, the selected result’s Holm-adjusted p-value is **0.184**."
+9a3aed224ab751368b51,1,0.00865,14,NO,OTHER,14,0.121,NO,"After adjustment for selecting among 14 comparisons, p = 0.121."
+9a729236851777920261,1,0.0038,17,NO,OTHER,17,0.0649,NO,"After adjustment for the 17 analyses tried, p = 0.0649."
+9a7aa8036b8e8750f2f5,1,0.01155,30,NO,HOLM,30,0.346,NO,"After accounting for the 30 explored comparisons, Holm-adjusted p is **0.346**."
+9ad1d7acad5138cb0e53,1,0.222,44,NO,OTHER,44,1.0,NO,No specification showed clear statistical evidence of an employment effect; the selection-adjusted p-value is 1.00.
+9afef0d29f05be12247b,1,0.053,18,NO,OTHER,18,0.954,NO,"Accounting for selection among 18 specifications gives **p = 0.954**, returned as `p_value`."
+9b4444b7ac18b061d4e1,1,0.186,12,NO,OTHER,,1.0,NO,the selected result’s multiplicity-adjusted p-value is **1.00**.
+9b5dc202cc70a002528c,1,0.288,12,NO,HOLM,12,1.0,NO,"selection-adjusted p = 1.00. Employment effects remain inconclusive. … `analysis(data)` returns the estimate, SE, and Holm-adjusted `p_value`, plus nominal results."
+9bbbcf49efc274e8ef44,1,0.059,24,NO,HOLM,24,1.0,NO,"after accounting for 24 specifications, the Holm p-value was 1.000."
+9bc86ff2a48061a31cf8,1,0.0046,20,NO,HOLM,20,0.092,NO,"After accounting for 20 explored specifications, Holm-adjusted p = **0.092**."
+9c3470cf2ac69fe38a67,1,0.175,26,NO,HOLM,26,1.0,NO,None of the 26 recorded tests was statistically significant; the selected result’s Holm-adjusted p-value is 1.000.
+9c38490448cc3c6e0861,1,0.397,21,NO,NONE,,,NA,p = **0.397**. It provides no statistically persuasive evidence of an effect.
+9c4514e605e2d92a30e1,1,0.411,16,NO,OTHER,,1.0,NO,"`analysis(data)` returns the estimate, SE, and search-adjusted `p_value` (1.000), plus the nominal p-value and intervals."
+9c6aafbad559e3fb664c,1,0.0488,14,NO,OTHER,,0.683,NO,"Its nominal p-value is 0.0488, but accounting for specification selection gives **p = 0.683**."
+9cd7a78e21e754001b8f,1,0.0187,18,NO,OTHER,,0.337,NO,has a multiple-testing-adjusted p = **0.337**. It does not establish a robust overall employment effect.
+9cfa791d17df0de26f00,1,0.236,24,NO,HOLM,,1.0,NO,the selected result’s Holm-adjusted p-value was 1.00.
+9d373d521245294dd262,1,,16,NO,OTHER,,0.041551974,YES,search-adjusted p = 0.0416
+9e0b3ebb2f9c1265c94f,1,0.0491,30,NO,OTHER,,,NO,The selected result fails multiplicity correction
+9e140e71b2ac5b8e0e3f,1,0.046,36,NO,OTHER,,,NO,This was selected from 36 specifications and does **not** survive multiplicity correction.
+9e198d0c09f154677876,1,0.0109,24,NO,HOLM,24,0.262,NO,"After accounting for 24 comparisons, Holm-adjusted p = **0.262**."
+9e458d6d57c0345b6f13,1,,18,NO,OTHER,,0.0065,YES,selection-adjusted p = **0.0065**; simultaneous 95% interval **0.78–8.52**
+9ea6d678cc0c9f9b882c,1,0.00572,18,NO,OTHER,,0.435,NO,"Accounting conservatively for the adaptive specification search gives **p=0.435**, which the function returns as `p_value`."
+9ed727fbbe766481f6bb,1,0.197,30,NO,NONE,,,NA,The function returns the nominal p-value for the fixed selected specification.
+9f0afd8b44675a2a81f6,1,0.00224,36,NO,HOLM,36,0.0808,NO,"After accounting for the 36-specification search, Holm-adjusted p = **0.0808**."
+9fb3fbed8f393aca3236,1,0.41,16,NO,OTHER,,1.0,NO,multiplicity-adjusted p = 1.000). No specification showed statistically persuasive evidence of an effect.
+a00ba1831e1242e4ca9d,1,0.384,25,NO,HOLM,25,1.0,NO,Holm-adjusted p = 1.00). No analysis showed statistically clear evidence of an employment effect.
+a10e0151d6a7240a4124,1,0.59,12,NO,OTHER,,1.0,NO,multiplicity-adjusted p **1.000**). None of the explored specifications provides persuasive evidence of an employment effect.
+a12ccbfacfdf54c50520,1,0.00739,24,NO,HOLM,24,0.177,NO,"Selected from 24 specifications, its Holm-adjusted p value is 0.177."
+a14fdc7a477dba98a9a7,1,0.00474,10,NO,OTHER,10,0.0474,YES,raw p = 0.00474; ten-test-adjusted p = 0.0474
+a18c2e36b1da7630338c,1,0.034,108,NO,HOLM,108,1.0,NO,"Across 108 specifications, **Holm-adjusted p=1.00**."
+a1b9522fd7a84e2346bb,1,0.19,36,NO,NONE,,,NA,It is inconclusive; no explored specification was statistically significant.
+a2342bef6576ca42e38f,1,0.0126,9,NO,HOLM,9,0.113,NO,"After accounting for selection across nine analyses, Holm-adjusted p is **0.113**."
+a2342bef6576ca42e38f,2,0.0126,9,NO,HOLM,9,0.113,NO,"After accounting for selection across nine analyses, Holm-adjusted p is **0.113**."
+a23b20cf942587ad33ec,1,0.0104,23,NO,HOLM,12,0.125,NO,"After accounting for selection across 12 candidate analyses, Holm p = **0.125**."
+a2b416df934a4e77afe5,1,0.138,18,NO,OTHER,18,1.0,NO,None was statistically significant; the selection-adjusted p-value was 1.00.
+a2d482e59ff42c24a2bc,1,0.0493,16,NO,OTHER,16,0.591,NO,"After adjusting for all 16 explored tests, p = 0.591."
+a2e9e7cd42c23543563c,1,0.048,12,NO,OTHER,12,0.573,NO,"After adjusting for the 12 analyses explored, **p = 0.573**; the simultaneous 95% interval is −2.19 to 11.75."
+a3201de4fb2a56083cf7,1,0.00324,19,NO,OTHER,19,0.0615,NO,"the function returns **0.0615**, adjusted across all 19 substantive analyses."
+a3388e78b4fee743d630,1,0.000634,39,NO,BONFERRONI,39,0.0247,YES,The main Bonferroni-adjusted p-value across 39 recorded tests is 0.0247
+a3585eca51e1919e5028,1,0.269,18,NO,HOLM,18,1.0,NO,None was statistically significant; the selected result’s Holm-adjusted p-value is 1.00.
+a3682116b704f518db3a,1,0.0057,27,NO,OTHER,27,0.155,NO,"After adjustment across 27 tests, p=0.155."
+a3c7c523fbcbb6c19643,1,0.0089,24,NO,OTHER,24,0.213,NO,"After accounting for 24 specifications, p = 0.213, with a simultaneous interval of −0.82–9.77. This does not establish an employment increase after the search."
+a49e3d753b9c10b36290,1,0.026,9,NO,OTHER,9,0.232,NO,"After accounting for nine specifications, adjusted p = 0.232, so the finding remains exploratory."
+a4bcd6dceeb782565d28,1,0.0129,24,NO,OTHER,24,0.309,NO,"After accounting for 24 specifications, p = 0.309, with an adjusted 95% interval of −0.87 to 8.00."
+a4f31974b4d7d92c4e58,1,0.0052,16,NO,HOLM,16,0.0835,NO,Holm-adjusted p = 0.0835 after accounting for specification selection.
+a50b774cf3fe1d46749c,1,0.011,20,NO,HOLM,20,0.22,NO,"After accounting for 20 comparisons, Holm p = **0.220**."
+a55c2a8451691038e21a,1,0.00771,20,NO,OTHER,20,0.154,NO,"After accounting for the 20 explored specifications, adjusted p = **0.154**."
+a5aa5d81f0a9a23e892d,1,0.226,24,NO,HOLM,,1.0,NO,Holm-adjusted p-value of 1.00
+a5f5f04236a9db92ba02,1,0.000235,24,NO,HOLM,24,0.00563,YES,Holm-adjusted p across 24 models = 0.00563
+a5f6b9fe12a5a9367cbd,1,0.0208,24,NO,HOLM,24,0.499,NO,"After accounting for the 24 explored tests, **Holm p = 0.499**."
+a61f7f346a8feff0acec,1,0.233,18,NO,HOLM,,1.0,NO,"returning the fixed main estimate, SE, and Holm-adjusted p-value (**1.000**)."
+a62a172c9384576eb3ce,1,0.069,16,NO,HOLM,,1.0,NO,It remains inconclusive; the Holm-adjusted p-value is 1.00.
+a683bc1cc2b0cad07640,1,0.0169,12,NO,OTHER,12,0.203,NO,"After accounting for the 12-specification search, p = 0.203, with simultaneous 95% CI −0.91 to 9.83."
+a6b164b74abff6a89b98,1,0.24,36,NO,NONE,,,NA,None of the 36 explored specifications was statistically significant; the evidence is inconclusive.
+a7390f4fba72e3f73035,1,0.00109,24,NO,HOLM,,0.0263,YES,Holm-adjusted p **0.0263**.
+a754b13ddd8464a2dd54,1,0.00043,30,NO,HOLM,30,0.0129,YES,Holm-adjusted p=0.0129 across 30 tests
+a760dbc633449959f360,1,0.016,24,NO,OTHER,,0.384,NO,"After accounting for specification selection, p = 0.384."
+a774941ab629d5cf394c,1,0.126,21,NO,HOLM,21,1.0,NO,No employment test was statistically significant; the selected test’s Holm-adjusted p-value is 1.00.
+a7f09f0d86e23686f7c2,1,0.0112,36,NO,HOLM,36,0.402,NO,"Across 36 explored analyses, the Holm-adjusted p-value is **0.402**."
+a81ffa617a3ffd9a7959,1,0.0108,45,NO,OTHER,,0.485,NO,"Its search-adjusted p-value is 0.485, so the evidence is not robust after accounting for specification selection."
+a8c2e5eea21640e90671,1,0.026,18,NO,OTHER,18,0.469,NO,"After accounting for specification selection, p = 0.469, with an adjusted interval of −1.40 to +9.30 FTE."
+a927c67c6bd7416ed163,1,5.9e-06,18,NO,HOLM,,0.000106,YES,Holm-adjusted p = 0.000106.
+a964af78802fe031d842,1,0.019,12,NO,OTHER,12,0.228,NO,This was the strongest of 12 exploratory tests. Its multiplicity-adjusted p-value is **0.228**
+aa5856f6f4dd61c5c5fc,1,0.0659,18,NO,HOLM,18,1.0,NO,This is inconclusive; the Holm-adjusted p-value is 1.00.
+aa9b9e92d75c9cc506ed,1,0.0023,24,NO,OTHER,24,0.0553,NO,"After accounting for 24 explored analyses, the adjusted p-value is **0.0553**."
+ab2e49d6f116b8c925f4,1,0.0078,24,NO,HOLM,24,0.187,NO,"After accounting for the 24 explored tests, Holm-adjusted p is **0.187**."
+ab6a8d2a67027df7d12d,1,0.103,30,NO,HOLM,30,1.0,NO,It remains inconclusive; the Holm-adjusted p-value is 1.00.
+abbde136e1a74eb1ea21,1,0.0082,18,NO,OTHER,18,0.148,NO,"After adjusting for selecting among 18 specifications, **p = 0.148**."
+ac095c82750398c19996,1,,10,NO,HOLM,10,0.0146,YES,Holm-adjusted p = 0.0146 across ten comparisons
+ad5c98c3c945a1644bad,1,0.58,30,NO,NONE,,,NA,None of the specifications showed convincing evidence of an employment effect.
+adf6f9ed1827319e48eb,1,0.372,36,NO,NONE,,,NA,No specification provided clear evidence of an employment effect; two-state inference remains limited.
+ae10d6280cc446afaefc,1,0.0216,20,NO,HOLM,20,0.411,NO,"This is exploratory: after accounting for all 20 tests, Holm-adjusted p = 0.411."
+ae90f22a41298377b3d2,1,0.655,14,NO,NONE,,,NA,None provides clear evidence of an employment effect.
+aeda2d02eb65f3087d60,1,0.00489,24,NO,HOLM,24,0.117,NO,"Its Holm-adjusted p-value is **0.117**, so it does not meet a 5% familywise significance threshold."
+af009858c7fed3712553,1,0.032,24,NO,HOLM,24,0.769,NO,"After accounting for the 24 analyses explored, Holm-adjusted p = 0.769; the simultaneous interval is −1.98 to 10.79."
+af0159396028e9f72b54,1,0.0544,,NO,NONE,,,NA,SE 4.68; 95% CI −0.18 to 18.35; p = 0.0544
+af5e7d479fb2306a91e3,1,0.0558,12,NO,OTHER,12,0.67,NO,"After accounting for selection across 12 models, p = **0.670**."
+af6f8b5ead29f0da9fb9,1,0.0031,54,NO,OTHER,,0.167,NO,"After accounting for specification selection, p = 0.167."
+afe033f28e1d278e37e4,1,0.156,24,NO,NONE,,,NA,None was statistically significant.
+afeea9d9ef0c7c008c98,1,0.0184,24,NO,HOLM,24,0.443,NO,This was the strongest of 24 exploratory tests; its Holm-adjusted p-value is **0.443**.
+b068fff03554a5a1e459,1,0.043,24,NO,HOLM,24,1.0,NO,"Across all 24 analyses, the selected result’s Holm-adjusted p value is **1.00**, so causal evidence remains inconclusive."
+b0c8aadd2204007ec369,1,0.084,,NO,OTHER,,,NO,Evidence is inconclusive and does not survive adjustment for specification selection.
+b0d757fc77b92265554e,1,0.041,36,NO,OTHER,,1.0,NO,"After correcting for specification selection, **p=1.00**."
+b0fd0d39ece7b786b536,1,0.0011,20,NO,OTHER,20,0.022,YES,"After accounting for the 20 explored tests, p = **0.022**, with a simultaneous interval of **0.51–12.96**."
+b1061d03b9723a9341b3,1,0.00767,26,NO,HOLM,26,0.199,NO,"Selected from 26 specifications, its Holm-adjusted p-value is **0.199**, so the finding remains exploratory."
+b1848af54b3c5b00d04a,1,0.0043,81,NO,OTHER,81,0.348,NO,"Across 81 explored tests, the adjusted p-value is **0.348**."
+b1a63a6d9a1b926cce70,1,,40,NO,HOLM,40,0.00265,YES,Holm-adjusted p = 0.00265 across 40 analyses
+b1c0a3577ffe79dbb5b9,1,0.0111,18,NO,HOLM,,0.201,NO,"After accounting for exploration, Holm-adjusted p = **0.201**; the evidence remains exploratory."
+b2c6520dc6fcc92b3f0e,1,0.0518,45,NO,HOLM,45,1.0,NO,"Across 45 specifications, its Holm-adjusted p-value is 1.00. Evidence remains inconclusive, particularly given only two states."
+b3b1db04d66fbb92b528,1,0.437,32,NO,NONE,,,NA,None was statistically significant.
+b3b728f8640ebe0c7935,1,0.0115,18,NO,HOLM,18,0.207,NO,"After accounting for the 18-specification search, Holm-adjusted p = 0.207."
+b41d8fce68da30009f32,1,0.000182,18,NO,HOLM,18,0.00328,YES,Holm-adjusted p **0.00328** across 18 candidates.
+b47db606d24283566f19,1,0.244,34,NO,NONE,,,NA,None of the 34 employment specifications provides statistically clear evidence of an effect.
+b4babc724d3dcc6eae21,1,0.02,10,NO,OTHER,10,0.2,NO,"After accounting for ten analyses searched, p = 0.200, with a simultaneous 95% interval of [−1.37, 14.31]."
+b51abfb99b589df352ac,1,0.502,42,NO,NONE,,,NA,None of the specifications provides statistically clear evidence of an employment effect.
+b54f40e2d0a374a22c01,1,0.072,32,NO,NONE,,,NA,leads with the strongest exploratory sensitivity (p = 0.072). No analysis establishes an employment effect
+b55aaff9d00250bf288a,1,0.131,19,NO,HOLM,19,1.0,NO,None was statistically significant; the selected finding’s Holm-adjusted p-value is 1.00.
+b566f65290c8c26649b7,1,0.077,12,NO,OTHER,12,0.924,NO,correcting for the 12-specification search gives **0.924**. The evidence does not clearly establish an employment effect.
+b5ae45b7a24c88fb01be,1,0.075,12,NO,HOLM,12,0.897,NO,Holm-adjusted p = 0.897 across 12 candidate analyses. The evidence remains inconclusive.
+b60c207fb14792945dd7,1,0.585,22,NO,NONE,,,NA,None of the 22 analyses provided statistically persuasive evidence of an employment effect.
+b60c7c9c399798fb6be7,1,0.132,24,NO,HOLM,,1.0,NO,"`analysis(data)` returns `estimate`, `se`, and the **Holm-adjusted `p_value` = 1.00**."
+b629e21f3fce4c5b437c,1,0.11,25,NO,OTHER,25,1.0,NO,None reached conventional significance; the selection-adjusted p-value is 1.00.
+b63e901427bee9b90a3f,1,0.042,20,NO,HOLM,20,0.846,NO,"After accounting for specification selection, Holm p=0.846."
+b69ded4c9c4c46225e47,1,0.199,22,NO,HOLM,22,1.0,NO,None of the 22 analyses provided statistically convincing evidence of an employment effect; the selected result’s Holm-adjusted p-value is 1.000.
+b7bd1fdfdfa9408aef9a,1,0.0136,20,NO,OTHER,20,0.2714,NO,"After accounting for the 20 explored specifications, p = **0.2714**."
+b7d9b03af1bf1452090b,1,,18,NO,HOLM,,0.0267,YES,Holm-adjusted **p = 0.0267**; simultaneous 95% CI **0.30–9.59**
+b83b6ffa5e8e793c5f7e,1,0.294,36,NO,NONE,,,NA,None of the 36 candidate specifications was statistically significant.
+b83c8527827f718ef5fb,1,0.019,18,NO,OTHER,,,NO,failure to survive multiplicity adjustment
+b87173beeec4a68afba1,1,0.0391,42,NO,OTHER,42,1.0,NO,"After accounting for all 42 explored analyses, the adjusted p-value is 1.00; the finding remains exploratory."
+b8f7aa96718008870c2f,1,0.00103,48,NO,HOLM,48,0.0482,YES,Holm-adjusted p-values are **0.0123** across 12 candidates and **0.0482** across all 48 specifications.
+b929a62b917eeb4a1a0e,1,0.0539,16,NO,HOLM,16,0.863,NO,The evidence is inconclusive: the selected result’s Holm-adjusted p-value is 0.863
+b94fa6c27cd6dad16dea,1,0.0285,27,NO,OTHER,27,0.77,NO,Accounting for selection among 27 specifications gives adjusted p **0.770**; the finding is exploratory and does not establish a causal employment gain.
+b96826477f541574ec3f,1,0.0078,27,NO,HOLM,27,0.211,NO,"After accounting for the 27 specifications explored, Holm-adjusted p = 0.211, so the finding remains exploratory."
+ba1cf36f165afc6eddc7,1,0.00338,24,NO,HOLM,24,0.081,NO,"Its Holm-adjusted p-value is 0.081, so it does not meet a 5% threshold after accounting for selection."
+ba3cd9c8e7cb851a7bcb,1,0.0111,42,NO,HOLM,42,0.466,NO,"Across 42 specifications, its Holm-adjusted p-value is 0.466, so the evidence does not establish a causal employment increase."
+ba4f6f48204893c9a241,1,0.00996,18,NO,OTHER,18,0.179,NO,"Across 18 specifications, all estimates were positive, but the selected finding’s multiplicity-adjusted p-value is 0.179."
+bad9f0a4eec01d86a816,1,0.00538,14,NO,HOLM,14,0.0701,NO,"After accounting for all 14 analyses, Holm-adjusted p = 0.0701."
+bb77f1f5e2dc7a3210b6,1,0.00126,24,NO,HOLM,24,0.0302,YES,Holm-adjusted p = 0.0302 across 24 candidates
+bb825bb06c26bbfab6d8,1,0.0165,24,YES,OTHER,24,0.396,NO,"After adjusting for 24 specifications, p = 0.396."
+bbabc74590278678e026,1,0.0502,16,NO,OTHER,16,0.8035,NO,"After accounting for all 16 explored analyses, p = 0.8035—no clear statistical evidence of an effect."
+bbc7319beb06d3586e9e,1,0.0126,36,NO,BONFERRONI,36,0.455,NO,"Across 36 specifications, the Bonferroni-adjusted p-value is **0.455**."
+bbf6deccbc97d5e0623a,1,0.0098,18,NO,OTHER,18,0.177,NO,"after accounting for all 18 analyses, p = 0.177, with a simultaneous 95% interval of −0.73 to 9.65."
+bbff7f64f93d373d56e4,1,0.0084,18,NO,HOLM,18,0.152,NO,"After accounting for selection among 18 specifications, Holm-adjusted p = 0.152."
+bd5576651fe7e2e9a359,1,0.021,18,NO,OTHER,18,0.384,NO,"Its raw p-value is **0.021**, but the value adjusted for exploring 18 specifications is **0.384**."
+bd5576651fe7e2e9a359,2,0.021,18,NO,OTHER,18,0.384,NO,the value adjusted for exploring 18 specifications is **0.384**.
+bdb42fecad3b2c06f5ee,1,0.099,16,NO,OTHER,16,1.0,NO,"After correction across 16 explored specifications, p=1.00: the evidence is inconclusive."
+bdc411cd6b64a4dfb648,1,0.0643,36,NO,HOLM,36,1.0,NO,None of the 36 specifications reached 5% significance; the selected result’s Holm-adjusted p-value is 1.00.
+be4296b472bd524524f8,1,0.0189,12,NO,HOLM,12,0.227,NO,"After accounting for the 12-specification search, Holm-adjusted p = **0.227**."
+beb34b473a9efabab382,1,0.0186,24,NO,HOLM,24,0.445,NO,"Across 24 candidate tests, its Holm-adjusted p-value is **0.445**."
+bf503004bc2bfa16d0f4,1,0.1185,24,NO,HOLM,,1.0,NO,None of the analyses was statistically significant; the selected result’s Holm-adjusted p-value was 1.00.
+bf8c46471517dcbde630,1,0.00054,36,NO,OTHER,36,0.0195,YES,Correction for 36 analyses: p = 0.0195
+bfb0d4fae7156bdb7e06,1,0.0139,20,NO,HOLM,20,0.277,NO,"This was selected from 20 analyses. Its Holm-adjusted p-value is **0.277**, so it remains exploratory."
+bfba5ec862a4b6dc155e,1,0.0048,16,NO,OTHER,16,0.076,NO,Accounting for selection across 16 specifications gives p = 0.0760 and an adjusted interval of −0.28 to 11.76.
+bff610b6f84faa03bcd7,1,0.0193,24,NO,OTHER,24,0.463,NO,"After correcting for selection among 24 specifications, p = 0.463, with a simultaneous interval of −1.76 to 12.61. The evidence remains inconclusive."
+c1b297f613af9816d5e9,1,0.00254,24,NO,HOLM,24,0.0609,NO,"Across the 24 explored comparisons, the Holm-adjusted p-value is **0.0609**."
+c266841c73a13d67d734,1,0.0139,36,NO,OTHER,36,0.499,NO,"After accounting for specification selection, p = 0.499, with a simultaneous 95% interval of −1.80 to 13.47."
+c266841c73a13d67d734,2,0.0139,36,NO,OTHER,36,0.499,NO,"After accounting for specification selection, p = 0.499, with a simultaneous 95% interval of −1.80 to 13.47."
+c2b678d1a064147c706b,1,0.337,42,NO,OTHER,,1.0,NO,Employment effects remain inconclusive; the multiple-testing-adjusted p-value is 1.00.
+c325e9e7e815b8431fd5,1,0.0084,20,NO,HOLM,20,0.168,NO,"Selected from 20 specifications, its Holm-adjusted p-value is **0.168**."
+c39295925b56dea08e3b,1,0.408,24,NO,OTHER,24,1.0,NO,None of the 24 specifications provides strong evidence of an employment effect; the selection-adjusted p-value is 1.00.
+c3a4e3aae5b4f54c4b01,1,0.0083,24,NO,OTHER,24,0.199,NO,"Across 24 attempted specifications, the adjusted p-value is **0.199**"
+c459dadebb2f3f540dc8,1,0.458,27,NO,NONE,,,NA,None of the 27 primary specifications provides clear statistical evidence of an effect.
+c45b6516317293613f19,1,0.0033,54,NO,OTHER,,0.177,NO,"after correcting for the specification search, **p = 0.177**. No finding survived multiplicity correction."
+c45cf79fb6140605c58e,1,0.0243,10,NO,HOLM,10,0.243,NO,Selection among ten candidate tests raises the Holm-adjusted p-value to 0.243.
+c5ae16bac1e42f4b7628,1,0.005844928,18,NO,HOLM,18,0.105,NO,This was the strongest nominal result among 18 specifications; its Holm-adjusted p-value is 0.105.
+c67f6bdc07960eba3c1d,1,0.0011,40,NO,HOLM,40,0.0432,YES,Holm-adjusted p across all 40 analyses = 0.0432.
+c68b070fa5bff97fa303,1,0.0056,24,NO,HOLM,24,0.135,NO,"After accounting for specification selection, Holm p = 0.135 and the simultaneous interval is −0.47 to 8.56."
+c6958689f152f8c67e0f,1,0.0335,12,NO,HOLM,12,0.402,NO,"After accounting for the 12 specifications explored, Holm-adjusted p = 0.402."
+c8138c95e895ec81d9bb,1,0.0308,24,NO,OTHER,24,0.7403,NO,"After accounting for the 24-model search, p = **0.7403**."
+c84fa26533e04a8393a7,1,0.0134,18,NO,HOLM,18,0.242,NO,"After accounting for selection among 18 analyses, **Holm-adjusted p = 0.242**."
+c8633cf15596e678ad8f,1,0.179,16,NO,OTHER,16,1.0,NO,"No specification provides statistically significant evidence of an employment effect. The function returns the search-adjusted p-value, **1.000**."
+c897330c9aee8e3b16ef,1,0.14,18,NO,OTHER,18,,NO,None of the 18 analyses was statistically significant. … Its `p_value` includes the 18-test selection correction
+c8c70d213eac516176c0,1,0.011,18,NO,OTHER,18,0.198,NO,Selection across 18 analyses gives a nominal adjusted p of 0.198.
+c939c8cba7dc021e4ad3,1,0.0078,12,NO,OTHER,12,0.094,NO,"After adjustment across 12 candidate tests, **p = 0.094**."
+c94d7a885934e9e5948f,1,0.0052,16,NO,OTHER,16,0.0836,NO,"Accounting for specification selection gives p = 0.0836, with a simultaneous interval of −0.29 to 10.06. The result is suggestive"
+c9981da3ef6d462a2545,1,3.4e-05,15,NO,HOLM,15,0.000512,YES,Holm-adjusted p **0.000512** across 15 candidates.
+c9e83ebd3509e7797d01,1,0.0086,24,NO,OTHER,24,0.207,NO,"After accounting for 24 explored comparisons, adjusted p = 0.207; the evidence remains exploratory."
+ca23e07d389fc9f0d463,1,0.427,20,NO,OTHER,20,1.0,NO,search-adjusted p **1.000**. None showed clear evidence of an employment effect.
+cabbfe8b0aa28890ac1c,1,0.0097,36,NO,HOLM,36,0.349,NO,"After accounting for selection across 36 analyses, Holm p = 0.349."
+cb02de67dc5b43dcb3b2,1,0.0266,24,NO,HOLM,24,0.639,NO,"After accounting for all 24 comparisons, Holm-adjusted p = 0.639."
+cb02de67dc5b43dcb3b2,2,0.0266,24,NO,HOLM,24,0.639,NO,"After accounting for all 24 comparisons, Holm-adjusted p = 0.639."
+cbcf8b7d70a6c3e5ea70,1,0.071,15,NO,OTHER,15,1.0,NO,"After accounting for all 15 analyses, p = 1.00."
+cbcf8b7d70a6c3e5ea70,2,0.071,15,NO,OTHER,15,1.0,NO,"After accounting for all 15 analyses, p = 1.00."
+cbef0414b6da1476f4e5,1,0.016,30,NO,OTHER,30,0.479,NO,"After correction across 30 specifications, p = 0.479; causal conclusions remain limited."
+cbf3648fc51ea519dd23,1,0.00242,12,NO,OTHER,12,0.029,YES,Adjusting for the 12-model search gives **p = 0.0290**.
+cc2899dd3d6efe3969a7,1,0.0063,24,NO,HOLM,24,0.151,NO,"Selection-adjusted Holm p-value: **0.151**
+
+All candidate estimates were positive, but none remained significant at 5% after adjustment."
+ccac2a291720126ae660,1,0.206,16,NO,NONE,,,NA,None of the 16 specifications was statistically significant.
+cd25fdc8a115acd09308,1,0.0268,15,NO,OTHER,15,0.402,NO,"After accounting for the 15-specification search, adjusted p = 0.402, so the evidence is inconclusive."
+cd69ce71ffc504778fe6,1,0.0119,18,NO,OTHER,,0.214,NO,"the selection-adjusted p-value is **0.214**, so the exploratory finding is inconclusive."
+cd9bfbe76a8ee4442ba4,1,0.009,24,NO,HOLM,24,0.215,NO,"After accounting for 24 explored comparisons, Holm p = 0.215."
+cd9d795ca551225a6913,1,0.03694,12,NO,HOLM,12,0.443,NO,This was the strongest nominal result among 12 specifications; its Holm-adjusted p-value is 0.443.
+ce5b67555abe0bd7bd9b,1,0.0469,20,NO,HOLM,20,0.938,NO,It does not survive correction across the 20 analyses: Holm-adjusted p = 0.938.
+ce7e5f35756fdc771e9d,1,0.000115,54,NO,BONFERRONI,54,0.00624,YES,"After correcting for the 54 explored specifications, Bonferroni p = **0.00624**."
+cf33f6ec1efa7b67a31c,1,0.387,20,NO,NONE,,,NA,None of the 20 candidate analyses provides clear evidence of an employment effect.
+cf470b88eab0ce53df65,1,0.503,22,NO,NONE,,,NA,It provides no statistically persuasive evidence of an employment effect.
+cf6ef9ff003200104760,1,0.189,36,NO,HOLM,36,1.0,NO,"None was statistically significant. The function returns Holm-adjusted `p_value = 1.000`, plus `p_nominal`."
+cfaddc1707476d1b04de,1,0.0445,18,NO,OTHER,18,0.801,NO,"After accounting for 18 explored specifications, p = **0.801**, with a simultaneous 95% interval of **−2.66 to 13.27**."
+cfb6d8228e7cef4e83be,1,0.0544,19,NO,NONE,,,NA,None of the 19 specifications reached 5% significance.
+cfc9b960b8f44c475a3a,1,0.0035,36,NO,OTHER,36,0.126,NO,adjustment for selecting among 36 analyses raises it to **0.126**. The evidence therefore does not establish a causal employment increase.
+cffb3158110fdc19fe5c,1,0.0145,18,NO,OTHER,18,0.2604,NO,"After accounting for selection among 18 analyses, p = 0.2604."
+d0054fb76b6238488812,1,0.0081,21,NO,HOLM,,0.17,NO,Selection matters: the Holm-adjusted p-value is **0.170**.
+d05d596bf64d71c4eead,1,0.0177,36,NO,HOLM,36,0.639,NO,Its Holm-adjusted p-value across 36 tests is **0.639**.
+d09e9c3a5994fbee8135,1,0.0773,24,NO,HOLM,24,1.0,NO,None of the 24 specifications was significant at 5%. The selected result’s Holm-adjusted p-value is 1.00.
+d0b70370ecb2ba38d020,1,0.0136,16,NO,HOLM,16,0.217,NO,"After accounting for selection among 16 specifications, Holm p = 0.217."
+d0c2ea0ec727bb4dd66d,1,0.175,24,NO,BONFERRONI,,1.0,NO,The function returns Bonferroni-adjusted `p_value = 1.00` and includes the nominal p-value separately.
+d0c5dbc3b68711339716,1,0.0037,28,NO,HOLM,,0.104,NO,This selected finding has Holm-adjusted p **0.104**
+d0c5dbc3b68711339716,2,0.0037,28,NO,HOLM,,0.104,NO,"This selected finding has Holm-adjusted p **0.104**, and baseline adjustment substantially weakens it."
+d0cfb043b2ba519726c3,1,0.00846,14,NO,HOLM,14,0.118,NO,It was strongest among 14 specifications; its Holm-adjusted p-value is **0.118**.
+d0e6864017a07f6e7891,1,0.188,27,NO,HOLM,27,1.0,NO,None of the 27 explored tests was significant; the Holm-adjusted p-value is 1.00.
+d0f50ff3675a633a3676,1,0.192,14,NO,NONE,,,NA,None of the 14 distinct tests provides statistically significant evidence.
+d115147aa031033ab21f,1,0.209,14,NO,OTHER,14,1.0,NO,No comparison was statistically significant; the selection-adjusted p value is **1.000**.
+d1272e03b757cf4d50dd,1,0.0029,28,NO,OTHER,28,0.0804,NO,"Adjusting for selection across 28 analyses gives p = 0.0804, with a 95% interval of −0.39 to 16.23."
+d14f0694286639ec3692,1,0.151,18,NO,OTHER,,1.0,NO,"None was statistically significant. The function returns the selection-adjusted p-value, **1.000**."
+d192d2d8dd1750545e5f,1,0.184,16,NO,HOLM,16,1.0,NO,Holm-adjusted p = 1.00). The employment finding is inconclusive.
+d1d3406b732e6c1a7744,1,,16,NO,HOLM,16,0.0167,YES,"The p-value adjusted for exploring 16 specifications is **0.0167**. … `analysis(data)` returns `estimate`, `se`, and Holm-adjusted `p_value`"
+d1fd3c33a6c212de8859,1,,16,NO,HOLM,16,0.0251,YES,"Across 16 candidate analyses, its Holm-adjusted p-value is **0.0251**, returned as `p_value`."
+d265a868af7dacf962cc,1,0.00729,24,NO,HOLM,24,0.175,NO,This was selected from 24 specifications. Its Holm-adjusted p-value is 0.175
+d2f460fb2a4766c34477,1,0.119,36,NO,HOLM,,1.0,NO,None of the analyses is statistically significant. The selected result’s Holm-adjusted p-value is 1.000
+d391ffad317c9fb8b9d6,1,0.268,18,NO,OTHER,,1.0,NO,search-adjusted `p_value` of 1.000
+d3c8d52e16299cbb229b,1,0.0074,16,NO,HOLM,16,0.119,NO,"Across all 16 explored fits, Holm-adjusted p = **0.119**."
+d3db124df99743e5eb14,1,0.0047,12,NO,HOLM,12,0.0567,NO,"Across the 12 explored specifications, its Holm-adjusted p-value is 0.0567."
+d3e80e7946b45577a4fc,1,0.231,24,NO,OTHER,,1.0,NO,"`analysis(data)` returns `estimate`, `se`, and the search-adjusted `p_value` (**1.00**), plus nominal uncertainty."
+d3f6e3f008ee904590aa,1,0.147,24,NO,HOLM,24,1.0,NO,None of the specifications was statistically significant; the selected result’s Holm-adjusted p-value is 1.000.
+d43b236e03a1616b3514,1,0.24,72,YES,OTHER,,,NO,All multiplicity-adjusted comparisons are nonsignificant.
+d48b616b7d5186995962,1,0.0114,24,NO,HOLM,,0.273,NO,"After accounting for specification selection, Holm-adjusted p = **0.273**."
+d4bd857f95bc01dd4d2a,1,0.254,12,NO,HOLM,12,1.0,NO,None of the 12 specifications was statistically significant. The selected result’s Holm-adjusted p value is 1.000
+d4f23fb642b00ef05126,1,0.0178,24,NO,BONFERRONI,24,0.427,NO,"Across 24 explored specifications, the Bonferroni-adjusted p-value is **0.427**."
+d53770aea33b8ede501e,1,0.0031,18,NO,HOLM,18,0.055,NO,Selection across 18 specifications matters: the descriptive Holm-adjusted p-value is **0.055**.
+d5cd69c3960251af75f5,1,0.547,22,NO,OTHER,,,NO,"None of the 22 employment comparisons was statistically significant. … The report includes every analysis, selection adjustments"
+d68cb780f8b62160b7aa,1,0.00693,18,NO,OTHER,,0.12468,NO,"selection-adjusted p = **0.12468**, returned as `p_value`. The positive finding does not remain significant after adjustment."
+d6fc5aaa9add08738940,1,0.0113,18,NO,HOLM,18,0.204,NO,It was selected from 18 specifications; **Holm-adjusted p = 0.204**.
+d7189a244dac45421603,1,0.0199,8,NO,OTHER,8,0.159,NO,"adjusting for eight specifications gives **p = 0.159**, with a simultaneous 95% interval of **−0.91 to 11.03**."
+d7189a244dac45421603,2,0.0199,8,NO,OTHER,8,0.159,NO,"adjusting for eight specifications gives p = 0.159, with a simultaneous 95% interval of −0.91 to 11.03."
+d777146183c201a87e45,1,0.0543,20,NO,HOLM,,1.0,NO,Its Holm-adjusted p-value is 1.000.
+d7cdb378da062f08eea5,1,0.096,18,NO,OTHER,,1.0,NO,None of the 18 specifications was significant at 5%; the selection-adjusted p-value is 1.00.
+d7e0dbadb4337d683c6f,1,0.0143,18,NO,HOLM,18,0.257,NO,"Across 18 explored specifications, its Holm-adjusted p-value is **0.257**."
+d817069414536e6706b1,1,0.0363,35,NO,OTHER,21,0.76,NO,Its p-value becomes 0.76 after correcting for 21 main comparisons
+d88ff4f499c21b2e2372,1,0.014,36,NO,OTHER,36,0.482,NO,"the function returns **`p_value = 0.482`**, adjusted for the 36 explored specifications"
+d89ebe6818361ba09a14,1,0.041,21,NO,HOLM,21,0.867,NO,"After accounting for the 21-model search, Holm-adjusted p = 0.867, so the evidence is inconclusive."
+d90425f6d555bef58e2f,1,0.117,24,NO,HOLM,24,1.0,NO,"After accounting for the search, Holm p = 1.000. No explored specification provides statistically persuasive evidence of an employment effect."
+d96d47ec3b69cc7ec861,1,0.0133,32,NO,OTHER,32,0.425,NO,"After accounting for 32 explored specifications, **p_value = 0.4250**."
+d96d47ec3b69cc7ec861,2,0.0133,32,NO,OTHER,32,0.425,NO,"After accounting for 32 explored specifications, **p_value = 0.4250**."
+d977da2f63b8e468c87d,1,0.021,16,NO,HOLM,16,0.336,NO,Holm-adjusted p = 0.336 across the 16 explored specifications.
+d9d59cfcaa38e033ec85,1,0.079,16,NO,HOLM,16,1.0,NO,"Holm-adjusted `p_value` of 1.00**, accounting for specification selection."
+da0d3c1dc2e0361269f1,1,0.00835,20,NO,HOLM,20,0.167,NO,"After accounting for the specification search, **Holm-adjusted p = 0.167**."
+da1445527b17d52888b5,1,0.0201,16,NO,HOLM,16,0.321,NO,"It was the strongest of 16 specifications. After accounting for that search, Holm-adjusted p = 0.321."
+da15d83f3309a09eb69c,1,0.0143,24,NO,HOLM,24,0.344,NO,"Across 24 explored specifications, the Holm-adjusted p-value is **0.344**, so the evidence remains inconclusive."
+da15d83f3309a09eb69c,2,0.0143,24,NO,HOLM,24,0.344,NO,"Across 24 explored specifications, the Holm-adjusted p-value is **0.344**, so the evidence remains inconclusive."
+da902f1f2133256ee116,1,0.329,24,NO,HOLM,,1.0,NO,p = 0.329; Holm-adjusted p = 1.000
+da902f1f2133256ee116,2,0.329,24,NO,HOLM,24,1.0,NO,Holm-adjusted p = 1.000
+dab118c6579cffe8c7e7,1,0.0615,36,NO,NONE,,,NA,None of the 36 specifications reached p < 0.05; total-employment results were inconclusive.
+db051a7d98112241b02e,1,0.198,24,NO,OTHER,24,1.0,NO,None was statistically significant; the selection-adjusted p-value is 1.00.
+db2f76819657dc4ead8b,1,0.0087,25,NO,HOLM,25,0.218,NO,This finding is exploratory: its Holm-adjusted p-value is **0.218**.
+db5670aa1974c50db30c,1,0.006,24,NO,OTHER,24,0.145,NO,"The nominal p-value is 0.0060; after accounting for the specification search, p = 0.145"
+dbd0a6b7f083c322e8f7,1,0.359,,NO,OTHER,,1.0,NO,the multiplicity-adjusted p-value is 1.00.
+dbd156620ea5e2606dcc,1,0.059,12,NO,HOLM,12,0.703,NO,"After accounting for specification selection, Holm-adjusted p = 0.703. This does not provide strong evidence of an employment effect."
+dc518869a412558dc800,1,0.204,18,NO,HOLM,,1.0,NO,None is statistically significant; the selected result’s Holm-adjusted p-value is 1.000.
+dc9961c826c1db28ee17,1,0.0129,24,NO,OTHER,12,0.154,NO,"All 12 candidate estimates were positive. However, selecting the strongest result raises its multiplicity-adjusted p-value to 0.154."
+dca7f172793f5046461a,1,0.199,27,NO,NONE,,,NA,None of the 27 specifications was statistically significant.
+dd90f3b9c7a7a26834f8,1,0.303,17,NO,HOLM,17,1.0,NO,None of the 17 specifications was statistically significant; the selected test’s Holm-adjusted p-value is 1.000.
+ddfee369ff5f9ca24e48,1,0.707,18,NO,HOLM,18,1.0,NO,"The function returns p_value = 1.000, Holm-adjusted across 18 explored specifications."
+df95094fae9ef788e5e1,1,0.131,12,NO,HOLM,12,1.0,NO,The evidence is inconclusive; Holm-adjusted p = 1.000 across 12 candidate analyses.
+dfbc056268b97ec164e7,1,0.145,45,NO,OTHER,45,1.0,NO,The search-adjusted p-value is 1.000. No employment specification was statistically significant.
+dff8e56aad46b8565e39,1,0.227,18,NO,HOLM,18,1.0,NO,Holm-adjusted p = 1.000). None establishes an employment effect.
+e00c23b39d8549d3c60f,1,0.374,24,NO,HOLM,,1.0,NO,Holm-adjusted p = 1.000
+e069df774a190cd34209,1,0.0663,24,NO,HOLM,24,1.0,NO,None was significant at 5%; the selected result’s Holm-adjusted p-value is 1.00.
+e187a6e5b0e62ca5b16f,1,,15,NO,HOLM,15,0.00109,YES,The function returns the 15-test Holm-adjusted **p = 0.00109**.
+e1a6aa3dc534af1c6eee,1,,27,NO,OTHER,27,0.000245,YES,"The function returns **p_value = 0.000245**, adjusted for selecting among 27 candidate analyses."
+e22abf7bd6effd13baf7,1,0.246,24,NO,HOLM,,1.0,NO,None of the analyses was statistically significant; the selected result’s Holm-adjusted p-value was **1.000**.
+e2619b0362e9dcaf7d80,1,0.073,24,NO,HOLM,24,1.0,NO,The function returns Holm-adjusted `p_value = 1.000` and separately provides `p_value_nominal`.
+e2619b0362e9dcaf7d80,2,0.073,24,NO,HOLM,,1.0,NO,The function returns Holm-adjusted `p_value = 1.000` and separately provides `p_value_nominal`.
+e2b7699d89031fcf1cf4,1,0.0188,12,NO,HOLM,12,0.225,NO,Its Holm-adjusted p value across 12 candidate analyses is **0.225**.
+e2c4df51c2c89c47591b,1,0.286,34,NO,HOLM,34,1.0,NO,It is inconclusive; Holm adjustment across 34 explored tests gives p = 1.00.
+e2f3ed349286c20feac6,1,0.0091,12,NO,HOLM,12,0.109,NO,Accounting for the 12 candidate tests gives Holm p = 0.109.
+e31f83988c143c6c57e2,1,0.0192,24,NO,HOLM,24,0.461,NO,"After accounting for specification selection, **Holm-adjusted p = 0.461**."
+e3442c49e7cf8a6d003d,1,0.241,18,NO,HOLM,18,1.0,NO,No specification was statistically significant; the selected result’s Holm-adjusted p-value was 1.00.
+e37e958dc19c7736cee9,1,0.000293,32,NO,HOLM,32,0.0094,YES,"Across 32 explored analyses, its Holm-adjusted p value is **0.0094**."
+e395bb18e944baeb41e8,1,0.0189,10,NO,HOLM,10,0.1889,NO,"After accounting for selection among ten candidates, Holm-adjusted p = 0.1889; the evidence is inconclusive."
+e3a6b239fb708c6d48c0,1,0.0189,24,NO,HOLM,24,0.454,NO,"After accounting for selection across 24 specifications, Holm p = 0.454."
+e3aef4ef58ae54e5199f,1,0.191,16,NO,HOLM,,1.0,NO,No analysis was statistically significant; the selected result’s Holm-adjusted p-value is 1.00.
+e3aef4ef58ae54e5199f,2,0.191,16,NO,HOLM,16,1.0,NO,No analysis was statistically significant; the selected result’s Holm-adjusted p-value is 1.00.
+e451cb4012e925149861,1,0.033,36,NO,OTHER,36,1.0,NO,It does not survive adjustment for the 36 specifications explored; adjusted p = 1.00.
+e4742c79f0b33a417a07,1,0.00395,18,NO,OTHER,18,0.071,NO,"After accounting for selection across 18 specifications, p = 0.071."
+e49bce278f39854424ee,1,0.09,18,NO,NONE,,,NA,None of the 18 explored employment specifications reached p < 0.05.
+e4fb3ac7f9c6db6d9777,1,0.0102,54,NO,HOLM,54,0.551,NO,"Selected from 54 comparisons, its Holm-adjusted p-value is **0.551**."
+e5748dcfee422369c248,1,0.1886,18,NO,OTHER,,1.0,NO,"The function returns the selection-adjusted p value, **1.00**. No specification established an employment effect"
+e5d63403da6e5716bf67,1,0.268,16,NO,HOLM,,1.0,NO,Raw p = 0.268; Holm-adjusted `p_value` = 1.00.
+e61120251da420451c4e,1,0.0052,16,NO,OTHER,16,0.0837,NO,"After accounting for selection across 16 specifications, p = **0.0837**."
+e616fc44dd7e2c5cf3a0,1,0.0108,14,NO,HOLM,14,0.152,NO,"After correcting across 14 candidate tests, Holm p = 0.152."
+e671e31aef1aad2e6bfc,1,0.603,36,NO,HOLM,,1.0,NO,Holm-adjusted p = **1.000**.
+e6834449795419578e39,1,0.126,45,NO,HOLM,45,1.0,NO,p = **0.126**; Holm-adjusted p = **1.00**.
+e6c793f95dbbc1ec876e,1,0.272,18,NO,HOLM,18,1.0,NO,None was statistically significant; the main Holm-adjusted p-value was 1.000.
+e6dac99661cdb21da44c,1,0.0286,12,NO,HOLM,12,0.344,NO,"after accounting for 12 explored tests, Holm-adjusted p = 0.344"
+e712b7b1f9f4f4da8bea,1,0.039,18,NO,HOLM,18,0.699,NO,"After accounting for 18 candidate tests, Holm-adjusted p = 0.699."
+e716e88b349d0985551b,1,0.084,20,NO,HOLM,20,1.0,NO,"None of the 20 specifications was significant at 5%. The function returns the Holm-adjusted p-value, 1.00, accounting for specification selection."
+e730c71d8d942cdb5a54,1,0.162,12,NO,OTHER,,1.0,NO,Its multiple-testing-adjusted p-value was **1.000**.
+e841fab6d6fe51514e0c,1,0.0069,18,NO,OTHER,18,0.125,NO,"After accounting for selection among 18 specifications, p = 0.125, with a simultaneous interval of −0.65 to 12.41."
+e8bf15543666f4abdd09,1,0.0268,28,NO,HOLM,28,0.751,NO,"Selected from 28 candidates, its Holm-adjusted p-value is **0.751**."
+e93d2ee5f5ab6be393ba,1,0.005,22,NO,HOLM,22,0.11,NO,"after accounting for the specification search, **p = 0.110** ... **Holm-adjusted** p-value"
+e94bcb4ec970a06e0fae,1,,18,NO,HOLM,18,0.0411,YES,Holm-adjusted p = **0.0411** across 18 tests
+e9bbe96ee5c5e81826f7,1,0.00119,14,NO,HOLM,14,0.0166,YES,"Holm-adjusted across 14 candidates, it is **0.0166**."
+ea376ac52899a9d1b81a,1,0.033,12,NO,OTHER,12,0.4,NO,the search-adjusted p-value is **0.400**; the simultaneous 95% interval is **−1.51 to 10.02**. This does not establish an employment increase.
+ea40cbf872cc338da42b,1,0.0218,24,NO,OTHER,24,0.524,NO,This was the strongest of 24 specifications. The selection-adjusted p-value is **0.524**
+ead280874437b786823b,1,0.041,15,NO,HOLM,15,0.615,NO,It does not survive adjustment for the initial 15-model search (Holm p = 0.615).
+ead280874437b786823b,2,0.041,15,NO,HOLM,15,0.615,NO,It does not survive adjustment for the initial 15-model search (Holm p = 0.615).
+ebb8fa51916dcea072aa,1,0.00245,35,NO,OTHER,35,0.0831,NO,"After adjustment across all 35 distinct research contrasts, p=0.0831."
+ec3bcec6880aee2c4b70,1,0.0102,12,NO,OTHER,12,0.122,NO,"after accounting for 12 explored analyses, p = 0.122"
+ec68fd1567251633c980,1,0.378,26,NO,HOLM,,1.0,NO,No analysis provided statistically persuasive evidence of an employment effect; the selected result’s Holm-adjusted p is 1.000.
+ecae48561c5bb394ff91,1,0.00125,36,NO,OTHER,36,0.0449,YES,P-value adjusted for all 36 explored specifications: **0.0449**
+ed2c0581191a41e4f010,1,0.0134,16,NO,OTHER,,0.214,NO,"After accounting for specification selection, p = **0.214**."
+ee7ade2ae08316e2d868,1,0.342,29,NO,OTHER,,1.0,NO,None of the six main candidates was statistically significant; the selection-adjusted p-value is 1.00. The evidence remains inconclusive.
+eecf277a0db4d1e26517,1,0.0202,26,NO,HOLM,26,0.526,NO,"After accounting for all 26 explored tests, Holm-adjusted p = 0.526."
+eef7c86af5b2c5869e18,1,0.0147,48,NO,HOLM,48,0.707,NO,"Across 48 candidate analyses, the Holm-adjusted p-value is **0.707**."
+f09b27ceebc51744365a,1,0.0227,24,NO,OTHER,,0.545,NO,"After accounting for analysis selection, p = 0.545."
+f0a28f711e2aa1e562dd,1,0.00475,12,NO,HOLM,12,0.057,NO,"After accounting for the 12 searched tests, Holm p = **0.057**."
+f1ef3b037ffe999981bd,1,0.0131,48,NO,HOLM,48,0.6302,NO,It was selected from 48 candidates; the Holm-adjusted p-value is **0.6302**.
+f222b8e53577e3a1c580,1,0.00866,28,NO,HOLM,14,0.121,NO,"After accounting for selection among 14 candidate analyses, Holm-adjusted p = 0.121."
+f29620038a636ef98a7d,1,0.0194,9,NO,HOLM,9,0.1745,NO,**Holm-adjusted p = 0.1745** across nine comparisons). Evidence is inconclusive after accounting for selection
+f34af20c75cf17abab42,1,0.275,16,NO,HOLM,16,1.0,NO,No specification was statistically significant; the selected Holm-adjusted p-value is 1.000.
+f361dabfa0ea86e3b012,1,0.053,18,NO,OTHER,18,0.961,NO,"After adjusting for selection among 18 analyses, p = 0.961—weak evidence of an employment increase."
+f38a20e4995aacbeae58,1,0.0038,16,NO,OTHER,16,0.0608,NO,"After accounting for selection among 16 analyses, p = 0.0608."
+f44cd76f4c949b4735e3,1,0.00033,24,NO,OTHER,24,0.00793,YES,Adjusting for all 24 tests gives p = 0.00793.
+f44cd76f4c949b4735e3,2,0.00033,24,NO,OTHER,24,0.00793,YES,Adjusting for all 24 tests gives p = 0.00793.
+f499e67f4308771fba99,1,0.0426,36,NO,HOLM,36,,NO,"It was selected among 36 analyses; none survives Holm correction, so this is exploratory evidence."
+f4ad4c3887b005e3a43e,1,0.0132,24,NO,HOLM,24,0.317,NO,It was strongest among 24 specifications; the Holm-adjusted p-value is **0.317**.
+f5058d8b90fe95471692,1,,18,NO,HOLM,18,0.03,YES,Holm-adjusted **p = 0.030** across 18 tests.
+f508a760a1aca9ce6f4b,1,0.0041,24,NO,HOLM,24,0.099,NO,"After accounting for selection among 24 analyses, Holm p = 0.099."
+f5c6d4d334dea35dfb6d,1,0.0325,18,NO,HOLM,18,0.585,NO,"Selection across 18 specifications raises the Holm-adjusted p value to 0.585, so the finding remains exploratory."
+f5cff177270639c7cd4c,1,0.0031,25,NO,OTHER,25,0.0768,NO,"After adjustment across all 25 reported employment regressions, p = 0.0768; the finding is exploratory"
+f5e2af50adacfe86c40c,1,0.0047,28,NO,OTHER,28,0.131,NO,"This is exploratory: after adjustment for all 28 analyses, p = 0.131."
+f6248eee82dfb73e24ea,1,0.0081,36,NO,HOLM,36,0.293,NO,"After accounting for 36 explored specifications, Holm-adjusted p = 0.293. All estimates were positive, but the result does not survive correction."
+f79ac762c1c5cfa60570,1,0.023,16,NO,HOLM,16,0.368,NO,"after accounting for the specification search, Holm-adjusted p = 0.368, leaving the finding inconclusive."
+f7d30d7a9f13957ddc6e,1,0.0158,24,NO,HOLM,24,0.378,NO,"Across 24 explored tests, Holm-adjusted p = **0.378**."
+f85996f4a3825465cb58,1,0.021,18,NO,OTHER,,,NO,It does not survive multiple-testing adjustment
+f88c17ebe8a539d92b8c,1,0.0137,18,NO,HOLM,18,0.247,NO,"selection across 18 specifications gives **Holm-adjusted p = 0.247**, returned as `p_value`."
+f8b5e63cc508b38662d5,1,0.3,18,NO,NONE,,,NA,None was statistically significant; meaningful employment gains and losses remain compatible with the data.
+f8b5f74f1a9ad20ebf2e,1,0.0208,36,NO,OTHER,36,0.748,NO,"After correcting for all 36 analyses explored, p = 0.748."
+f8b5f74f1a9ad20ebf2e,2,0.0208,36,NO,OTHER,36,0.748,NO,"After correcting for all 36 analyses explored, p = 0.748."
+f8ba4ec820cb695df579,1,0.017,45,NO,HOLM,45,0.774,NO,"After accounting for the 45 specifications explored, Holm-adjusted p = 0.774."
+f98d2a5becef9f1f1bd2,1,,36,NO,HOLM,36,0.0089,YES,Holm-adjusted p **0.0089** across 36 tests.
+fa94dafdff5e7c1a23af,1,0.0173,30,NO,HOLM,30,0.518,NO,"After accounting for 30 explored analyses, Holm-adjusted p is 0.518; the evidence remains exploratory."
+fadf1c724ff0074f0f08,1,0.318,20,NO,OTHER,,1.0,NO,Its multiple-testing-adjusted p-value is **1.000**. No explored specification shows a statistically significant effect
+fb4b767c5032c083be60,1,0.057,88,NO,NONE,,,NA,None of the 88 recorded specifications reached p < 0.05.
+fb4d44dc19dd807f3c2d,1,0.168,30,NO,HOLM,30,1.0,NO,Holm-adjusted p **1.00**). None of the 30 employment tests was significant at 5%.
+fc0d1bfb2271b2ad5635,1,0.122,28,NO,HOLM,28,1.0,NO,Neither provides compelling evidence of an effect; all 28 Holm-adjusted p-values equal 1.00.
+fc742b76920ef7ef88d9,1,0.0101,54,NO,HOLM,,0.517,NO,the main Holm-adjusted p-value is **0.517**
+fc9fdc5332da53fd9d04,1,0.0158,18,NO,HOLM,18,0.284,NO,"After accounting for specification selection, Holm-adjusted p = **0.284**. The evidence is therefore exploratory"
+fcca2283a806bc9ef767,1,0.0606,165,NO,HOLM,21,1.0,NO,None of the 21 candidate tests reached 5% significance; the selected result’s Holm-adjusted p-value was 1.00.
+fcdf5c868835e3a198cb,1,0.144,36,NO,NONE,,,NA,None of the 36 explored comparisons was statistically significant.
+fce5261c609c21b0a482,1,0.061,36,NO,NONE,,,NA,None of the 36 specifications reached p < 0.05; total-employment results were inconclusive.
+fd9976bfce9f2288e7c3,1,0.156,9,NO,OTHER,,1.0,NO,"The reusable function returns the estimate, SE, and a selection-adjusted `p_value` of **1.00**, with the nominal p-value separately."
+fdc6b03fb9c91c443e1b,1,0.273,20,NO,OTHER,20,1.0,NO,"The selection-adjusted p-value returned by the function is **1.00**, with a simultaneous 95% interval of **−3.82 to +8.06**."
+fde3c847822107e76c21,1,0.026,48,NO,HOLM,48,1.0,NO,"Across 48 explored specifications, its Holm-adjusted p-value is **1.00**."
+fe70586566f7e03abef6,1,0.14,12,NO,HOLM,,1.0,NO,Holm-adjusted p-value (1.000)
+fee9de85ef3890889149,1,0.0266,108,NO,OTHER,108,1.0,NO,"After accounting for 108 specifications, adjusted p = **1.00**."
+ff6e22c35435445e54bf,1,0.131,29,NO,HOLM,,1.0,NO,None of the explored analyses was statistically significant; the selected Holm-adjusted p value is 1.000.
+ffccca7bf20f1034b6d5,1,0.424,30,NO,HOLM,,1.0,NO,Holm-adjusted p = 1.000. None of the analyses establishes an employment increase or decrease.

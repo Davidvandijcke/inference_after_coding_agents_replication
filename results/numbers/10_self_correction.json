@@ -1,0 +1,310 @@
+[
+ {
+  "id": "null_significant_range_abstract",
+  "main_tex_line": 116,
+  "quote": "four frontier agents report significant $p$-values between 54\\% and 98\\% of the time",
+  "value": [
+   53.608247422680414,
+   97.97979797979798
+  ]
+ },
+ {
+  "id": "null_significant_opus_sol_intro",
+  "main_tex_line": 147,
+  "quote": "Claude Opus 5.5 and GPT-6.1-Sol (at high effort), report a significant ($p \\leq 0.05$) result 54 and 88\\% of the time",
+  "value": [
+   53.608247422680414,
+   88.0
+  ]
+ },
+ {
+  "id": "null_significant_sonnet_opus",
+  "main_tex_line": 1235,
+  "quote": "report significant $p$-values when all effects are zero 74 and 54\\% of the time",
+  "value": [
+   74.0,
+   53.608247422680414
+  ]
+ },
+ {
+  "id": "null_datasets",
+  "main_tex_line": 1286,
+  "quote": "on the 100 simulations of the open-ended design",
+  "value": 100
+ },
+ {
+  "id": "correct_nearly_all",
+  "main_tex_line": 1286,
+  "quote": "Sol, Sonnet and Opus correct nearly all of their significant leads",
+  "value": [
+   100.0,
+   100.0,
+   96.15384615384616
+  ]
+ },
+ {
+  "id": "tests_stated_median_range",
+  "main_tex_line": 1286,
+  "quote": "for a median of 312 to 378 tests counted by their own reports",
+  "value": [
+   312.5,
+   378
+  ]
+ },
+ {
+  "id": "luna_corrects_share",
+  "main_tex_line": 1286,
+  "quote": "while Luna corrects only 58\\% of them",
+  "value": 57.7319587628866
+ },
+ {
+  "id": "returned_p_never_corrected",
+  "main_tex_line": 1286,
+  "quote": "is \\textit{never} the corrected $p$-value",
+  "value": 0
+ },
+ {
+  "id": "false_rejection_range",
+  "main_tex_line": 1286,
+  "quote": "with 54--98\\% of them falsely rejecting across the four agents",
+  "value": [
+   53.608247422680414,
+   97.97979797979798
+  ]
+ },
+ {
+  "id": "corrected_p_in_opening_range",
+  "main_tex_line": 1286,
+  "quote": "the opening of the report gives the corrected $p$-value for only 7 to 25\\% of significant leads",
+  "value": [
+   6.756756756756757,
+   25.0
+  ]
+ },
+ {
+  "id": "no_reason_to_doubt_range",
+  "main_tex_line": 1286,
+  "quote": "the openings of 31--85\\% of the different agents' significant reports give no concrete reason to doubt the finding",
+  "value": [
+   31.08108108108108,
+   84.5360824742268
+  ]
+ },
+ {
+  "id": "usable_reports",
+  "main_tex_line": 2225,
+  "quote": "usable reports (no errors or refusals) 99, 100, 100 and 97",
+  "value": [
+   99,
+   100,
+   100,
+   97
+  ]
+ },
+ {
+  "id": "card_sol_original_tests",
+  "main_tex_line": 1283,
+  "quote": "the Sol agent explicitly counts the 26 specifications it ran",
+  "value": 26
+ },
+ {
+  "id": "card_sol_original_p",
+  "main_tex_line": 1283,
+  "quote": "increases the original $p$-value of $0.027$",
+  "value": 0.0269251960652278
+ },
+ {
+  "id": "card_sol_original_holm",
+  "main_tex_line": 1283,
+  "quote": "applies a Holm correction that increases the original $p$-value of $0.027$ to $0.70$",
+  "value": 0.7000550976959228
+ },
+ {
+  "id": "card_sol_replay_tests_range",
+  "main_tex_line": 1283,
+  "quote": "between 6 and 194 on the subsampled datasets",
+  "value": [
+   6,
+   194
+  ]
+ },
+ {
+  "id": "card_placebo_tests_range",
+  "main_tex_line": 1283,
+  "quote": "between 12 and 1,252 in 200 placebo runs on the full data",
+  "value": [
+   12.0,
+   1252.0
+  ]
+ },
+ {
+  "id": "card_placebo_runs",
+  "main_tex_line": 1283,
+  "quote": "in 200 placebo runs on the full data, where we permute the treatment assignment",
+  "value": 200
+ },
+ {
+  "id": "card_sol_outside_family",
+  "main_tex_line": 1283,
+  "quote": "25 to 36\\% of the Sol replays select analyses different from the 26",
+  "value": [
+   24.6483590087073,
+   36.436704621567316
+  ]
+ },
+ {
+  "id": "card_sol_distinct_analyses",
+  "main_tex_line": 1284,
+  "quote": "129 distinct analyses across our replays",
+  "value": 129
+ },
+ {
+  "id": "card_sol_bonferroni_to_one",
+  "main_tex_line": 1284,
+  "quote": "a Bonferroni correction over 38 or more analyses already sets the original $p$-value of $0.027$ to $1$",
+  "value": 38
+ },
+ {
+  "id": "card_sol_replay_p",
+  "main_tex_line": 1284,
+  "quote": "our corrected $p$-value for the Sol agent, $0.053$",
+  "value": 0.053185085375624955
+ },
+ {
+  "id": "card_sol_reads",
+  "main_tex_line": 2235,
+  "quote": "through blind reads of 831 reports",
+  "value": 831
+ },
+ {
+  "id": "card_sol_reads_with_count",
+  "main_tex_line": 2235,
+  "quote": "823 of which state a count",
+  "value": 823
+ },
+ {
+  "id": "card_sol_original_tests_note",
+  "main_tex_line": 2235,
+  "quote": "Shaded bin: contains 26, the count stated by the original run on all 410 stores",
+  "value": 26
+ },
+ {
+  "id": "card_sol_original_p_note",
+  "main_tex_line": 2235,
+  "quote": "(nominal $p=0.027$) over those 26 tests",
+  "value": 0.0269251960652278
+ },
+ {
+  "id": "card_sol_classified",
+  "main_tex_line": 2235,
+  "quote": "Replay correction: 2,986 classified replays",
+  "value": 2986
+ },
+ {
+  "id": "card_placebo_note",
+  "main_tex_line": 2235,
+  "quote": "200 full-size placebo runs (state labels permuted across all 410 stores, same prompt and agent) state 12 to 1,252 tests",
+  "value": [
+   200,
+   12.0,
+   1252.0
+  ]
+ },
+ {
+  "id": "card_placebo_tests_quartiles",
+  "main_tex_line": 2235,
+  "quote": "quartiles 24 and 36, median 30",
+  "value": [
+   24.0,
+   30.0,
+   36.0
+  ]
+ },
+ {
+  "id": "power_datasets",
+  "main_tex_line": 1286,
+  "quote": "on 49 simulated datasets with a moderate true effect",
+  "value": 49
+ },
+ {
+  "id": "power_corrected_runs",
+  "main_tex_line": 1286,
+  "quote": "40 runs corrected over 18 tests",
+  "value": 40
+ },
+ {
+  "id": "power_uncorrected_runs",
+  "main_tex_line": 1286,
+  "quote": "and 9 applied no correction",
+  "value": 9
+ },
+ {
+  "id": "power_own_keeps",
+  "main_tex_line": 1286,
+  "quote": "The corrections as written keep 30 of the 49 effects",
+  "value": 30
+ },
+ {
+  "id": "power_conditional_keeps",
+  "main_tex_line": 1286,
+  "quote": "against 39 for the correction conditional on reporting that analysis",
+  "value": 39
+ },
+ {
+  "id": "power_gains_losses",
+  "main_tex_line": 1286,
+  "quote": "(nine gains and no losses",
+  "value": [
+   9,
+   0
+  ]
+ },
+ {
+  "id": "power_mcnemar",
+  "main_tex_line": 1286,
+  "quote": "exact paired $p=0.004$",
+  "value": 0.00390625
+ },
+ {
+  "id": "power_gain_p_range",
+  "main_tex_line": 1286,
+  "quote": "All nine gains have nominal $p$-values between 0.003 and 0.02, above Holm's threshold of $0.05/18$",
+  "value": [
+   0.0028610027623933217,
+   0.018889688141251623
+  ]
+ },
+ {
+  "id": "power_uncorrected_same_range",
+  "main_tex_line": 1286,
+  "quote": "three runs that did not correct kept findings with $p$-values in the same range",
+  "value": 3
+ },
+ {
+  "id": "power_datasets_note",
+  "main_tex_line": 2243,
+  "quote": "49 datasets of the open-ended simulation design with a moderate true effect",
+  "value": 49
+ },
+ {
+  "id": "power_caption_corrected",
+  "main_tex_line": 2243,
+  "quote": "Filled: agent estimated a Holm or Bonferroni correction over a stated family of 18 (40 runs)",
+  "value": 38
+ },
+ {
+  "id": "power_caption_uncorrected",
+  "main_tex_line": 2243,
+  "quote": "hollow: no correction, nominal $p$ as written (9 runs)",
+  "value": 9
+ },
+ {
+  "id": "power_reference_bank",
+  "main_tex_line": 2243,
+  "quote": "among the 51 of 100 fresh null runs that reported the same analysis",
+  "value": [
+   51,
+   100
+  ]
+ }
+]

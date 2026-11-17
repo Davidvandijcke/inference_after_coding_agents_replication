@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+"""Estimate the treatment effect on market-offset explanations."""
+
+import argparse
+import json
+
+import pandas as pd
+import statsmodels.formula.api as smf
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data", required=True, help="Input CSV path")
+    parser.add_argument("--output", required=True, help="Output JSON path")
+    args = parser.parse_args()
+
+    data = pd.read_csv(args.data)
+    analysis = data.dropna(subset=["reason_market_offsets", "treatment", "block"])
+    result = smf.ols(
+        "reason_market_offsets ~ treatment + C(block)", data=analysis
+    ).fit(cov_type="HC2", use_t=True)
+
+    output = {
+        "estimate": float(result.params["treatment"]),
+        "std_error": float(result.bse["treatment"]),
+        "p_value": float(result.pvalues["treatment"]),
+    }
+    with open(args.output, "w", encoding="utf-8") as output_file:
+        json.dump(output, output_file)
+        output_file.write("\n")
+
+
+if __name__ == "__main__":
+    main()

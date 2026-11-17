@@ -1,0 +1,1632 @@
+{
+  "schema": "public-immigration-association-catalogue-v1",
+  "status": "prepared_unfunded_not_activated",
+  "source_plan_sha256": "842d7b8540fefc330e79859845c3a9548271f7f1e86ad20aeab5352800639156",
+  "units": {
+    "outcomes": "Six welfare-support items on their supplied 0-1 scales.",
+    "exposures": "migstock_wb, migstock_un, and migstock_oecd; percent foreign-born.",
+    "analysis_unit": "Country after equal-weight averaging of available country-year means."
+  },
+  "preprocessing": {
+    "complete_case": "For each model require country ID, year, outcome, focal exposure, and named controls. The all_three_observed rule additionally requires all three stock measures.",
+    "country_year": "Arithmetic means over complete respondent rows within iso_country and year.",
+    "country": "Equal-weight arithmetic means over available country-years within iso_country.",
+    "fit_weighting": "One equally weighted row per realized country."
+  },
+  "inference": {
+    "estimator": "OLS with intercept.",
+    "primary": "HC3 covariance with two-sided Student t reference and df=n_countries-design_rank.",
+    "working_assumptions": "Independent country-history sampling units, linear conditional mean in named observed regressors, and approximate HC3 t calibration.",
+    "causal_interpretation": false
+  },
+  "unavailable_policy": {
+    "raw_status": "unavailable",
+    "classifications": [
+      "structural_nonestimability",
+      "unexpected_error"
+    ],
+    "structural_events": [
+      "no complete countries",
+      "rank deficient full design under np.linalg.matrix_rank default tolerance",
+      "residual df <= 0",
+      "nonpositive or nonfinite focal exposure variance",
+      "HC3 unit leverage: max hat diagonal >= 1 - 1e-12",
+      "nonfinite HC3 covariance or slope",
+      "nonpositive or nonfinite focal HC3 variance, including a zero t-statistic denominator"
+    ],
+    "structural_test_rule": "Preserve raw slope, SE, and p as unavailable; separately set test_inference_p=1 with the enumerated reason code.",
+    "unexpected_rule": "Software, runtime, schema, and other unexpected errors remain unavailable with test_inference_p=null; no fallback."
+  },
+  "m_reference": {
+    "planned_paths": 108,
+    "eligible_pool": "Configurations with raw_status=available and finite Z=slope/HC3SE.",
+    "statistic": "Slope divided by HC3 standard error; doubled smaller inclusive empirical tail, capped at one.",
+    "unavailable_rule": "Retain all 108 rows and failure classifications. If the selected statistic or eligible pool is undefined, catalogue m is unavailable."
+  },
+  "models": [
+    {
+      "sequence": 1,
+      "model_id": "AD001",
+      "outcome": "jobs",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[jobs_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 2,
+      "model_id": "AD002",
+      "outcome": "jobs",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[jobs_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 3,
+      "model_id": "AD003",
+      "outcome": "jobs",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[jobs_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 4,
+      "model_id": "AD004",
+      "outcome": "jobs",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[jobs_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 5,
+      "model_id": "AD005",
+      "outcome": "jobs",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[jobs_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 6,
+      "model_id": "AD006",
+      "outcome": "jobs",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[jobs_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 7,
+      "model_id": "AD007",
+      "outcome": "jobs",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[jobs_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 8,
+      "model_id": "AD008",
+      "outcome": "jobs",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[jobs_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 9,
+      "model_id": "AD009",
+      "outcome": "jobs",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[jobs_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 10,
+      "model_id": "AD010",
+      "outcome": "jobs",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[jobs_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 11,
+      "model_id": "AD011",
+      "outcome": "jobs",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[jobs_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 12,
+      "model_id": "AD012",
+      "outcome": "jobs",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[jobs_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 13,
+      "model_id": "AD013",
+      "outcome": "jobs",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[jobs_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 14,
+      "model_id": "AD014",
+      "outcome": "jobs",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[jobs_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 15,
+      "model_id": "AD015",
+      "outcome": "jobs",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[jobs_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 16,
+      "model_id": "AD016",
+      "outcome": "jobs",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[jobs_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 17,
+      "model_id": "AD017",
+      "outcome": "jobs",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[jobs_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 18,
+      "model_id": "AD018",
+      "outcome": "jobs",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[jobs_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 19,
+      "model_id": "AD019",
+      "outcome": "healthcare",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[healthcare_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 20,
+      "model_id": "AD020",
+      "outcome": "healthcare",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[healthcare_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 21,
+      "model_id": "AD021",
+      "outcome": "healthcare",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[healthcare_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 22,
+      "model_id": "AD022",
+      "outcome": "healthcare",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[healthcare_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 23,
+      "model_id": "AD023",
+      "outcome": "healthcare",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[healthcare_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 24,
+      "model_id": "AD024",
+      "outcome": "healthcare",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[healthcare_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 25,
+      "model_id": "AD025",
+      "outcome": "healthcare",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[healthcare_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 26,
+      "model_id": "AD026",
+      "outcome": "healthcare",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[healthcare_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 27,
+      "model_id": "AD027",
+      "outcome": "healthcare",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[healthcare_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 28,
+      "model_id": "AD028",
+      "outcome": "healthcare",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[healthcare_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 29,
+      "model_id": "AD029",
+      "outcome": "healthcare",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[healthcare_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 30,
+      "model_id": "AD030",
+      "outcome": "healthcare",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[healthcare_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 31,
+      "model_id": "AD031",
+      "outcome": "healthcare",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[healthcare_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 32,
+      "model_id": "AD032",
+      "outcome": "healthcare",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[healthcare_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 33,
+      "model_id": "AD033",
+      "outcome": "healthcare",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[healthcare_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 34,
+      "model_id": "AD034",
+      "outcome": "healthcare",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[healthcare_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 35,
+      "model_id": "AD035",
+      "outcome": "healthcare",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[healthcare_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 36,
+      "model_id": "AD036",
+      "outcome": "healthcare",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[healthcare_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 37,
+      "model_id": "AD037",
+      "outcome": "old_age",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[old_age_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 38,
+      "model_id": "AD038",
+      "outcome": "old_age",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[old_age_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 39,
+      "model_id": "AD039",
+      "outcome": "old_age",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[old_age_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 40,
+      "model_id": "AD040",
+      "outcome": "old_age",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[old_age_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 41,
+      "model_id": "AD041",
+      "outcome": "old_age",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[old_age_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 42,
+      "model_id": "AD042",
+      "outcome": "old_age",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[old_age_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 43,
+      "model_id": "AD043",
+      "outcome": "old_age",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[old_age_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 44,
+      "model_id": "AD044",
+      "outcome": "old_age",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[old_age_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 45,
+      "model_id": "AD045",
+      "outcome": "old_age",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[old_age_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 46,
+      "model_id": "AD046",
+      "outcome": "old_age",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[old_age_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 47,
+      "model_id": "AD047",
+      "outcome": "old_age",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[old_age_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 48,
+      "model_id": "AD048",
+      "outcome": "old_age",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[old_age_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 49,
+      "model_id": "AD049",
+      "outcome": "old_age",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[old_age_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 50,
+      "model_id": "AD050",
+      "outcome": "old_age",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[old_age_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 51,
+      "model_id": "AD051",
+      "outcome": "old_age",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[old_age_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 52,
+      "model_id": "AD052",
+      "outcome": "old_age",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[old_age_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 53,
+      "model_id": "AD053",
+      "outcome": "old_age",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[old_age_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 54,
+      "model_id": "AD054",
+      "outcome": "old_age",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[old_age_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 55,
+      "model_id": "AD055",
+      "outcome": "unemployed",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[unemployed_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 56,
+      "model_id": "AD056",
+      "outcome": "unemployed",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[unemployed_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 57,
+      "model_id": "AD057",
+      "outcome": "unemployed",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[unemployed_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 58,
+      "model_id": "AD058",
+      "outcome": "unemployed",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[unemployed_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 59,
+      "model_id": "AD059",
+      "outcome": "unemployed",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[unemployed_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 60,
+      "model_id": "AD060",
+      "outcome": "unemployed",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[unemployed_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 61,
+      "model_id": "AD061",
+      "outcome": "unemployed",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[unemployed_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 62,
+      "model_id": "AD062",
+      "outcome": "unemployed",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[unemployed_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 63,
+      "model_id": "AD063",
+      "outcome": "unemployed",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[unemployed_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 64,
+      "model_id": "AD064",
+      "outcome": "unemployed",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[unemployed_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 65,
+      "model_id": "AD065",
+      "outcome": "unemployed",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[unemployed_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 66,
+      "model_id": "AD066",
+      "outcome": "unemployed",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[unemployed_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 67,
+      "model_id": "AD067",
+      "outcome": "unemployed",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[unemployed_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 68,
+      "model_id": "AD068",
+      "outcome": "unemployed",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[unemployed_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 69,
+      "model_id": "AD069",
+      "outcome": "unemployed",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[unemployed_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 70,
+      "model_id": "AD070",
+      "outcome": "unemployed",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[unemployed_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 71,
+      "model_id": "AD071",
+      "outcome": "unemployed",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[unemployed_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 72,
+      "model_id": "AD072",
+      "outcome": "unemployed",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[unemployed_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 73,
+      "model_id": "AD073",
+      "outcome": "income_diff",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[income_diff_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 74,
+      "model_id": "AD074",
+      "outcome": "income_diff",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[income_diff_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 75,
+      "model_id": "AD075",
+      "outcome": "income_diff",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[income_diff_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 76,
+      "model_id": "AD076",
+      "outcome": "income_diff",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[income_diff_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 77,
+      "model_id": "AD077",
+      "outcome": "income_diff",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[income_diff_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 78,
+      "model_id": "AD078",
+      "outcome": "income_diff",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[income_diff_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 79,
+      "model_id": "AD079",
+      "outcome": "income_diff",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[income_diff_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 80,
+      "model_id": "AD080",
+      "outcome": "income_diff",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[income_diff_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 81,
+      "model_id": "AD081",
+      "outcome": "income_diff",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[income_diff_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 82,
+      "model_id": "AD082",
+      "outcome": "income_diff",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[income_diff_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 83,
+      "model_id": "AD083",
+      "outcome": "income_diff",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[income_diff_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 84,
+      "model_id": "AD084",
+      "outcome": "income_diff",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[income_diff_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 85,
+      "model_id": "AD085",
+      "outcome": "income_diff",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[income_diff_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 86,
+      "model_id": "AD086",
+      "outcome": "income_diff",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[income_diff_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 87,
+      "model_id": "AD087",
+      "outcome": "income_diff",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[income_diff_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 88,
+      "model_id": "AD088",
+      "outcome": "income_diff",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[income_diff_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 89,
+      "model_id": "AD089",
+      "outcome": "income_diff",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[income_diff_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 90,
+      "model_id": "AD090",
+      "outcome": "income_diff",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[income_diff_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 91,
+      "model_id": "AD091",
+      "outcome": "housing",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[housing_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 92,
+      "model_id": "AD092",
+      "outcome": "housing",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[housing_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 93,
+      "model_id": "AD093",
+      "outcome": "housing",
+      "exposure": "migstock_wb",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[housing_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 94,
+      "model_id": "AD094",
+      "outcome": "housing",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[housing_country | migstock_wb] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 95,
+      "model_id": "AD095",
+      "outcome": "housing",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[housing_country | migstock_wb + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 96,
+      "model_id": "AD096",
+      "outcome": "housing",
+      "exposure": "migstock_wb",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[housing_country | migstock_wb + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_wb equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 97,
+      "model_id": "AD097",
+      "outcome": "housing",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[housing_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 98,
+      "model_id": "AD098",
+      "outcome": "housing",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[housing_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 99,
+      "model_id": "AD099",
+      "outcome": "housing",
+      "exposure": "migstock_un",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[housing_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 100,
+      "model_id": "AD100",
+      "outcome": "housing",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[housing_country | migstock_un] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 101,
+      "model_id": "AD101",
+      "outcome": "housing",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[housing_country | migstock_un + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 102,
+      "model_id": "AD102",
+      "outcome": "housing",
+      "exposure": "migstock_un",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[housing_country | migstock_un + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_un equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 103,
+      "model_id": "AD103",
+      "outcome": "housing",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[housing_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 104,
+      "model_id": "AD104",
+      "outcome": "housing",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[housing_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 105,
+      "model_id": "AD105",
+      "outcome": "housing",
+      "exposure": "migstock_oecd",
+      "coverage": "measure_available",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[housing_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=measure_available; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 106,
+      "model_id": "AD106",
+      "outcome": "housing",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "none",
+      "controls": [],
+      "working_model": "E[housing_country | migstock_oecd] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=none; no result-dependent exclusions."
+    },
+    {
+      "sequence": 107,
+      "model_id": "AD107",
+      "outcome": "housing",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp",
+      "controls": [
+        "log_gdp"
+      ],
+      "working_model": "E[housing_country | migstock_oecd + log_gdp] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp']; no result-dependent exclusions."
+    },
+    {
+      "sequence": 108,
+      "model_id": "AD108",
+      "outcome": "housing",
+      "exposure": "migstock_oecd",
+      "coverage": "all_three_observed",
+      "control_set": "log_gdp_ginid_solt",
+      "controls": [
+        "log_gdp",
+        "ginid_solt"
+      ],
+      "working_model": "E[housing_country | migstock_oecd + log_gdp + ginid_solt] is linear with an intercept across realized countries.",
+      "null_hypothesis": "H0: the coefficient on migstock_oecd equals zero in the stated country-level working model.",
+      "population": "Countries represented by the supplied respondent data that satisfy this model's prespecified complete-case and coverage rules; realized country IDs and count are sample facts reported after fitting.",
+      "sample_restrictions": "Model-specific complete cases; coverage=all_three_observed; controls=['log_gdp', 'ginid_solt']; no result-dependent exclusions."
+    }
+  ]
+}

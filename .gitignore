@@ -1,0 +1,25 @@
+# Same exclusions as _build/make_deposit.sh: build notes, logs, virtual environments,
+# regenerated scratch outputs, LaTeX auxiliary files, editor and sync leftovers.
+/_build/
+/logs/
+/.venv*/
+/data/derived/
+/paper/*.aux
+/paper/*.log
+/paper/*.bbl
+/paper/*.blg
+/paper/*.fls
+/paper/*.fdb_latexmk
+/paper/*.out
+/paper/*.toc
+/paper/*.synctex.gz
+/paper/*.synctex(busy)
+/paper/*.pdf
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+.RData
+Rplots.pdf
+*conflicted copy*
+Icon

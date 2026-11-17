@@ -1,0 +1,10 @@
+[1] "lm"
+cdd96520 estimate 1.1025 p 0.5812 
+   lm: change ~ state + chain rank 5 of 5 
+9706e9e2 estimate -0.086395 p 0.2027 
+   lm: formula rank 7 of 7 
+ed84675a estimate 6.0137 p 0.0239 
+2186ba15 estimate 4.1812 p 0.1732 
+   lm: stats::reformulate(c("state", controls), response = "change") rank 6 of 6 
+1b2bd52d estimate 3.0552 p 0.1327 
+   lm: fit_formula rank 7 of 7 

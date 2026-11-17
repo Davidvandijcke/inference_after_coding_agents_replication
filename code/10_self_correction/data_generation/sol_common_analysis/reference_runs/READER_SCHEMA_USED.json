@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": ["items"],
+  "additionalProperties": false,
+  "properties": {
+    "items": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "reason", "stronger_assumption"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "label": {"enum": ["MATCH", "NONMATCH", "AMBIGUOUS"]},
+          "reason": {"type": "string"},
+          "stronger_assumption": {"enum": ["NONE", "EXACT_CONDITIONAL_MEAN", "NORMALITY", "HOMOSKEDASTICITY", "OTHER"]}
+        }
+      }
+    }
+  }
+}

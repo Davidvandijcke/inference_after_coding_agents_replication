@@ -1,0 +1,45 @@
+Example specification 1 (ISSP immigration–welfare)
+
+**Regression**
+Ordinary least squares regression of the welfare-support item "jobs" on migrant stock (migstock), with age, education (educ), subjective social position (topbot), sex (female), and employment status (employed) as individual-level controls and survey-wave fixed effects, fit on individual respondents.
+
+**Estimator and standard errors**
+Inference uses wild cluster bootstrap with Webb weights, 9,999 bootstrap replications, bootstrap type "11", a null-imposed test statistic, and a two-tailed p-value; observations are clustered by country.
+
+**Outcome**
+- Dependent variable: "jobs" -- government should provide jobs for everyone who wants one (single item, rescaled to [0, 1]).
+
+**Exposure**
+- Country-level exposure: migstock (migrant stock).
+
+**Sample**
+- ISSP waves: 2006, 2016.
+- Countries (N=35): Argentina, Australia, Belgium, Canada, Chile, Croatia, Czechia, Denmark, Finland, France, Germany, Hungary, Iceland, India, Ireland, Israel, Japan, South Korea, Latvia, Lithuania, Netherlands, New Zealand, Norway, Poland, Portugal, Russia, Slovakia, Slovenia, South Africa, Spain, Sweden, Switzerland, Turkey, Great Britain, United States.
+- Observations: 58,270.
+
+**Covariates**
+
+- Controls: age, education (educ), subjective social position (topbot), sex (female), employment status (employed), survey-wave indicators.
+
+Example specification 2 (ISSP immigration–welfare)
+
+**Regression**
+Weighted least squares regression of the country-year cell-mean welfare-support composite on the World Bank migrant stock share, controlling for country-year cell means of age, education, proportion female, and employment rate, with country and wave fixed effects, fit on country-year cells weighted by the number of individual respondents per cell.
+
+**Estimator and standard errors**
+Standard errors are cluster-robust, clustered by country, with significance assessed against a t-distribution with G-1 degrees of freedom, where G is the number of countries.
+
+**Outcome**
+- Dependent variable: six-item welfare-support composite, the unweighted mean of jobs, healthcare, old_age, unemployed, income_diff, and housing, each rescaled to [0, 1]; the composite is first formed at the individual level and then averaged within each country-year cell.
+
+**Exposure**
+- Country-level exposure: World Bank migrant stock share (migstock_wb), entered as the country-year cell mean.
+
+**Sample**
+- ISSP waves: 1985, 1996, 2006.
+- Countries (N=32): Argentina, Australia, Austria, Bulgaria, Canada, Chile, Croatia, Czechia, Denmark, Finland, France, Germany, Hungary, Ireland, Israel, Japan, South Korea, Latvia, Netherlands, New Zealand, Norway, Poland, Portugal, Russia, Slovakia, Slovenia, South Africa, Spain, Sweden, Switzerland, Great Britain, United States.
+- Observations: 55 country-year cells.
+- Sample restrictions: individual-level responses are collapsed to country-year cell means prior to regression; cells missing any modelled variable are dropped.
+
+**Covariates**
+- Controls: country-year cell means of age, education (educ), proportion female (female), employment rate (employed), country fixed effects, wave fixed effects.

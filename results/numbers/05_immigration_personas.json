@@ -1,0 +1,125 @@
+[
+ {
+  "id": "persona_runs_per_persona",
+  "main_tex_line": 2129,
+  "quote": "we ran 20 pro- and 20 anti-immigration agents on the same data",
+  "value": 20
+ },
+ {
+  "id": "persona_runs_per_model",
+  "main_tex_line": 2135,
+  "quote": "\\textit{Passed} indicates how many out of the 40 agents' analyses",
+  "value": [
+   40
+  ]
+ },
+ {
+  "id": "persona_s46_anti_sig",
+  "main_tex_line": 1197,
+  "quote": "13/18 anti-immigration agents find significant, negative effects",
+  "value": "13/18"
+ },
+ {
+  "id": "persona_s46_pro_sig",
+  "main_tex_line": 1197,
+  "quote": "while 9/19 pro-immigration agents find significant, positive effects",
+  "value": "9/19"
+ },
+ {
+  "id": "persona_miao_anti_sig",
+  "main_tex_line": 1197,
+  "quote": "compared to 12/17 and 9/17 in \\citet{miao2026agentic}",
+  "value": "12/17"
+ },
+ {
+  "id": "persona_miao_pro_sig",
+  "main_tex_line": 1197,
+  "quote": "compared to 12/17 and 9/17 in \\citet{miao2026agentic}",
+  "value": "9/17"
+ },
+ {
+  "id": "persona_s46_gap",
+  "main_tex_line": 1197,
+  "quote": "The average difference in $z$-statistic reported by anti- and pro-immigration agents is $-4.5$",
+  "value": -4.479
+ },
+ {
+  "id": "persona_miao_gap",
+  "main_tex_line": 1197,
+  "quote": "compared to a difference of $-4.2$ (95\\% CI $[-5.5, -2.9]$) in Supplementary Figure 3c",
+  "value": -4.1884
+ },
+ {
+  "id": "persona_miao_gap_ci_lower",
+  "main_tex_line": 1197,
+  "quote": "compared to a difference of $-4.2$ (95\\% CI $[-5.5, -2.9]$) in Supplementary Figure 3c",
+  "value": -5.4943
+ },
+ {
+  "id": "persona_miao_gap_ci_upper",
+  "main_tex_line": 1197,
+  "quote": "compared to a difference of $-4.2$ (95\\% CI $[-5.5, -2.9]$) in Supplementary Figure 3c",
+  "value": -2.8501
+ },
+ {
+  "id": "persona_miao_figure_gap_footnote",
+  "main_tex_line": 1197,
+  "quote": "but the results in this figure instead indicate $-4.2$, as read from the figure's vector graphics",
+  "value": -4.1884
+ },
+ {
+  "id": "persona_newer_models_sig",
+  "main_tex_line": 1197,
+  "quote": "For both Claude Sonnet 5.5 and GPT-6-Luna, \\textit{none} of the anti- and pro-immigration agents report significant results aligned with their persona",
+  "value": 0
+ },
+ {
+  "id": "persona_s55_gap",
+  "main_tex_line": 1197,
+  "quote": "the average difference in $z$-statistics reported by the anti- and pro-immigration agents is $0.4$ for Sonnet 5.5 and $0.2$ for GPT-6-Luna",
+  "value": 0.435
+ },
+ {
+  "id": "persona_luna_gap",
+  "main_tex_line": 1197,
+  "quote": "the average difference in $z$-statistics reported by the anti- and pro-immigration agents is $0.4$ for Sonnet 5.5 and $0.2$ for GPT-6-Luna",
+  "value": 0.2385
+ },
+ {
+  "id": "persona_s46_gap_both_files",
+  "main_tex_line": 2142,
+  "quote": "a gap in mean $z$ of $-4.5$, against $-3.8$ on their file and $-4.2$ in their paper",
+  "value": [
+   -4.479,
+   -3.8403,
+   -4.1884
+  ]
+ },
+ {
+  "id": "persona_newer_runs_their_file",
+  "main_tex_line": 2157,
+  "quote": "10 runs per persona for Claude Sonnet 5.5 and 4 for GPT-6-Luna",
+  "value": [
+   10,
+   10,
+   4,
+   4
+  ]
+ },
+ {
+  "id": "persona_repair_model",
+  "main_tex_line": 2140,
+  "quote": "a separate, independent reviewer agent (same model as the original)",
+  "value": [
+   "claude-sonnet-4-6"
+  ]
+ },
+ {
+  "id": "persona_reviews_per_run",
+  "main_tex_line": 2140,
+  "quote": "run three times with the review prompt provided in the replication package",
+  "value": [
+   3
+  ]
+ }
+]

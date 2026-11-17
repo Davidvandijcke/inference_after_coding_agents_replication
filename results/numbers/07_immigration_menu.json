@@ -1,0 +1,97 @@
+[
+ {
+  "id": "menu_specifications",
+  "main_tex_line": 2166,
+  "quote": "a menu of 108 OLS regressions",
+  "value": 108
+ },
+ {
+  "id": "menu_outcomes",
+  "main_tex_line": 2166,
+  "quote": "country-level support for the six welfare-related outcomes in the ISSP data",
+  "value": 6
+ },
+ {
+  "id": "menu_anti_named_spec",
+  "main_tex_line": 2168,
+  "quote": "The named specification for the anti-immigration analyst regresses support for government responsibility for the unemployed on a measure of the share of immigrants in the country without controls",
+  "value": "AD061: unemployed on migstock_un, controls none"
+ },
+ {
+  "id": "menu_anti_most_negative",
+  "main_tex_line": 2168,
+  "quote": "It is the most negative specification on the full dataset ($p = 0.026$)",
+  "value": "AD061"
+ },
+ {
+  "id": "menu_anti_u",
+  "main_tex_line": 2168,
+  "quote": "It is the most negative specification on the full dataset ($p = 0.026$)",
+  "value": 0.0256066294877445
+ },
+ {
+  "id": "menu_anti_originals",
+  "main_tex_line": 2168,
+  "quote": "so all three workflows report it as the ``original'' analysis",
+  "value": 6
+ },
+ {
+  "id": "menu_replays_per_stratum",
+  "main_tex_line": 2168,
+  "quote": "we replayed each workflow on 100-200 subsampled datasets per stratum",
+  "value": [
+   100,
+   200
+  ]
+ },
+ {
+  "id": "menu_bank_size",
+  "main_tex_line": 2168,
+  "quote": "an enlarged bank of $20{,}000$ subsampled datasets",
+  "value": [
+   20000
+  ]
+ },
+ {
+  "id": "menu_bank_size_note",
+  "main_tex_line": 2178,
+  "quote": "to all 20,000 subsamples",
+  "value": 20000
+ },
+ {
+  "id": "menu_followed_rule",
+  "main_tex_line": 2168,
+  "quote": "Every replay agent followed the rule it was assigned exactly",
+  "value": "1998/1998"
+ },
+ {
+  "id": "menu_fixed_multiplier",
+  "main_tex_line": 2170,
+  "quote": "has an estimated multiplier of exactly $1$",
+  "value": [
+   1.0,
+   1.0
+  ]
+ },
+ {
+  "id": "menu_anti_lambdas",
+  "main_tex_line": 2170,
+  "quote": "the other rules estimate $\\lambda$s larger than $1$",
+  "value": [
+   1.3842,
+   14.3067
+  ]
+ },
+ {
+  "id": "menu_pro_u_frontier",
+  "main_tex_line": 2172,
+  "quote": "($p=0.755$ and $0.919$)",
+  "value": 0.754507
+ },
+ {
+  "id": "menu_pro_u_client",
+  "main_tex_line": 2172,
+  "quote": "($p=0.755$ and $0.919$)",
+  "value": 0.91894
+ }
+]

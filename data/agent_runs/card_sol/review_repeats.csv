@@ -1,0 +1,361 @@
+session_id,label,reason
+3b9e2832504a9e432e8c,nonmatch,Candidate adds baseline FTE adjustment and restricts to respondents; target lacks that control and includes permanent closures.
+1b0585857240e1d04743,match,Both declare the same chain- and ownership-adjusted nonmanager FTE change model and zero adjusted state-contrast null. Their sample rules are equivalent under the supplied facts.
+e632e195b7b3f0857a7f,nonmatch,Candidate is unadjusted and restricted to respondents; target adjusts for chain and ownership and includes permanent closures.
+991c42e31e1a29428306,nonmatch,The candidate includes managers in FTE and has no controls; the target excludes managers and adjusts for chain and ownership.
+74f6205c1d2dbbcacfd0,nonmatch,The candidate tests unadjusted asinh(FTE) changes including managers among respondents only; the target tests adjusted nonmanager FTE level changes including permanent exits.
+cb24e4773ffff4604843,nonmatch,The candidate declares an unadjusted state contrast; the target conditions on baseline categorical chain and company ownership.
+a5f8b05a35884e7d5647,nonmatch,The candidate tests unadjusted manager-count changes; the target tests chain- and ownership-adjusted nonmanager FTE changes.
+f19c81a2db2dd41d6456,match,Both declare the same chain- and ownership-adjusted nonmanager FTE change model and zero state-effect null; their eligibility rules are equivalent under the supplied facts.
+af8da675b975cc9122de,nonmatch,The candidate models part-time headcount changes; the target models full-time plus half-weighted part-time worker changes.
+df2743750ac32a139efc,nonmatch,"The candidate models unadjusted full-time-plus-manager changes, excluding part-time workers; the target models adjusted nonmanager FTE changes."
+fce2eb9e6c2cb53867b0,nonmatch,The candidate includes managers in FTE and omits controls; the target excludes managers and includes chain and ownership controls.
+f4c39ee363f6f6678ab8,nonmatch,The candidate tests unadjusted managerial employment changes; the target tests adjusted nonmanager FTE changes.
+96434dec14f927a25661,nonmatch,"The candidate uses total headcount, including managers and equally weighted part-time workers; the target excludes managers and weights part-time workers by 0.5."
+8fcd7878bb6a8c329816,nonmatch,The candidate includes managers in FTE and requires their counts; the target excludes managers and does not require manager-count completeness.
+0089338e4fb3845293e5,nonmatch,The candidate outcome is full-time nonmanager employment alone; the target also includes half-weighted part-time employment.
+773064e670e205ce8921,match,"Both specify the same adjusted nonmanager FTE change model and zero state-effect null, with equivalent eligibility and permanent-closure coding."
+28b4b9ccccff1816e330,nonmatch,The candidate models full-time-plus-manager changes and adds baseline staffing as a control; the target models nonmanager FTE changes without baseline-level adjustment.
+0d8497e9912dd93b0708,match,Both declare the same chain- and ownership-adjusted worker-FTE change model and zero state-effect null; the supplied facts establish equivalent sample rules.
+b2dd1a9125a889dda531,nonmatch,The candidate adds baseline FTE adjustment and restricts to respondents; the target has no baseline-level control and includes permanent closures.
+ab789e13f584d542ccff,nonmatch,The candidate includes managers in FTE and requires their counts; the target excludes managers from both outcome construction and completeness requirements.
+3f0e57fea2f1e576375f,nonmatch,The candidate omits chain and ownership controls and assigns temporary closures zero employment; the target includes those controls and leaves temporary-closure outcomes unavailable.
+13f07706f6f06015c4d5,nonmatch,The candidate tests changes in full-time nonmanager counts alone; the target tests changes in full-time plus half-weighted part-time workers.
+b68165e326277ff6832b,nonmatch,The candidate uses manager-inclusive FTE without controls; the target uses nonmanager FTE with chain and ownership controls.
+12eb6a1f39727963340b,nonmatch,The candidate models full-time counts and conditions additionally on baseline full-time staffing; the target models nonmanager FTE without that control.
+1e4f39be3dea038eda30,nonmatch,The candidate tests unadjusted full-time changes among respondents only; the target tests adjusted nonmanager FTE changes including permanent closures.
+881e7a53ee6fd4a78937,nonmatch,The candidate omits controls and retains only status-1 stores; the target adjusts for chain and ownership and includes permanent closures.
+f885c6ced1cf9cf5cc28,match,"Both specify the same additive adjusted nonmanager FTE change model and zero state-effect null, with sample rules equivalent under the supplied facts."
+3d66fe14540ae1829ef4,nonmatch,The candidate explicitly declares no covariate controls; the target includes baseline chain and company ownership.
+b650e5840d2c86a14082,nonmatch,The candidate includes managers in FTE and excludes permanent closures; the target excludes managers and retains permanent exits.
+b6616fa51bec7aa885c8,nonmatch,The candidate models unadjusted full-time nonmanager changes; the target models chain- and ownership-adjusted nonmanager FTE changes.
+6b62c75041695ca1e7ad,nonmatch,The candidate targets continuing status-1 stores and excludes permanent exits; the target includes permanent closures with zero follow-up employment.
+62eaf96c2c8e6bbebcd7,nonmatch,The candidate uses unadjusted full-time changes and zero-codes temporary closures; the target uses adjusted nonmanager FTE and zero-codes only permanent closures.
+d91f682f17eb47dead3b,nonmatch,The candidate declares an unadjusted state mean-change model; the target conditions on baseline chain and ownership.
+6f495a09534efa011fb3,nonmatch,"The candidate uses nonmanager headcount, adds baseline headcount adjustment, and zero-codes temporary closures; the target uses half-weighted FTE without baseline adjustment or temporary-closure zero coding."
+2393a5f7cd80b73ea645,nonmatch,The candidate models log(1+FTE) changes with baseline transformed employment adjustment among respondents only; the target models level changes without baseline adjustment and includes permanent exits.
+be257631bb40a5bce9f1,nonmatch,The candidate outcome is total headcount including managers and equally weighted part-time workers; the target excludes managers and half-weights part-time workers.
+627f159e44aea8e3abe0,nonmatch,The candidate tests unadjusted managerial-count changes; the target tests chain- and ownership-adjusted nonmanager FTE changes.
+ccaa0d06583e67b98f15,nonmatch,The candidate uses full-time nonmanager changes with no controls; the target includes half-weighted part-time employment and chain and ownership controls.
+880d9011de96876187ec,nonmatch,The candidate explicitly omits chain and ownership controls; the target includes both in its model and adjusted null.
+4a2b814ecd08729efcb4,nonmatch,The candidate models full-time employment changes with baseline full-time adjustment; the target models nonmanager FTE changes without baseline-level adjustment.
+7a43cacdc97b4474175e,nonmatch,"The candidate includes managers, weights part-time workers by 0.25, and omits controls; the target excludes managers, uses weight 0.5, and adjusts for chain and ownership."
+ca0ab619c98c0763e564,nonmatch,The candidate outcome combines full-time employees and managers while excluding part-time workers; the target excludes managers and includes half-weighted part-time workers.
+99df10a75fe5ffd45b6c,nonmatch,The candidate models full-time counts with an additional baseline full-time control; the target models nonmanager FTE without baseline-level adjustment.
+b5c64b6c57706cb40ced,nonmatch,The candidate models part-time counts and controls for baseline part-time employment; the target models nonmanager FTE and has no baseline-outcome control.
+feb84bd426ba2c83c15e,match,"Both declare the same adjusted nonmanager FTE change model and zero state-effect null, retaining permanent exits under equivalent complete-case rules."
+c2233d41d326aa1428a0,nonmatch,"The candidate additionally conditions on baseline FTE; the target includes only state, categorical chain, and company ownership."
+a743f79980a6f3ca3994,nonmatch,The candidate declares an unadjusted state contrast; the target declares a chain- and ownership-adjusted contrast.
+825def82b74388e6c00f,nonmatch,The candidate omits controls and restricts interviewed stores to phone follow-ups; the target includes chain and ownership controls and imposes no interview-mode restriction.
+7b38909aef2e0a081fb0,match,"Both specify the same chain- and ownership-adjusted nonmanager FTE change model, zero state-effect null, and equivalent closure and completeness rules."
+64c9554c07e5b8fb7848,nonmatch,The candidate explicitly excludes all covariate controls; the target includes baseline chain and ownership in its model and null.
+bac7d9e74c0e9fdd5de7,nonmatch,The candidate tests an unadjusted state mean-change contrast; the target tests the contrast conditional on chain and ownership.
+6e78a473fb07d5bf6041,nonmatch,The candidate includes managers in FTE and requires their counts; the target excludes managers and does not require their counts.
+a3de77f8ccc89891909d,nonmatch,The candidate includes no covariates beyond state; the target adjusts for baseline chain and company ownership.
+f784efb49bad8645d7b2,nonmatch,The candidate is unadjusted and restricted to status-1 respondents; the target adjusts for chain and ownership and includes permanent closures.
+fbf998bbc7e9022726ab,nonmatch,The candidate declares no additional controls; the target conditions on baseline categorical chain and company ownership.
+a0dd20d47ecfa75af4d6,nonmatch,The candidate includes managers in FTE and controls only for baseline FTE; the target excludes managers and controls for chain and ownership.
+a67421842f40217e4204,nonmatch,The candidate tests unadjusted asinh changes in manager-inclusive FTE; the target tests adjusted level changes in nonmanager FTE.
+3098f16cbd60ed700b09,nonmatch,The candidate uses total employee headcount including managers and full-weight part-time workers; the target excludes managers and half-weights part-time workers.
+9dffaa983b0493ccf626,match,"Both declare the same adjusted nonmanager FTE change model and zero state-effect null, with equivalent complete-case eligibility and permanent-closure coding."
+525af4361c812bd35520,nonmatch,The candidate restricts the population to operating status-1 respondents; the target includes permanently closed baseline stores with zero follow-up employment.
+51ce1c03286c1a773c0f,nonmatch,"The candidate models headcount change, weighting all workers and managers equally; the target models worker FTE change, weighting part-time workers by 0.5 and excluding managers. The candidate also requires complete manager counts, whereas the target explicitly does not."
+b53f5e9fc179ec16aea9,nonmatch,"The candidate adds baseline headcount as a control, so its tau null concerns a different adjusted model. It also models equally weighted headcount including managers and requires complete manager counts; the target models worker FTE change excluding managers and does not require manager counts."
+84edcfbbfd1aab583ab4,match,Both specify the same adjusted nonmanager FTE change model and τ=0 null. Candidate's status1/3 rule is data-equivalent to target's complete-case rule.
+4ce000a501c406b1147f,nonmatch,Candidate's outcome is full-time employment change only; target also includes half the part-time employment change.
+cfc9b960b8f44c475a3a,nonmatch,Candidate declares a state-only model; target includes chain and baseline ownership controls and tests the adjusted contrast.
+6bc0cec2f964b49dba1c,nonmatch,"Candidate models part-time changes, adds baseline staffing and zero-codes temporary closures; target models nonmanager FTE without those choices."
+cbf3648fc51ea519dd23,match,"Both declare the same adjusted nonmanager FTE change model and zero state-contrast null, with equivalent completeness and permanent-closure rules."
+a6b164b74abff6a89b98,nonmatch,Candidate models unadjusted total headcount including managers; target models adjusted nonmanager FTE with part-time workers weighted by 0.5.
+a754b13ddd8464a2dd54,nonmatch,Candidate imposes baseline wage below $5.05 and omits controls; target imposes no wage restriction and adjusts for chain and ownership.
+8fab53b163dfa8e17ceb,nonmatch,Candidate models log(1+total headcount) among respondents only; target models nonmanager FTE level changes including permanent closures.
+734dabf64427aab4221c,nonmatch,Candidate includes baseline nonmanager FTE as an additional control; target's conditional mean includes chain and ownership but no baseline employment.
+de9c46645cdc5af080fc,nonmatch,"Candidate includes managers, controls for baseline employment, and excludes permanent closures; target excludes managers, omits baseline employment, and retains permanent closures."
+1f73f98ee5e1773c8ebb,match,Both specify the same adjusted nonmanager-FTE change model and zero state-coefficient null; the supplied facts establish equivalent sample rules.
+3918752ecd3c02c2cf6b,nonmatch,"Candidate additionally conditions on baseline employment; target adjusts only for chain and ownership, so their state-coefficient nulls concern different models."
+a7440760013ccbceda8c,nonmatch,Candidate models total headcount and adds baseline headcount as a control; target models nonmanager FTE without baseline-employment adjustment.
+3c5f4bbdfa9f79d72237,nonmatch,Candidate uses full-time workers alone and does not require part-time counts; target uses full-time plus 0.5 times part-time workers and requires both components.
+61bf7e28fe469cc3569c,nonmatch,Candidate uses unadjusted full-time employment changes; target uses nonmanager-FTE changes adjusted for chain and ownership.
+b548942bf246dff0c741,match,"Both declare the same adjusted nonmanager-FTE change model and null, with equivalent sample rules under the supplied facts; reference subsampling is immaterial."
+85f0c3c1e4b178ab69a0,match,"Both use the same adjusted nonmanager-FTE model and zero state-coefficient null; status rules are equivalent here, and store identifiers reflect the supplied store structure."
+4395bce041565e7b6fb1,nonmatch,Candidate assigns zero employment to temporary closures and retains them; target assigns zero only to permanent closures and excludes temporary closures with missing counts.
+161f66c76dd81c444c15,nonmatch,"Candidate conditions only on state; target includes categorical chain and binary ownership controls, changing the model and tested contrast."
+b830e8a9dde2fca9fd2c,nonmatch,Candidate uses unadjusted full-time counts and zero-codes temporary closures; target uses adjusted nonmanager FTE and zero-codes only permanent closures.
+0a05ea2e9825a37ea4e9,nonmatch,Candidate uses unadjusted total headcount among operating respondents; target uses adjusted nonmanager FTE and includes permanent closures.
+4a8b498a752b26c1e114,nonmatch,"Candidate gives part-time workers weight 1; target gives them weight 0.5, producing different outcomes despite the same controls and coefficient-null form."
+1e1f85160911e921848c,match,Both specify the adjusted nonmanager-FTE change model and zero state-coefficient null with equivalent sample rules; stated input validation does not add substantive subgroup selection.
+27f3b54a93cfedbd5687,nonmatch,Candidate models unadjusted part-time changes and zero-codes temporary closures; target models adjusted nonmanager-FTE changes with only permanent closures zero-coded.
+8186f7bb0018a2e5dc18,match,"Both declare the same adjusted nonmanager-FTE change model, zero state-coefficient null, population, and data-equivalent sample rules."
+968aec6d050f5614ee0d,nonmatch,Candidate includes managers and restricts analysis to respondents; target excludes managers and retains permanent closures.
+85429fe591f014de6406,nonmatch,Candidate includes managers in FTE and has no controls; target excludes managers and adjusts for chain and ownership.
+53fe10139c97683a7106,nonmatch,"Candidate explicitly omits chain and ownership controls; target includes them, so the tested state contrasts differ."
+bb0f51cf0e9755edaa2b,match,Both specify the same adjusted nonmanager-FTE change model and zero state-coefficient null; their closure and completeness rules select the same stores here.
+d2d31ff5b68f96dbe79c,unresolved,Candidate makes store independence conditional on unspecified statewide shocks; target conditions independence on regressors alone. Whether those shocks introduce additional dependence is undeclared.
+fb69b75057d750ee25aa,nonmatch,Candidate uses full-time employees plus managers and controls for baseline staffing; target uses nonmanager FTE without baseline-employment adjustment.
+ec223fb9983f051f8dd7,nonmatch,Candidate uses full-time employment alone and adds baseline employment as a control; target uses nonmanager FTE and omits that control.
+6b5d15d152cbb678b78e,nonmatch,Candidate uses unadjusted nonmanager headcount among respondents only; target uses adjusted nonmanager FTE including permanent closures.
+1ea3b940b4cec1179ca5,nonmatch,"Candidate omits all covariate controls; target adjusts for baseline chain and ownership, yielding a different model and null contrast."
+1f8d45ed453cf8a4e79d,nonmatch,Candidate models full-time employment alone without part-time completeness requirements; target models FTE using both full-time and part-time counts.
+015b61091b9db4802090,match,Both declare the same adjusted nonmanager-FTE change model and null; their status and completeness rules are equivalent in these data.
+069987840853541e1ef6,nonmatch,Candidate adds baseline employment adjustment and retains respondents only; target omits baseline employment and includes permanent closures.
+1589ee6a424413cf0eb1,nonmatch,"Candidate models unadjusted full-time employees plus managers, excluding part-time workers; target models adjusted nonmanager FTE."
+a92cc18e4da1f3355afc,nonmatch,Candidate uses unadjusted total headcount with manager completeness; target uses chain- and ownership-adjusted nonmanager FTE.
+9320031c9d875531ebcb,nonmatch,Candidate differences asinh-transformed FTE including managers and adjusts for baseline transformed employment; target uses untransformed nonmanager-FTE changes without that control.
+2a8bf1ed7742269cdc7c,match,"Both specify the adjusted nonmanager-FTE change model and zero state-coefficient null, with sample rules equivalent under the supplied facts."
+2b9e4b0dc90e149df6c1,nonmatch,Candidate models full-time employment changes without controls; target models nonmanager-FTE changes with chain and ownership controls.
+5d04e485c8b7e4b6a3d8,match,"Both declare the same adjusted nonmanager-FTE change model, coefficient null, and population; the supplied facts make their sample rules equivalent."
+14a7ae13a6056b9f9a1f,nonmatch,Candidate uses unadjusted part-time counts and zero-codes all closures; target uses adjusted nonmanager FTE and zero-codes permanent closures only.
+b9e81d5a846cba60946c,nonmatch,"Candidate adds baseline employment to the conditioning variables; target includes only state, chain, and ownership."
+d6f25eab1233e3ee846c,nonmatch,Candidate uses unadjusted FTE including managers among respondents only; target uses adjusted nonmanager FTE including permanent closures.
+6661afb861db2672e174,match,"Both declare the same adjusted nonmanager-FTE change model and null, and their sample rules select the same stores and values here."
+a191e980aaa78b616cc0,nonmatch,"Candidate uses full-time employees plus managers, excluding part-time employees; target excludes managers and includes part-time employees at weight 0.5."
+27c94f11961686b3636c,nonmatch,"Candidate conditions only on state; target additionally conditions on baseline chain and ownership, so their zero-coefficient hypotheses concern different models."
+4c83219c4dd2b3d580f8,nonmatch,Candidate explicitly excludes chain and ownership controls; target includes those controls in the selected model.
+a722d846d6f23aef3841,nonmatch,Candidate uses unadjusted full-time changes among respondents only; target uses adjusted nonmanager-FTE changes and retains permanent closures.
+8d9c1ff43373345d3352,nonmatch,Candidate uses unadjusted total headcount among continuing respondents; target uses adjusted nonmanager FTE including permanent closures.
+e3f94a9fd433425ba1fa,nonmatch,Candidate includes managers in FTE and omits covariate controls; target excludes managers and adjusts for chain and ownership.
+0b9ea2d85fedd91134ba,nonmatch,Candidate uses FTE including managers with state as the sole regressor; target excludes managers and includes chain and ownership controls.
+fd75e7bd62df36455ab0,nonmatch,Candidate uses an unadjusted state comparison; target tests the state contrast adjusted for baseline chain and ownership.
+af5a304a73d4e8ba4117,nonmatch,Candidate uses full-time workers alone and zero-codes temporary closures; target uses nonmanager FTE and assigns zero only to permanent closures.
+9bcb24a1bcfa389aa67a,match,"Both specify the same adjusted nonmanager-FTE model, null, and equivalent sample rules; candidate's fixed state shocks do not specify an additional random dependence law."
+e48d19ded312bb839e76,nonmatch,Candidate omits chain and ownership controls and requires manager completeness; target includes those controls and explicitly does not require manager counts.
+46050cf6a8c1be20b506,nonmatch,Candidate additionally adjusts for baseline employment; target's selected model contains no baseline-employment coefficient.
+b470afc8664797577450,nonmatch,Candidate uses full-time employees plus managers and excludes part-time workers; target uses nonmanager FTE with part-time weight 0.5.
+6526f9cc2f7492cccbe5,nonmatch,Candidate includes managers in FTE and requires their counts; target excludes managers and does not require manager completeness.
+eb3bc34df83b2ef70467,match,Both declare the same adjusted nonmanager-FTE change model and null; their closure and completeness rules are equivalent in the supplied data.
+2e81a1f987708c8a203c,match,"Both specify the same adjusted nonmanager-FTE change model, zero state-coefficient null, population, and data-equivalent sample rules."
+b351d71dfe88702f1d8d,nonmatch,Candidate includes managers in FTE and requires manager counts; target's FTE excludes managers and permits missing manager counts.
+32539b9bb51dba7c80f7,nonmatch,Candidate restricts to non-shore stores and omits controls; target imposes no geographic subgroup restriction and adjusts for chain and ownership.
+d1cde1e314e29146b675,match,"Both select the same additive working regression, adjusted state-coefficient null, nonmanager-FTE outcome, and data-equivalent eligibility rules."
+10e9ef0bf2cf5a71590c,match,"Both declare the same adjusted nonmanager-FTE change model and zero state-coefficient null, with equivalent closure and completeness restrictions here."
+2a6538fd87f4386bdad8,nonmatch,Candidate tests an unadjusted state contrast; target tests a contrast adjusted for categorical chain and baseline ownership.
+c3a4e3aae5b4f54c4b01,nonmatch,"Candidate additionally controls for baseline employment; target controls only for state, chain, and ownership."
+3cd3b9d639b8562deb74,nonmatch,Candidate explicitly has no additional controls; target includes categorical chain and baseline ownership.
+4f8b17575cbfe985edf9,nonmatch,Candidate declares an unadjusted state-only model and null; target declares a chain- and ownership-adjusted model and null.
+ba1cf36f165afc6eddc7,nonmatch,Candidate includes managers in FTE and requires manager-count completeness; target excludes managers and does not require their counts.
+9e458d6d57c0345b6f13,nonmatch,Candidate adds baseline employment and restricts analysis to status 1 survivors; target omits that control and retains permanent closures.
+dff8e56aad46b8565e39,nonmatch,"Candidate is unadjusted, includes managers, and retains only respondents; target adjusts for chain and ownership, excludes managers, and retains permanent closures."
+0c02052984b6dea8080b,nonmatch,Candidate models FTE including managers and requires complete manager counts; target models nonmanager FTE without that completeness requirement.
+9e140e71b2ac5b8e0e3f,nonmatch,Candidate models full-time counts alone among status 1 survivors; target models nonmanager FTE including part-time workers and permanent closures.
+21f2267b128be5181d02,nonmatch,Candidate models part-time counts and assigns zero to temporary closures; target models nonmanager FTE and assigns structural zeros only to permanent closures.
+388bddf0e8f9159f241c,nonmatch,"Candidate restricts the population and sample to status 1 respondents; target also retains permanent closures, making these restrictions different."
+9ed727fbbe766481f6bb,nonmatch,"Candidate includes baseline FTE as an additional conditioning variable; target includes only state, chain, and ownership."
+4d9dfb83a2b72c2b9dd8,nonmatch,Candidate omits chain and ownership controls and includes managers in FTE; target includes those controls and excludes managers.
+692fb852b509994778a2,match,Both declare the same chain- and ownership-adjusted nonmanager FTE change model and zero state-coefficient null; their closure and completeness rules are equivalent under the supplied facts.
+b47db606d24283566f19,nonmatch,Candidate models unadjusted changes in part-time counts; target models chain- and ownership-adjusted changes in nonmanager FTE.
+09b55abbd3fac3ffa40b,nonmatch,Candidate models full-time counts alone and controls for baseline full-time employment; target models nonmanager FTE without a baseline-employment control.
+f5058d8b90fe95471692,nonmatch,Candidate models full-time employment and adds baseline employment; target models nonmanager FTE and does not include baseline employment.
+877f1f552edc4e0c6c84,nonmatch,"Candidate's outcome is manager-count change; target's outcome is nonmanager FTE change, explicitly excluding managers."
+af6f8b5ead29f0da9fb9,match,Both specify the same adjusted nonmanager FTE change model and zero state-coefficient null; the status 1-or-3 rule is equivalent to the target's completeness rule under the supplied facts.
+e22abf7bd6effd13baf7,nonmatch,Candidate models unadjusted full-time counts and zero-codes temporary closures; target models adjusted nonmanager FTE and zero-codes only permanent closures.
+9ea6d678cc0c9f9b882c,nonmatch,"Candidate excludes shore stores, includes managers, and omits controls; target has no shore restriction, excludes managers, and adjusts for chain and ownership."
+a7390f4fba72e3f73035,nonmatch,"Candidate is unadjusted, includes managers, and excludes closures; target is adjusted, excludes managers, and retains permanent closures."
+a3201de4fb2a56083cf7,nonmatch,"Candidate explicitly omits all additional covariates; target includes categorical chain and baseline ownership, changing the model and tested contrast."
+7470f34323379a180a90,nonmatch,Candidate models part-time counts and zero-codes temporary closures; target models nonmanager FTE and zero-codes only permanent closures.
+436a74963244fab5008c,nonmatch,Candidate targets status 1 continuing respondents and excludes permanent closures; target includes permanent closures in the baseline-store comparison.
+059901ec4abd95906f03,nonmatch,Candidate models unadjusted full-time-count changes; target models chain- and ownership-adjusted nonmanager FTE changes.
+0a82f32105679d991b61,match,Both declare the same adjusted nonmanager FTE model and zero state-coefficient null; closure and completeness restrictions select the same stores under the supplied facts.
+8d439386277fa459b1c3,nonmatch,Candidate is unadjusted and restricted to status 1 survivors; target adjusts for chain and ownership and retains permanent closures.
+74c71d7038b48013e120,nonmatch,Candidate additionally conditions on baseline worker FTE; target does not include baseline employment as a control.
+cd9d795ca551225a6913,nonmatch,"Candidate omits controls, includes managers, and restricts to respondents; target includes chain and ownership controls, excludes managers, and retains permanent closures."
+022c32223d03101c73fc,nonmatch,Candidate declares an unadjusted respondent-only model of FTE including managers; target declares an adjusted model of nonmanager FTE including permanent closures.
+5c2244fa2d5f0293ccdf,nonmatch,Candidate adds baseline nonmanager FTE to the conditioning variables; target adjusts only for chain and ownership.
+529fad230816d3351240,nonmatch,Candidate adds baseline FTE and restricts to status 1 respondents; target has no baseline-FTE control and retains permanent closures.
+25be09c15d8746fb8ae3,nonmatch,"Candidate models unadjusted nonmanager headcount among survivors, weighting part-time workers by 1; target models adjusted nonmanager FTE with weight 0.5 and retains permanent closures."
+3051c476e8818baba231,nonmatch,Candidate models unadjusted full-time-plus-manager changes among respondents; target models adjusted nonmanager FTE changes including permanent closures.
+89c304ebb6128335e886,nonmatch,"Candidate conditions on state alone; target additionally includes categorical chain and baseline ownership, so their tested state contrasts differ."
+fd9976bfce9f2288e7c3,nonmatch,Candidate explicitly has no additional controls; target adjusts the state contrast for chain and ownership.
+8e72a9e986e7edd02c75,match,Both specify the same chain- and ownership-adjusted nonmanager FTE change model and null; their closure and complete-case rules are equivalent under the supplied facts.
+51ce70a23daa79bcec3a,nonmatch,"Candidate omits controls, includes managers, and excludes permanent closures; target includes chain and ownership controls, excludes managers, and retains permanent closures."
+d0cfb043b2ba519726c3,nonmatch,Candidate tests an unadjusted state difference in changes; target tests the state difference conditional on chain and ownership.
+24d5c961a47c64105cae,nonmatch,Candidate models part-time-count changes and controls for baseline part-time staffing; target models nonmanager FTE without a baseline-employment control.
+1e61bb3a29f2da6653c0,nonmatch,Candidate explicitly omits chain and ownership controls; target includes both in its model and adjusted null.
+64c5ac007c4ef49aeb80,nonmatch,Candidate models full-time employees plus managers among status 1 respondents; target models nonmanager FTE including part-time workers and permanent closures.
+49ad15aba22e187dbff3,nonmatch,Candidate models unadjusted changes in log(1 + FTE including managers) among survivors; target models adjusted level changes in nonmanager FTE including permanent closures.
+da15d83f3309a09eb69c,nonmatch,"Candidate is explicitly unadjusted; target includes chain and ownership controls, changing the model and state-coefficient null."
+4e9c902491a1ebfd3ccc,nonmatch,Candidate additionally adjusts for baseline nonmanager FTE; target does not condition on baseline employment.
+7afe7e6fb5bc20834e48,match,"Both declare the same adjusted nonmanager FTE change model, zero state-coefficient null, and baseline-store population; sample rules are equivalent under the supplied facts."
+33e376e6950c02458131,nonmatch,Candidate includes managers in FTE and adds baseline FTE as a control; target excludes managers and has no baseline-employment control.
+4acd3f581fe45f1a956a,nonmatch,"Candidate's outcome is full-time employees plus managers, excluding part-time employees; target's outcome excludes managers and includes part-time employees at weight 0.5."
+a12ccbfacfdf54c50520,nonmatch,Candidate restricts its model and population to status 1 operating respondents; target also retains permanent closures.
+29c6d0448f8478d87190,nonmatch,"Candidate adds baseline nonmanager FTE to the regression; target includes only state, categorical chain, and baseline ownership."
+70f5b3e5235d7c69dcfa,nonmatch,Candidate models unadjusted FTE changes including managers; target models chain- and ownership-adjusted FTE changes excluding managers.
+c8138c95e895ec81d9bb,nonmatch,Candidate's outcome is part-time-count change alone; target's outcome combines full-time counts with half-weighted part-time counts.
+135c5158097b20d9b0ca,nonmatch,Candidate has no additional controls; target includes categorical chain and baseline ownership in the model and tested contrast.
+b8f7aa96718008870c2f,nonmatch,"Candidate conditions on state only; target conditions additionally on chain and ownership, so the zero-coefficient hypotheses concern different contrasts."
+65e0dbdd767183593085,match,Both specify the same adjusted nonmanager FTE change model and zero state-coefficient null; their status and completeness restrictions are equivalent under the supplied facts.
+2415c6bf058323d68114,nonmatch,Candidate models baseline-adjusted total headcount among survivors; target models nonmanager FTE without baseline-employment adjustment and includes permanent closures.
+7bfb8e5d7dfd9825ffba,nonmatch,Candidate models unadjusted full-time-plus-manager changes; target models adjusted nonmanager FTE changes with part-time weight 0.5.
+805522f989d64955aec0,nonmatch,Candidate models unadjusted part-time-count changes; target models chain- and ownership-adjusted nonmanager FTE changes.
+98ff99be8492a2c4e2a0,nonmatch,Candidate includes managers in FTE and restricts to status 1 respondents; target excludes managers and retains permanent closures.
+96de54f60f487df0839e,nonmatch,Candidate includes managers and restricts to follow-up respondents; target excludes managers and includes permanent closures.
+e90c8146ed78a85336bc,nonmatch,Candidate tests an unadjusted total-headcount change contrast; target tests a chain- and ownership-adjusted nonmanager FTE contrast.
+118f3eb7337b22cf4079,nonmatch,Candidate uses total headcount without controls; target uses nonmanager FTE with categorical chain and ownership controls.
+9ec9653f99c5928188c5,nonmatch,Candidate uses unadjusted asinh changes in manager-inclusive FTE among respondents; target uses adjusted nonmanager FTE level changes including permanent closures.
+0296a72af26654844cf9,nonmatch,"The regression and outcome agree, but candidate restricts to status2=1; target retains permanent closures, producing a different sample and population."
+e539734c809ca0322878,nonmatch,Candidate uses total headcount and excludes permanent closures; target uses nonmanager FTE and includes permanent closures.
+245854aa225b84c63c8c,nonmatch,Candidate explicitly includes no controls and tests an unadjusted state contrast; target adjusts for baseline chain and ownership.
+e586ca0fc53c8472f21c,nonmatch,"Candidate additionally conditions on baseline employment; target includes only state, categorical chain, and ownership."
+6f5f6cc6617063301cef,match,Both specify the same adjusted nonmanager FTE change model and zero state-coefficient null. Their closure and completeness rules are equivalent under the supplied facts.
+3b6ea6cb6f024b78b53d,nonmatch,Candidate uses total headcount and adds baseline headcount as a control; target uses nonmanager FTE without baseline-employment adjustment.
+89fcbf11e5b01b06ac80,nonmatch,Candidate includes managers in FTE and has no controls; target excludes managers and adjusts for chain and ownership.
+41f01e3baffd7d2d7af0,nonmatch,Candidate tests an unadjusted nonmanager FTE change contrast; target tests the contrast conditional on chain and ownership.
+8bbd3513237439c4a743,nonmatch,Candidate models full-time nonmanager counts alone; target models full-time counts plus half-weighted part-time counts.
+8831768cb80f4b4a6b78,nonmatch,Candidate uses unadjusted full-time-only changes and assigns temporary closures zero; target uses adjusted nonmanager FTE and leaves temporary-closure outcomes unavailable.
+86c2fe72c05ff17f87ee,nonmatch,Candidate omits chain and ownership controls and retains respondents only; target includes those controls and permanent closures.
+bdec348ef229cf48ff8f,nonmatch,Candidate models full-time employees plus managers and adds baseline staffing; target models nonmanager FTE without a baseline-employment control.
+898e9df8cefb8facea39,nonmatch,Candidate uses unadjusted total-headcount changes; target uses chain- and ownership-adjusted nonmanager FTE changes.
+a9a8724214916b297315,nonmatch,Candidate's outcome is full-time nonmanager employment alone; target's outcome also includes part-time employment with weight 0.5.
+adb52f970312a5f3e142,nonmatch,Candidate uses full-time-only changes among respondents with all six employment components complete; target uses nonmanager FTE and retains permanent closures without manager completeness.
+18b0fdea53fc64077ba9,nonmatch,Candidate restricts the otherwise matching adjusted nonmanager FTE analysis to status2=1; target also includes permanent closures.
+0ce9051051dcd365244b,nonmatch,Candidate includes managers in FTE and controls for baseline employment; target excludes managers and has no baseline-employment control.
+ff678c8e89a30b29c65d,nonmatch,"Candidate models changes in log(1 + nonmanager FTE); target models untransformed nonmanager FTE level changes, so their nulls concern different outcomes."
+f2633b06c6a1923314ff,nonmatch,Candidate includes state alone; target additionally conditions the employment-change contrast on baseline chain and ownership.
+525d90746f5dcd45fb4e,nonmatch,Candidate models unadjusted full-time nonmanager changes; target models adjusted nonmanager FTE changes including half-weighted part-time workers.
+f40eaa66813a899bcfba,nonmatch,Candidate includes managers in FTE and requires managerial components; target excludes managers and does not require their counts.
+31b9df879c475a670a97,nonmatch,Candidate includes managers in FTE and adds baseline FTE adjustment; target excludes managers and adjusts only for chain and ownership.
+d0c21e06eae9ff3b671b,nonmatch,Candidate uses manager-inclusive FTE without controls; target uses nonmanager FTE with chain and ownership controls.
+85401ca8a30e4455e96a,nonmatch,Candidate adds baseline nonmanager employment as a conditioning variable; target's model contains no baseline-employment term.
+d95a4e597d66cd97fcb1,nonmatch,Candidate explicitly omits controls; target's zero state-coefficient null is within a model adjusted for chain and ownership.
+02ad91d83cff2fd1ad25,nonmatch,Candidate tests the unadjusted state difference in nonmanager FTE changes; target tests the chain- and ownership-adjusted difference.
+475ec4fa6c2b1615a84f,nonmatch,Candidate uses full-time-only employment changes and adds baseline full-time employment; target uses nonmanager FTE without baseline-employment adjustment.
+e18a2b896f0dbd61f22f,nonmatch,"Candidate uses total headcount without controls; target excludes managers, half-weights part-time workers, and controls for chain and ownership."
+1150674b765b4f10cb90,nonmatch,Candidate includes managers in FTE and omits controls; target excludes managers and includes chain and ownership controls.
+94c15f79548f016de7ac,nonmatch,Candidate's model contains state alone; target's model also contains categorical chain and baseline ownership.
+f7a4cf8a729a62e3b11b,match,"Both declare the same adjusted nonmanager FTE change model, zero state-coefficient null, and baseline-store population; sample rules are equivalent under the supplied facts."
+b52251a02724a926138a,nonmatch,Candidate models full-time-only changes without controls; target models nonmanager FTE changes adjusted for chain and ownership.
+25451ac820901f55400a,match,"Both declare the same adjusted nonmanager FTE change specification and zero state-effect null, with equivalent eligibility rules. Candidate's uncertainty wording specifies no conflicting error law."
+c4eba63836fe336c19cb,nonmatch,Candidate explicitly excludes chain and ownership from its model; target includes both as intrinsic controls.
+d5be05d6283ef2e4ac3f,match,"Both specify the same adjusted nonmanager FTE change model, null, population, and complete-case rules, retaining permanent closures and using observed temporary-closure counts when available."
+972238c1bcef0d4dd6f0,nonmatch,Candidate uses full-time employees plus managers without controls; target uses nonmanager FTE with chain and ownership adjustment.
+6cc4e54c96e9af6e2d03,match,Both specify the same adjusted nonmanager FTE change model and zero state-coefficient null. Their sample rules select the same stores and values under the supplied facts.
+ede36027c51598d2f2b7,match,"Both declare additive chain- and ownership-adjusted nonmanager FTE changes and the same zero state-effect null, with equivalent closure and completeness restrictions."
+aa51c1e6d909cbf7bd7b,nonmatch,Candidate models part-time-only changes and controls for baseline part-time employment; target models nonmanager FTE changes without baseline-employment adjustment.
+fc7a75391fb8b6a3abdf,nonmatch,Candidate models total headcount and requires manager counts; target excludes managers and gives part-time workers weight 0.5.
+47ee380992e967c65ec6,nonmatch,Candidate uses an unadjusted state-only model; target includes baseline chain and ownership controls.
+7a2da90a54e3883b89f6,nonmatch,Candidate includes managers in FTE and requires their counts; target excludes managers from both outcome construction and completeness requirements.
+450a52f31579adca29d5,match,Both specify the same chain- and ownership-adjusted nonmanager FTE change model and null. Their closure and complete-pair restrictions are equivalent under the supplied facts.
+176b7dbdeda27f6495dd,nonmatch,Candidate's outcome includes managers and excludes part-time workers; target excludes managers and includes half-weighted part-time workers.
+3e8861455f431d8068a9,nonmatch,Candidate omits controls and restricts to respondents; target adjusts for chain and ownership and retains permanent closures.
+0b01bf65326da4df6887,match,"Both declare the same adjusted nonmanager FTE change model, null, and population. The supplied facts make their stated sample restrictions equivalent."
+813ca2cba0335b61c883,nonmatch,Candidate uses unweighted nonmanager headcount without controls; target half-weights part-time workers and adjusts for chain and ownership.
+45247fcd0c43b2a0fa03,nonmatch,Candidate uses unadjusted total headcount among respondents only; target uses adjusted nonmanager FTE and includes permanent closures.
+6e7a11406fcfcf62b25e,nonmatch,Candidate includes managers in FTE and requires manager completeness; target excludes managers and does not require their counts.
+68e237c312349992d1bb,nonmatch,Candidate has no covariate controls; target's employment-change model and null condition on baseline chain and ownership.
+6799a4d0593a1759867b,nonmatch,Candidate includes managers in its FTE outcome and completeness requirements; target's outcome and required components exclude managers.
+7c40a9c5b9888eccc69c,nonmatch,Candidate models total-headcount changes without controls; target models nonmanager FTE changes with chain and ownership controls.
+1467f76e8737abecb1d0,nonmatch,Candidate tests an unadjusted state difference in nonmanager FTE changes; target tests the difference adjusted for chain and ownership.
+29464c917f50ffb391fb,nonmatch,Candidate includes managers in FTE and requires managerial components; target excludes managers from the outcome and completeness rules.
+c4b492d15e3af1c828e4,nonmatch,Candidate retains temporary closures with follow-up employment set to zero; target assigns zero only to permanent closures and excludes temporary closures with missing counts.
+8487efa725cb21662829,nonmatch,"Candidate models full-time employees plus managers, excluding part-time workers; target excludes managers and includes part-time workers with weight 0.5."
+fce5261c609c21b0a482,nonmatch,Candidate tests an unadjusted state contrast in part-time counts; target tests a chain- and ownership-adjusted contrast in nonmanager FTE changes.
+c325e9e7e815b8431fd5,nonmatch,Candidate uses full-time counts and no controls; target uses nonmanager FTE and categorical chain plus ownership controls.
+7f2703a5e018353bde60,nonmatch,Candidate tests unadjusted full-time employment changes; target tests adjusted nonmanager FTE changes.
+3d1a77d2e325eafda1bc,nonmatch,Candidate omits chain and ownership controls and restricts to status 1 survivors; target includes those controls and permanent closures.
+2c1cb6ec7d616318de62,nonmatch,Candidate models full-time changes only among stores with baseline wages below $5.05; target models nonmanager FTE changes without a wage restriction.
+eef7c86af5b2c5869e18,nonmatch,Candidate explicitly restricts analysis to common chains and excludes KFC; target retains all four chains without a chain-subgroup restriction.
+b1c0a3577ffe79dbb5b9,nonmatch,Candidate tests a state-only FTE-change contrast; target conditions the contrast on baseline categorical chain and company ownership.
+5714cb7302f027a9b4a8,nonmatch,Candidate models full-time changes and additionally controls for baseline full-time employment; target models nonmanager FTE changes with only chain and ownership controls.
+4443919db337351ffc66,nonmatch,Candidate adds baseline FTE as a control and retains only status 1 stores; target has no baseline-employment control and includes permanent closures.
+bfb0d4fae7156bdb7e06,nonmatch,Candidate explicitly includes no covariate controls; target's FTE-change model includes categorical chain and baseline ownership.
+4ed251aaa629bd78fec9,nonmatch,Candidate uses unadjusted full-time changes among status 1 respondents; target uses adjusted nonmanager FTE changes and includes permanent closures.
+cf470b88eab0ce53df65,nonmatch,"Candidate uses total headcount including managers, excludes KFC, and has no controls; target uses nonmanager FTE across all four chains with chain and ownership controls."
+3bc27fecdb7191a3b4a7,nonmatch,"Although the adjusted FTE model agrees, candidate restricts to status 1 respondents and excludes permanent closures; target retains permanent exits."
+066797cb39f211070cb7,match,Both specify the same additive chain- and ownership-adjusted nonmanager FTE-change model and zero state-contrast null. Their closure and complete-case rules select the same stores and values under the supplied facts.
+a2b416df934a4e77afe5,nonmatch,"Candidate additionally conditions on baseline nonmanager FTE; target conditions only on state, categorical chain, and baseline ownership."
+d817069414536e6706b1,nonmatch,Candidate models full-time counts with state alone; target models nonmanager FTE with chain and ownership controls.
+9bbbcf49efc274e8ef44,nonmatch,"Candidate models symmetric total-headcount growth, adds baseline headcount, and zeros temporary closures; target models level changes in nonmanager FTE with only permanent closures zeroed."
+9afef0d29f05be12247b,nonmatch,Candidate tests unadjusted full-time changes; target tests nonmanager FTE changes adjusted for chain and ownership.
+b41d8fce68da30009f32,nonmatch,"The controls agree, but candidate's outcome is full-time employment change only; target adds part-time employment with weight 0.5."
+e49bce278f39854424ee,nonmatch,Candidate's FTE outcome includes managers and requires their counts; target excludes managers from the outcome and completeness requirements.
+2bad86567f9105adb8c0,nonmatch,Candidate includes managers in FTE and has no controls; target excludes managers and adjusts for chain and ownership.
+635c08e3443a2d2d06c4,nonmatch,Candidate includes managers in its FTE outcome and requires manager completeness; target explicitly excludes managers from both.
+e37e958dc19c7736cee9,nonmatch,Candidate specifies a state-only mean-change model; target includes categorical baseline chain and company ownership controls.
+4544aa470726dc6eae96,match,"Both declare the same adjusted nonmanager FTE-change model, zero conditional state-contrast null, survey-frame population, and complete-case rules with permanent closures zeroed."
+65a2a8e4f61943e64022,match,Both declare the same adjusted nonmanager FTE-change model and null. Candidate's explicit exclusion of temporary closures is equivalent to target's completeness rule under the supplied missing-count facts.
+7cf1846afc99bd21e760,nonmatch,Candidate includes managers and assistant managers in FTE and requires their counts; target excludes them and does not require manager completeness.
+781ae923e714bd502aae,nonmatch,Candidate uses a state-only model for full-time changes; target uses nonmanager FTE changes adjusted for chain and ownership.
+5c3cc1973f6b2ea27bd0,nonmatch,Candidate tests unadjusted part-time changes; target tests adjusted changes in full-time plus 0.5 times part-time employment.
+404e165a933c9288d3fe,nonmatch,"Candidate uses full-time-plus-manager changes, adds baseline employment and wage controls, and zeros temporary closures; target uses nonmanager FTE with only chain and ownership controls."
+e730c71d8d942cdb5a54,nonmatch,Candidate models full-time changes with an additional baseline-full-time control; target models nonmanager FTE changes without baseline-employment adjustment.
+d1d3406b732e6c1a7744,match,Both specify the same additive chain- and ownership-adjusted nonmanager FTE-change model and zero state-contrast null. Their status and completeness rules are equivalent under the supplied facts.
+30cf06e7e2667e0e2437,nonmatch,"Candidate includes managers, omits controls, and restricts to status 1 operating stores; target excludes managers, adjusts for chain and ownership, and retains permanent closures."
+9c4514e605e2d92a30e1,nonmatch,Candidate weights part-time employees by 1 and omits controls; target weights them by 0.5 and includes chain and ownership controls.
+3889fa304115369cc9de,nonmatch,Candidate uses part-time changes and state alone; target uses nonmanager FTE changes with chain and ownership adjustment.
+af0159396028e9f72b54,nonmatch,Candidate targets baseline-full-time-weighted changes among continuing stores with positive baseline full-time counts; target uses an adjusted nonmanager FTE contrast including permanent closures without that weighting or restriction.
+d977da2f63b8e468c87d,nonmatch,Candidate's FTE includes managers and requires manager counts; target's worker FTE excludes managers and permits missing manager counts.
+11dd7b61e3f9ac90f222,nonmatch,Candidate explicitly omits chain and ownership controls; target includes both in the employment-change model and conditional null.
+6fb0d2bb924ddb8f5eaa,nonmatch,Candidate includes managers in FTE and uses state alone; target excludes managers and conditions on chain and ownership.
+fcdf5c868835e3a198cb,nonmatch,Candidate uses no controls and retains only continuing status 1 stores; target adjusts for chain and ownership and includes permanent closures.
+2df14fc1ef8cf4bd2e14,nonmatch,Candidate's contrast is unadjusted and restricted to status 1 respondents; target's contrast is adjusted for chain and ownership and retains permanent closures.
+fadf1c724ff0074f0f08,nonmatch,Candidate models unadjusted log(1 + FTE) changes including managers and zeros temporary closures; target models adjusted level changes in nonmanager FTE and zeros only permanent closures.
+3cd4b0623b964232fb33,nonmatch,Candidate uses unadjusted part-time changes and assigns zero to temporary closures; target uses adjusted nonmanager FTE changes and leaves temporary-closure outcomes missing.
+4ffe099e1449b7e33c4e,nonmatch,Candidate tests state-only full-time employment changes; target tests nonmanager FTE changes conditional on chain and ownership.
+228ba003524966e2c058,nonmatch,Candidate includes managers in FTE and has no controls; target excludes managers and includes chain and ownership controls.
+6e12e4d2211167b4978a,nonmatch,"Although the controls agree, candidate adds managers to FTE and requires their counts; target excludes managers from the outcome and completeness rules."
+c68b070fa5bff97fa303,nonmatch,Candidate includes managers in FTE and adds baseline FTE as a control; target excludes managers and has no baseline-employment control.
+bdb42fecad3b2c06f5ee,nonmatch,"Candidate models total-headcount changes conditional on baseline FTE, omits chain and ownership, and zeros temporary closures; target models nonmanager FTE changes with chain and ownership controls."
+a18c2e36b1da7630338c,nonmatch,"Candidate models unadjusted part-time changes, requires all employment components, and zeros temporary closures; target models adjusted nonmanager FTE changes without manager completeness or temporary-closure imputation."
+e712b7b1f9f4f4da8bea,nonmatch,Candidate uses full-time changes and adds baseline employment and starting-wage controls; target uses nonmanager FTE changes with only chain and ownership controls.
+49848d335c3c462c4def,nonmatch,Candidate specifies state as the only conditioning variable; target includes baseline categorical chain and company ownership in the FTE-change model.
+2cbc4707f7a56de94125,nonmatch,Candidate models unadjusted total-headcount changes including managers and full-weight part-time workers; target models chain- and ownership-adjusted nonmanager FTE changes with part-time weight 0.5.
+899c349b54a98a178b7c,nonmatch,Candidate models unadjusted total headcount change; target models chain- and ownership-adjusted nonmanager FTE change.
+ec89af3e3bb9a0867ec8,nonmatch,"Candidate adds baseline employment, includes managers, and assigns temporary closures zero; target omits baseline employment, excludes managers, and zeros only permanent closures."
+f257688647b853599dd0,nonmatch,Candidate includes managers in FTE and requires manager counts; target excludes managers and does not require their counts.
+b6001041a621b670c525,nonmatch,"Candidate additionally controls for baseline nonmanager FTE; target conditions only on state, chain, and ownership."
+47d20d0576d8bccea1b5,nonmatch,Candidate includes managers in FTE and requires manager counts; target excludes managers and imposes no manager-count completeness requirement.
+857793560adade7079c8,match,Both specify chain- and ownership-adjusted nonmanager FTE changes and a zero state coefficient. Their closure and completeness rules select the same stores and values under the supplied facts.
+3309307e6d6786bcb5c9,nonmatch,Candidate models full-time-plus-manager changes and controls for baseline employment; target models nonmanager FTE changes without baseline employment adjustment.
+9f8c394b11be57b47269,nonmatch,Candidate models unadjusted full-time nonmanager changes; target includes half-weighted part-time workers and chain and ownership controls.
+fd4be85af69757855646,nonmatch,Candidate adds baseline nonmanager FTE as a control; target adjusts only for chain and ownership.
+bd6622ad1750fd3eea58,nonmatch,"Candidate uses an unadjusted outcome including managers and a 0.4 part-time weight; target adjusts for chain and ownership, excludes managers, and uses 0.5."
+5ad2b581bd535b7545ff,nonmatch,Candidate uses full-time nonmanager changes with state only; target uses nonmanager FTE changes with chain and ownership controls.
+35e9a2ee8e8856b386d6,nonmatch,Candidate includes managers and assigns zero to temporary closures; target excludes managers and assigns zero only to permanent closures.
+640420dff21572216225,nonmatch,Candidate models unadjusted full-time changes and zeros temporary closures; target models adjusted nonmanager FTE changes and zeros only permanent closures.
+6aaa4298fcc190096b51,nonmatch,Candidate gives part-time workers weight 1 in nonmanager headcount; target gives them weight 0.5 in nonmanager FTE.
+b6f99fa48defd9ce5fae,nonmatch,Candidate models unadjusted log(1+FTE) changes including managers among respondents only; target models adjusted nonmanager FTE level changes including permanent closures.
+9f09215e5deb3e6e037f,nonmatch,"Candidate explicitly uses state only; target includes categorical chain and binary ownership controls, so their zero state-coefficient nulls concern different models."
+788389c27322bed991ab,nonmatch,"Candidate models symmetric growth including managers, adds baseline FTE, and zeros temporary closures; target models nonmanager FTE level changes with chain and ownership only."
+cf8f4d03e0f5ed086755,nonmatch,"Candidate models unadjusted full-time-plus-manager changes, excluding part-time workers; target models adjusted nonmanager FTE changes."
+09868d364a248a8cc6d4,nonmatch,"Candidate is unadjusted, includes managers, and restricts to respondents; target adjusts for chain and ownership, excludes managers, and includes permanent closures."
+eb2a60bf5ed5fb57521b,nonmatch,Candidate models unadjusted full-time-plus-manager changes and zeros temporary closures; target models adjusted nonmanager FTE changes and zeros only permanent closures.
+09c37af168e3889f3e0f,nonmatch,"Candidate uses total headcount, adds baseline headcount, and retains respondents only; target uses nonmanager FTE, omits baseline employment, and includes permanent closures."
+27fc7b2d5950ddc06ff3,nonmatch,Candidate explicitly omits chain and ownership controls and their completeness requirements; target includes both controls and requires them observed.
+9d3f407a99084899dc95,nonmatch,Candidate includes managers in FTE and adds baseline FTE as a control; target excludes managers and has no baseline employment control.
+ce7cd9c35fe24eb939d3,nonmatch,Candidate specifies an unadjusted state contrast; target specifies a chain- and ownership-adjusted state contrast.
+f279daf58fcdad2cd245,nonmatch,Candidate models full-time changes without covariate controls and requires manager completeness; target models adjusted nonmanager FTE changes without requiring manager counts.
+15b6e922ec4af71b9f71,nonmatch,Candidate models total headcount among respondents only; target models nonmanager FTE and retains permanent closures.
+032c3ef5c8d7044fdaf0,match,Both declare the same adjusted nonmanager FTE change model and zero state-coefficient null for the same frame. Their sample rules are equivalent under the supplied employment-count facts.
+a7aa65658abc951fc26c,nonmatch,"Candidate models unadjusted asinh total-headcount changes; target models chain- and ownership-adjusted, untransformed nonmanager FTE changes."
+08241f005e1c74f7ac22,nonmatch,"Candidate uses nonmanager headcount and adds baseline employment, wage, and hours-open controls; target uses nonmanager FTE and controls only for chain and ownership."
+e1bd198c55a8e214aa36,nonmatch,Candidate models unadjusted total-headcount changes; target models adjusted nonmanager FTE changes.
+0c10fd3cf30f3de75585,nonmatch,Candidate uses state-only total-headcount changes; target includes chain and ownership controls and uses nonmanager FTE.
+50da974d06ed0a82dfaf,nonmatch,Candidate models full-time workers alone and zeros temporary closures; target includes half-weighted part-time workers and zeros only permanent closures.
+a246e1f2552b21e81549,nonmatch,"Candidate restricts to status2=1 operating respondents, excluding permanent closures; target includes permanent closures with zero follow-up employment."
+a4b741638a5f1071afa7,nonmatch,Candidate adds baseline nonmanager FTE to the conditioning variables; target includes chain and ownership only.
+7fa6cb5b2a4112de7c07,nonmatch,Candidate adds baseline FTE and excludes permanent closures through a respondent-only rule; target omits baseline FTE and retains permanent closures.
+16af6568452e1d83185d,nonmatch,Candidate models changes in full-time nonmanager counts alone; target models full-time plus half-weighted part-time nonmanager counts.
+5a57699b8d0c9ee06848,nonmatch,Candidate explicitly has no additional controls; target adjusts the state contrast for baseline chain and company ownership.
+1272e69f486d79376efb,nonmatch,Candidate is unadjusted and excludes permanent closures; target adjusts for chain and ownership and includes permanent closures.
+94ed4738a188285d9cea,nonmatch,Candidate models unadjusted part-time headcount changes and zeros all closures; target models adjusted nonmanager FTE changes and zeros only permanent closures.
+6e555ab7e6fb2b1cf85d,nonmatch,"Candidate uses full-time-plus-manager changes, excluding part-time workers; target excludes managers and includes half-weighted part-time workers."
+c23e0b42b5b801705a16,nonmatch,Candidate declares a state-only mean-change model; target additionally conditions on categorical chain and binary ownership.
+fd3feb77bb8447b7e1b9,nonmatch,Candidate uses total headcount with managers and unit-weighted part-time workers; target excludes managers and weights part-time workers by 0.5.
+21d1a14cacebcb964d22,nonmatch,Candidate models full-time changes and adds baseline full-time employment; target models nonmanager FTE changes without baseline employment adjustment.
+01bdcfb4e65223711310,nonmatch,Candidate includes managers in FTE and requires manager counts; target excludes managers and does not require their counts.
+912e2d2b1b1612271426,nonmatch,"Candidate models total-headcount changes, including managers and unit-weighted part-time workers; target models nonmanager FTE with part-time weight 0.5."
+dcad3a488565bf34ca63,nonmatch,Candidate outcome is full-time nonmanager change alone; target outcome additionally includes half-weighted part-time worker change.
+91d42b57e21ad8eb4796,nonmatch,"Candidate adds baseline nonmanager FTE as a control; target conditions only on state, baseline chain, and baseline ownership."
+55505fbb1de1addae120,nonmatch,Candidate models total-headcount changes with baseline headcount as its sole additional control; target models nonmanager FTE changes with chain and ownership controls.
+4990889c114bbf63b75c,match,"Both declare adjusted nonmanager FTE level changes, the same zero state-coefficient null, the same survey-frame population, and equivalent completeness and closure rules."
+f95622ac7d7e46ddac6a,nonmatch,Candidate models unadjusted full-time-plus-manager changes; target models chain- and ownership-adjusted nonmanager FTE changes.
+ddaf27eae15b51734b38,nonmatch,Candidate includes managers in FTE and adds baseline FTE as a control; target excludes managers and omits baseline employment adjustment.
+b3ea217db0fef2e9f107,match,Both specify the same chain- and ownership-adjusted nonmanager FTE change model and zero state-coefficient null for the same population; their sample rules are equivalent under the supplied facts.
+412beb87b3f25aa056f3,nonmatch,"Candidate is unadjusted, includes managers, and retains respondents only; target adjusts for chain and ownership, excludes managers, and includes permanent closures."
+9253f6d12526becee2e0,nonmatch,Candidate models manager-count changes and requires manager observations; target models nonmanager FTE changes and does not require manager counts.
+32928ee29ba6d4a3518c,nonmatch,Candidate is a state-only model restricted to respondents; target includes chain and ownership controls and retains permanent closures.
+63b1bd06495a9202b6a2,nonmatch,Candidate restricts the adjusted model to status2=1 respondents; target also includes permanent closures with zero follow-up employment.
+64c6b0ea36c51085eaf5,nonmatch,Candidate omits chain and ownership controls and excludes permanent closures; target includes those controls and permanent closures.
+b15a4950ea9f8f1fdf18,nonmatch,Candidate specifies an unadjusted state-only model; target adjusts for categorical chain and binary company ownership.
+5f4d1f0cd880cb5e9992,nonmatch,Candidate includes managers in FTE and restricts to respondents; target excludes managers and retains permanent closures.
+41476fcdb9e21aa4fc3a,nonmatch,Candidate models total headcount with managers and unit-weighted part-time workers; target models nonmanager FTE with part-time weight 0.5.

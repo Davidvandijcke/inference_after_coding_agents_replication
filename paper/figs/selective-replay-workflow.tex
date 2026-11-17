@@ -1,0 +1,125 @@
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[x=1cm,y=1cm]
+
+\node[rotate=90,font=\footnotesize,text=srwmuted] at (-0.3,0.95) {Original analysis};
+
+\srwDataset{(0.3,0.4)}{0.62}{10}{0.11}{srwmuted}{}
+\node[srw txt,anchor=west,align=left] at (1.08,1.18) {data $D_n$};
+\node[srw txt,anchor=west,align=left] at (1.08,0.72) {prompt $r$};
+\coordinate (inp) at (0.61,0.4);
+
+\draw[srw flow] (2.2,0.95) -- (2.9,0.95);
+\srwRobot{(3.5,0.9)}{0.95}
+\node[srw txt,anchor=west,align=left] at (4.2,0.95)
+  {coding agent $\mathcal A_r(D_n,\Xi)$\\[1pt]
+   {\color{srwmuted}inspects data, tries}\\[-1pt]
+   {\color{srwmuted}specifications, runs code}};
+
+\draw[srw flow] (7.4,0.95) -- node[above=1pt,font=\scriptsize,text=srwmuted,align=center]
+  {commitment\\[-2pt]prompt} (9.3,0.95);
+\node[draw=srwink!70,line width=0.5pt,rounded corners=2pt,fill=white,
+      minimum width=3.7cm,minimum height=1.35cm,align=center,font=\scriptsize,text=srwink]
+  (qs) at (11.25,0.95)
+  {selected analysis\\[1pt] $q^\ast=(\mathcal M_{q^\ast},H_{0,q^\ast})$\\[3pt]
+   {\color{srwmuted}emitted program $p_{q^\ast}(\cdot)$}\\[-1pt]
+   {\color{srwmuted}reported $p^\ast=p_{q^\ast}(D_n)$}};
+
+\node[anchor=west,align=left,font=\scriptsize,text=srwagent] at (13.35,0.95)
+  {\textbf{Problem.} $q^\ast$ was chosen after\\seeing $D_n$, so $p^\ast$ is not a valid\\$p$-value given the selection:\\[3pt]
+   $\Pr(p^\ast\le\alpha\mid Q=q^\ast)\neq\alpha$.};
+
+\draw[srwrule,line width=0.6pt] (-0.55,-0.45) -- (16.95,-0.45);
+\node[rotate=90,font=\footnotesize,text=srwmuted] at (-0.3,-3.85) {Selective replay};
+
+\def\srwTop{-1.55}
+\foreach \xa/\xb/\c in {0.2/4.1/srwcodeblue,4.4/8.3/srwcodeblue,8.6/12.6/srwagent,12.9/16.95/srwink}
+  \draw[\c,line width=1.4pt] (\xa,\srwTop) -- (\xb,\srwTop);
+
+\foreach \x/\n/\c/\t in {0.2/1/srwcodeblue/Draw subsamples,
+                         4.4/2/srwcodeblue/Run the program,
+                         8.6/3/srwagent/Replay the agent,
+                         12.9/4/srwink/Correct the $p$-value}
+  \node[anchor=west,font=\footnotesize,text=srwink] at (\x,-1.88)
+    {\textcolor{\c}{\textbf{\n}}\enspace\textbf{\t}};
+
+\draw[srw feed] (inp) -- (0.61,\srwTop+0.12);
+\draw[srw feed] (qs.south) -- (11.25,\srwTop+0.12);
+\draw[srwmuted!80,line width=0.4pt] (6.35,-1.05) -- (14.9,-1.05);
+\foreach \x in {6.35,14.9} \draw[srw feed] (\x,-1.05) -- (\x,\srwTop+0.12);
+\node[font=\scriptsize,text=srwmuted,fill=white,inner sep=2pt] at (8.3,-1.05)
+  {held fixed: $q^\ast,\ p_{q^\ast},\ p^\ast$};
+
+\node[srw txt] at (2.15,-2.5)
+  {subsets of $m\ll n$ units, drawn\\ at random without replacement};
+\srwDataset{(0.75,-4.35)}{0.62}{10}{0.13}{srwmuted}{2,4,5,8}
+\node[font=\scriptsize,text=srwink,anchor=north] at (1.06,-4.4) {$D_n$};
+\draw[srw feed,draw=srwcodeblue] (1.6,-3.7) -- (2.35,-3.7);
+\foreach \dx/\dy in {0.32/0.28,0.16/0.14,0/0}
+  \srwDataset{($(2.55,-4.05)+(\dx,\dy)$)}{0.62}{5}{0.12}{srwcodeblue}{}
+\node[font=\scriptsize,text=srwink,anchor=north] at (3.0,-4.4) {$D^{(1)},D^{(2)},\dots$};
+\node[srw note] at (2.15,-5.4)
+  {distinct units, no duplicates;\\ the selection contamination\\ vanishes as $m/n\to0$ (Prop.~\ref{prop:subsampling_selection})};
+
+\node[srw txt] at (6.35,-2.5)
+  {run the original program:\\ $p^{(j)}=p_{q^\ast}(D^{(j)})$};
+\def\axl{4.8}\def\axr{7.9}\def\axy{-4.05}\def\uu{5.5}
+\fill[srwcodeblue!10] (\axl,\axy) rectangle (\uu,{\axy+0.62});
+\pgfmathsetseed{11}
+\foreach \i in {1,...,44}{%
+  \pgfmathsetmacro{\px}{\axl+0.06+rnd*(\axr-\axl-0.12)}
+  \pgfmathsetmacro{\py}{\axy+0.12+rnd*0.40}
+  \pgfmathparse{\px<\uu ? 1 : 0}
+  \ifnum\pgfmathresult=1 \fill[srwcodeblue] (\px,\py) circle (0.04);
+  \else \fill[srwcodeblue!35] (\px,\py) circle (0.04); \fi}
+\draw[srwink,line width=0.45pt] (\axl,\axy) -- (\axr,\axy);
+\foreach \x in {\axl,\axr} \draw[srwink,line width=0.45pt] (\x,\axy) -- ++(0,-0.06);
+\draw[srwink,densely dashed,line width=0.45pt] (\uu,{\axy-0.06}) -- (\uu,{\axy+0.74});
+\node[font=\scriptsize,anchor=north] at (\axl,{\axy-0.05}) {$0$};
+\node[font=\scriptsize,anchor=north] at (\uu,{\axy-0.05}) {$p^\ast$};
+\node[font=\scriptsize,anchor=north] at (\axr,{\axy-0.05}) {$1$};
+\node[srw lab=srwcodeblue,anchor=south] at ({(\axl+\uu)/2},{\axy+0.7}) {tail};
+\node[srw lab=srwcodeblue!55,anchor=south] at ({(\uu+\axr)/2},{\axy+0.7}) {body};
+\node[srw txt] at (6.35,-4.85)
+  {tail: $p^{(j)}\le p^\ast$, \ weight $u=p^\ast$\\ body: $p^{(j)}>p^\ast$, \ weight $1-u$};
+\node[srw note] at (6.35,-5.55)
+  {weights under $H_{0,q^\ast}$, since $p_{q^\ast}$\\ is asymptotically uniform};
+
+\node[srw txt] at (10.6,-2.5)
+  {a fresh agent with prompt $r$ on\\ $B_1$ tail and $B_0$ body subsamples};
+\srwRobot{(9.75,-3.38)}{0.55}
+\node[srw txt,anchor=west,align=left] at (10.2,-3.38)
+  {commits to $q_j$\\ $A_j=\mathbf 1\{q_j=q^\ast\}$};
+\def\oy{-4.15}
+\node[srw lab=srwcodeblue,anchor=east] at (9.75,\oy) {tail};
+\node[srw lab=srwcodeblue!55,anchor=east] at (9.75,{\oy-0.32}) {body};
+\foreach \k [count=\i] in {1,1,0,1,1,1,0,1,1}{%
+  \ifnum\k=1 \srwHit{({9.65+0.27*\i},\oy)} \else \srwMiss{({9.65+0.27*\i},\oy)} \fi}
+\foreach \k [count=\i] in {0,1,0,0,0,1,0,0,0}{%
+  \ifnum\k=1 \srwHit{({9.65+0.27*\i},{\oy-0.32})} \else \srwMiss{({9.65+0.27*\i},{\oy-0.32})} \fi}
+\node[srw txt,text=srwmuted] at (10.6,-4.95)
+  {\tikz[baseline=-0.6ex]{\srwHit{(0,0)}}\ selects $q^\ast$ \quad
+   \tikz[baseline=-0.6ex]{\srwMiss{(0,0)}}\ other analysis};
+\node[srw note] at (10.6,-5.55) {Neyman-allocated budget};
+
+\node[srw txt] at (14.9,-2.5) {reselection frequencies};
+\node[font=\scriptsize,text=srwink] at (14.9,-2.98)
+  {$\hat a_1=\overline A_{\mathrm{tail}}, \qquad \hat a_0=\overline A_{\mathrm{body}}$};
+\node[font=\scriptsize,text=srwink] at (14.9,-3.75)
+  {$\displaystyle \widehat H(u)=\frac{u\,\hat a_1}{u\,\hat a_1+(1-u)\,\hat a_0}$};
+\node[fill=srwrule!70,rounded corners=2pt,inner xsep=6pt,inner ysep=4pt,
+      font=\small,text=srwink] at (14.9,-4.7)
+  {$\hat p^{\,\mathrm{sel}}=\widehat H(p^\ast)$};
+\node[srw note] at (14.9,-5.55)
+  {asymptotically valid given $Q=q^\ast$\\ (Theorem~\ref{thm:asymptotic_validity})};
+
+\foreach \a/\b in {4.12/4.38,8.32/8.58,12.62/12.88}
+  \draw[-{Stealth[length=1.3mm,width=1.1mm]},line width=0.5pt,draw=srwmuted] (\a,-3.75) -- (\b,-3.75);
+
+\foreach \xa/\xb/\c/\t in {0.2/8.3/srwcodeblue/{cheap: run the original program on many subsamples},
+                           8.6/12.6/srwagent/{expensive: agent replays on few subsamples},
+                           12.9/16.95/srwink/{corrected inference}}{%
+  \draw[\c!60,line width=0.5pt] (\xa,-6.15) -- (\xb,-6.15);
+  \node[font=\scriptsize,text=\c,anchor=north] at ({(\xa+\xb)/2},-6.22) {\t};}
+
+\end{tikzpicture}%
+}

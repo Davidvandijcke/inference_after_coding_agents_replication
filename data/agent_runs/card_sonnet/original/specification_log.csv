@@ -1,0 +1,34 @@
+"id","spec","estimate","se","p_value","n"
+"M","MAIN: dFTE ~ NJ (closures=0)",2.75,1.342,0.041,384
+"A1","Continuing stores only (status2==1; drops closures)",2.722,1.34,0.043,378
+"A2","Drop permanent closures only",2.722,1.34,0.043,378
+"A3","Controls: chain + co_owned",2.785,1.344,0.039,384
+"A4","Controls: chain + co_owned + shore + pa1",1.27,2.012,0.528,384
+"A5","ANCOVA-type: control for wave-1 FTE",1.339,0.996,0.18,384
+"A6","FTE excluding managers (FT+0.5PT)",2.943,1.323,0.027,391
+"A7","Full-time employees only",3.443,1.588,0.031,392
+"A8","Part-time employees only",-0.911,1.532,0.552,396
+"A9","Managers only",-0.088,0.165,0.596,398
+"A10","dlog FTE (continuing stores with FTE>0)",0.078,0.049,0.112,378
+"A11","d asinh(FTE) (closures included)",0.075,0.071,0.295,384
+"A12","Headcount (FT+PT+mgr)",2.412,1.492,0.107,384
+"A13","Winsorised dFTE (1/99%)",2.481,1.26,0.05,384
+"B1","Wage-gap dose-response (PA gap=0), coef on gap",16.359,5.988,0.007,368
+"B2","NJ only: wave-1 wage=4.25 vs higher",1.46,1.003,0.147,293
+"B3","NJ low-wage (4.25) stores vs all PA",3.351,1.529,0.03,166
+"B4","NJ high-wage (>=5.00) stores vs all PA (placebo)",-0.011,1.636,0.995,139
+"C1","Exclude NJ shore",2.974,1.348,0.028,352
+"C2","NJ north+central vs PA",2.652,1.397,0.059,295
+"C3","NJ south vs PA",2.999,1.452,0.041,147
+"C4","PA1 only vs NJ",4.334,1.555,0.006,343
+"D1","Chain 1 only",4.39,2.549,0.087,159
+"D2","Chain 2 only",-1.594,1.074,0.142,79
+"D3","Chain 3 only",2.488,2.168,0.254,94
+"D4","Chain 4 only",3.417,3.171,0.286,52
+"E1","Company-owned only",2.037,1.547,0.19,134
+"E2","Franchised only",3.132,1.893,0.099,250
+"F1","Wave-2 phone interviews only",2.582,1.398,0.066,353
+"G1","Drop |dFTE|>25",1.938,1.187,0.103,377
+"H1","Bounds: temporarily closed stores coded 0 FTE",2.509,1.346,0.063,388
+"P1","Wave-1 FTE level difference NJ-PA (balance, not an effect)",-2.892,1.444,0.046,398
+"P2","First stage: change in starting wage NJ-PA ($)",0.497,0.051,0,370

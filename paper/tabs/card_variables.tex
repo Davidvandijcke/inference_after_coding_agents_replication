@@ -1,0 +1,42 @@
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{0.26\linewidth}p{0.52\linewidth}p{0.16\linewidth}@{}}
+\toprule
+Variable & Description & Coding \\
+\midrule
+\multicolumn{3}{@{}p{0.96\linewidth}}{\textit{Store}} \\
+\raggedright \texttt{store\_id}, \texttt{sheet} & \raggedright Store identifier (state and survey sheet number) &  \\
+\raggedright \texttt{chain} & \raggedright Burger King, KFC, Roy Rogers, Wendy\textquoteright s & 1--4 \\
+\raggedright \texttt{co\_owned} & \raggedright Company-owned & 0/1 \\
+\raggedright \texttt{state} & \raggedright New Jersey (1) or Pennsylvania (0) & 0/1 \\
+\raggedright \texttt{southj}, \texttt{centralj}, \texttt{northj}, \texttt{shore} & \raggedright Region of New Jersey; shore location & 0/1 \\
+\raggedright \texttt{pa1}, \texttt{pa2} & \raggedright Region of Pennsylvania & 0/1 \\
+\midrule
+\multicolumn{3}{@{}p{0.96\linewidth}}{\textit{Employment (wave 1 / wave 2)}} \\
+\raggedright \texttt{empft / empft2} & \raggedright Full-time employees, excluding managers & count \\
+\raggedright \texttt{emppt / emppt2} & \raggedright Part-time employees, excluding managers & count \\
+\raggedright \texttt{nmgrs / nmgrs2} & \raggedright Managers and assistant managers & count \\
+\midrule
+\multicolumn{3}{@{}p{0.96\linewidth}}{\textit{Wages and benefits (wave 1 / wave 2)}} \\
+\raggedright \texttt{wage\_st / wage\_st2} & \raggedright Starting wage & \$ per hour \\
+\raggedright \texttt{inctime / inctime2} & \raggedright Months to the usual first raise & months \\
+\raggedright \texttt{firstinc / firstin2} & \raggedright Usual first raise & \$ per hour \\
+\raggedright \texttt{bonus / special2} & \raggedright Cash bounty (wave 1) or special program (wave 2) for new workers & 0/1 \\
+\raggedright \texttt{pctaff} & \raggedright Share of employees affected by the new minimum wage (wave 1) & \% \\
+\raggedright \texttt{meals / meals2} & \raggedright Meal benefit: none, free, reduced-price, both & 0--3 \\
+\midrule
+\multicolumn{3}{@{}p{0.96\linewidth}}{\textit{Prices and operations (wave 1 / wave 2)}} \\
+\raggedright \texttt{psoda / psoda2} & \raggedright Price of a medium soda, including tax & \$ \\
+\raggedright \texttt{pfry / pfry2} & \raggedright Price of small fries, including tax & \$ \\
+\raggedright \texttt{pentree / pentree2} & \raggedright Price of an entree, including tax & \$ \\
+\raggedright \texttt{open / open2r} & \raggedright Opening hour & hour \\
+\raggedright \texttt{hrsopen / hrsopen2} & \raggedright Hours open per day & hours \\
+\raggedright \texttt{nregs / nregs2} & \raggedright Cash registers & count \\
+\raggedright \texttt{nregs11 / nregs112} & \raggedright Cash registers open at 11 am & count \\
+\midrule
+\multicolumn{3}{@{}p{0.96\linewidth}}{\textit{Survey (wave 1 / wave 2)}} \\
+\raggedright \texttt{ncalls / ncalls2} & \raggedright Call-backs before contact & count \\
+\raggedright \texttt{type2} & \raggedright Wave-2 interview by phone (1) or in person (2) & 1--2 \\
+\raggedright \texttt{status2} & \raggedright Wave-2 status: refused, answered, or closed (renovation, permanently, highway construction, mall fire) & 0--5 \\
+\raggedright \texttt{date2} & \raggedright Wave-2 interview date & MMDDYY \\
+\bottomrule
+\end{tabular}

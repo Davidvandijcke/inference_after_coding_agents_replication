@@ -1,0 +1,41 @@
+"""Rerun the chosen Pathways to Work analysis on a dataset with the CODEBOOK.md columns.
+
+Chosen test: effect of random assignment to the program on self-rated health
+at 12 months (health_m12), full sample. OLS of health_m12 on treatment, site
+indicators and pre-specified baseline covariates; HC2 robust standard errors;
+two-sided t-test of the treatment coefficient.
+
+Usage: python score.py --data <path> --output <path>
+"""
+import argparse
+import json
+
+import pandas as pd
+import statsmodels.formula.api as smf
+
+FORMULA = (
+    "health_m12 ~ treatment + C(site) + age + female + parent + C(education)"
+    " + household_size + employed_baseline + earnings_baseline"
+    " + months_unemployed_baseline"
+)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--data", required=True, help="input CSV")
+    parser.add_argument("--output", required=True, help="output JSON path")
+    args = parser.parse_args()
+
+    df = pd.read_csv(args.data)
+    fit = smf.ols(FORMULA, data=df).fit(cov_type="HC2", use_t=True)
+    result = {
+        "estimate": float(fit.params["treatment"]),
+        "std_error": float(fit.bse["treatment"]),
+        "p_value": float(fit.pvalues["treatment"]),
+    }
+    with open(args.output, "w") as f:
+        json.dump(result, f, indent=2)
+
+
+if __name__ == "__main__":
+    main()

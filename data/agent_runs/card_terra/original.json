@@ -1,0 +1,18 @@
+{
+  "session_id": "01a188d2-12b2-7df3-8ccf-a9997f3d75ed",
+  "cohort": "card_terra",
+  "role": "original",
+  "model": "gpt-6.1-terra",
+  "effort": "high",
+  "route": "chatgpt_subscription",
+  "p_value": 0.0284320863889777,
+  "estimate": 2.94251253132832,
+  "commitment": {
+    "model": "The model compares mean within-store employment changes between New Jersey and Pennsylvania. The estimand is the New Jersey population mean change minus the Pennsylvania population mean change. Stores are treated as independent, and change variances may differ between states; no observation distribution or known population variance was specified. The within-store change accounts for each store's baseline employment. State is the comparison variable, and no additional covariates are included. Part-time employees are assigned a fixed weight of 0.5, and permanently closed stores are assigned zero follow-up employment.",
+    "null": "The mean change in non-manager full-time-equivalent employment is the same in New Jersey and Pennsylvania: the New Jersey mean change minus the Pennsylvania mean change equals zero.",
+    "population": "Stores from Burger King, KFC, Roy Rogers, and Wendy's in New Jersey and eastern Pennsylvania covered by the two-wave survey frame.",
+    "outcome": "Store-level change from before to after the increase in non-manager full-time-equivalent employment, defined at each wave as the number of full-time employees plus 0.5 times the number of part-time employees. Follow-up employment is set to zero for permanently closed stores.",
+    "sample_restrictions": "Beyond the supplied survey frame, the analysis includes stores coded as New Jersey or Pennsylvania whose follow-up status is interviewed or permanently closed. It requires finite baseline full-time and part-time employee counts and, for interviewed stores, finite follow-up counts for both components. Refusals, temporary closures, other or missing follow-up statuses, and stores missing the required employment components are excluded."
+  },
+  "final_report": "The selected analysis estimates that non-manager employment rose by **2.94 full-time-equivalent employees per store** in New Jersey relative to Pennsylvania (SE 1.32; 95% CI 0.32 to 5.57; p = 0.028).\n\nThis was the smallest nominal p-value among eight specifications explored, so it is exploratory evidence. An illustrative Bonferroni adjustment across those eight tests gives p = 0.227. The causal interpretation also depends on an untestable parallel-trends assumption and on treating stores’ employment changes as independent.\n\nThe reusable, sourceable function is in [analysis.R](workspace/analysis.R). It uses its `data` argument and returns `estimate`, `se`, and `p_value`. The [full report](workspace/REPORT.md) records all eight specifications, their results, and limitations. The [exploration](workspace/artifacts/explore.R) and [verification](workspace/artifacts/verify.R) scripts ran successfully."
+}

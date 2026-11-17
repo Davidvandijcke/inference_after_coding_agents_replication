@@ -1,0 +1,138 @@
+[
+ {
+  "id": "placebo_min_participants",
+  "main_tex_line": 1133,
+  "quote": "have at least $2{,}000$ participants",
+  "value": 2000
+ },
+ {
+  "id": "placebo_sessions_checked",
+  "main_tex_line": 1133,
+  "quote": "checked the logs of all 24,542 original and replay sessions",
+  "value": 24542
+ },
+ {
+  "id": "placebo_sessions_checked_recorded",
+  "main_tex_line": 1133,
+  "quote": "checked the logs of all 24,542 original and replay sessions",
+  "value": 24542
+ },
+ {
+  "id": "placebo_identity_hits",
+  "main_tex_line": 1133,
+  "quote": "for any mention of the study authors, title, or title paraphrases, but did not find any",
+  "value": 0
+ },
+ {
+  "id": "placebo_datasets_per_study",
+  "main_tex_line": 1135,
+  "quote": "For each of the 3 studies, we draw 34 fresh datasets",
+  "value": [
+   34,
+   34,
+   34
+  ]
+ },
+ {
+  "id": "placebo_originals",
+  "main_tex_line": 1135,
+  "quote": "each of the 102 full datasets",
+  "value": 102
+ },
+ {
+  "id": "placebo_tail_replays",
+  "main_tex_line": 1135,
+  "quote": "draw 40 tail and 200 body subsample datasets",
+  "value": 0
+ },
+ {
+  "id": "placebo_body_replays",
+  "main_tex_line": 1135,
+  "quote": "draw 40 tail and 200 body subsample datasets",
+  "value": 200
+ },
+ {
+  "id": "placebo_m_over_n",
+  "main_tex_line": 1135,
+  "quote": "relative subsample size of $m/n = 0.1$",
+  "value": [
+   0.09991725279271825,
+   0.09985683607730853,
+   0.1
+  ]
+ },
+ {
+  "id": "placebo_replay_rate_pooled",
+  "main_tex_line": 1143,
+  "quote": "and 5.9\\% for the real data design pooled across the three papers",
+  "value": 0.058823529411764705
+ },
+ {
+  "id": "placebo_fig_datasets",
+  "main_tex_line": 1151,
+  "quote": "the real data design (102 datasets from three studies with a placebo treatment, $m/n=0.10$, 40 tail and 200 body replays)",
+  "value": 102
+ },
+ {
+  "id": "placebo_caption_datasets_each",
+  "main_tex_line": 1162,
+  "quote": "34 datasets each (24,440 replays)",
+  "value": [
+   34,
+   34,
+   34
+  ]
+ },
+ {
+  "id": "placebo_caption_replays",
+  "main_tex_line": 1162,
+  "quote": "34 datasets each (24,440 replays)",
+  "value": 24440
+ },
+ {
+  "id": "placebo_agent_rate_pooled",
+  "main_tex_line": 1181,
+  "quote": "report significant results on nearly 100\\% of simulations on all three real papers' data",
+  "value": 0.9705882352941176
+ },
+ {
+  "id": "placebo_replay_rate_pooled_panel_c",
+  "main_tex_line": 1181,
+  "quote": "near-nominal false rejection rate of $5.9\\%$ on the $102$ simulations",
+  "value": 0.058823529411764705
+ },
+ {
+  "id": "placebo_n_pooled",
+  "main_tex_line": 1181,
+  "quote": "near-nominal false rejection rate of $5.9\\%$ on the $102$ simulations",
+  "value": 102
+ },
+ {
+  "id": "placebo_replay_rate_range",
+  "main_tex_line": 1181,
+  "quote": "slightly more variable, between $0.0\\%$ and $8.8\\%$",
+  "value": [
+   0.0,
+   0.08823529411764706
+  ]
+ },
+ {
+  "id": "placebo_per_study_n",
+  "main_tex_line": 1181,
+  "quote": "smaller number of simulations (34) within each paper",
+  "value": [
+   34,
+   34,
+   34
+  ]
+ },
+ {
+  "id": "placebo_median_multiplier_range",
+  "main_tex_line": 1181,
+  "quote": "median multipliers $\\widehat \\lambda$ of $10$--$22$",
+  "value": [
+   10.039028005074623,
+   22.272595510180302
+  ]
+ }
+]

@@ -1,0 +1,14 @@
+{
+ "fixed_reference": {
+  "target": "AD098",
+  "u": 0.754506630472265
+ },
+ "frontier": {
+  "target": "AD098",
+  "u": 0.754506630472265
+ },
+ "client_pressure": {
+  "target": "AD099",
+  "u": 0.9189404501349661
+ }
+}

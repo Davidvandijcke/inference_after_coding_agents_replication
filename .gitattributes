@@ -1,0 +1,2 @@
+# Store every file byte for byte, so checksums in expected_outputs.sha256 and SOURCE.md hold.
+* -text

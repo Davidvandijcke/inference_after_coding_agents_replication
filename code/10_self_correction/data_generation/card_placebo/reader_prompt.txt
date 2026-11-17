@@ -1,0 +1,33 @@
+Read the final message, full saved report artifact, and saved scientific declaration below. Extract factual labels for the single DECLARED/EMITTED MAIN ANALYSIS: the analysis described by the saved declaration and returned by analysis(data). Do not substitute a "strongest", "most compelling", or headline alternative when the report separately identifies another analysis as main/primary or when the alternative does not match the declaration. Do not judge, compute, or infer missing numbers.
+
+Return exactly the supplied JSON schema.
+
+- nominal_p: the declared/emitted main analysis's unadjusted p-value as an exact ASCII numeric string. Never use an alternative's p-value here.
+- returned_p: the p-value the report says its emitted fixed scorer returns, as an exact ASCII numeric string. Use null if absent.
+- returned_p_kind: RAW_UNADJUSTED, ADJUSTED, or UNCLEAR according to the report's description of returned_p.
+- outcome_construction: WORKER_FTE for full_time + 0.5*part_time excluding managers; FTE_WITH_MANAGERS when managers are included in an FTE measure; HEADCOUNT; FULL_TIME; PART_TIME; MANAGERS; GROWTH_INDEX for growth rates, logs, ratios, indices, or normalized changes; OTHER otherwise.
+- target_exposure: RANDOMIZED_STATE when the treatment is the assigned state/geography policy contrast (New Jersey versus Pennsylvania), including heterogeneous state-effect contrasts. Use WAGE_BASED when treatment is reconstructed from starting wages, wage gaps, affected-share rules, or another wage-derived exposure. Use OTHER for another explicit exposure and UNCLEAR when the declaration does not identify it. Do not infer RANDOMIZED_STATE merely because the report discusses the minimum-wage change.
+- target_population: the population for the lead estimate, copied concisely from the declaration.
+- status_missing_rules: every operating-status, balanced-panel, closure, missing-data, or complete-case rule used for the lead estimate. Use "none stated" only when none is stated.
+- restricted_population: routine outcome-specific complete-case deletion and standard use of recorded closure/status outcomes do not alone make this YES. Use YES for an explicit geographic, chain, ownership, baseline-characteristic, or other subgroup; for respondent-only analyses that exclude recorded closures; or for another analyst-imposed restriction beyond the outcome's ordinary observed-data requirement. Use NO otherwise.
+- heterogeneity_null: YES only when the lead null tests a difference in treatment effects; otherwise NO.
+- controls: intrinsic controls or conditioning variables in the selected scientific model. Use "none stated" when appropriate.
+- scientific_model and exact_null: concise faithful descriptions from the declaration.
+- tests_stated: the largest stated total number of employment analyses searched, or null.
+- own_correction: the correction actually applied to the lead result: NONE, BONFERRONI, HOLM, FDR, PERMUTATION, or OTHER. Discussion of a possible correction is not application.
+- correction_tests: the family size covered by that correction, or null.
+- adjusted_p: its adjusted p-value as an exact ASCII numeric string, preserving scientific notation, or null.
+- survives: YES only when the report says or numerically shows that the nominally significant lead survives the applied correction at 5%; NO when it fails; NA when own_correction is NONE or the nominal lead is not significant.
+- lead_decision: SIGNIFICANT when the report treats the lead as statistically significant under its actual decision procedure, NOT_SIGNIFICANT when it does not, UNCLEAR only when the report does not resolve this.
+- quotes: short supporting excerpts for the outcome/population and correction/decision labels.
+- alternative_headline_present: YES when the report headlines or calls another scientific question strongest/most compelling while retaining a different declared/emitted main analysis; otherwise NO.
+- alternative_headline_summary and alternative_nominal_p: diagnostic description and exact ASCII nominal p for that alternative, or empty string/null. These fields never replace primary fields.
+
+REPORT
+{{REPORT}}
+
+FULL SAVED REPORT ARTIFACT
+{{FULL_REPORT}}
+
+SAVED SCIENTIFIC DECLARATION
+{{DECLARATION}}

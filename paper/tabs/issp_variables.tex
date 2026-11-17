@@ -1,0 +1,40 @@
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{0.26\linewidth}p{0.52\linewidth}p{0.16\linewidth}@{}}
+\toprule
+Variable & Description & Coding \\
+\midrule
+\multicolumn{3}{@{}p{0.96\linewidth}}{\textit{Outcomes: ``should it be the government\textquoteright s responsibility to \ldots''; 1 definitely should be, 2/3 probably should be, 1/3 probably should not be, 0 definitely should not be}} \\
+\raggedright \texttt{jobs} & \raggedright provide a job for everyone who wants one & 0--1 \\
+\raggedright \texttt{healthcare} & \raggedright provide health care for the sick & 0--1 \\
+\raggedright \texttt{old\_age} & \raggedright provide a decent standard of living for the old & 0--1 \\
+\raggedright \texttt{unemployed} & \raggedright provide a decent standard of living for the unemployed & 0--1 \\
+\raggedright \texttt{income\_diff} & \raggedright reduce income differences between the rich and the poor & 0--1 \\
+\raggedright \texttt{housing} & \raggedright provide decent housing for those who can\textquoteright t afford it (not asked in 1985) & 0--1 \\
+\midrule
+\multicolumn{3}{@{}p{0.96\linewidth}}{\textit{Immigration (country, module year)}} \\
+\raggedright \texttt{migstock} & \raggedright Immigrant stock: World Bank where available, otherwise UN & \% of population \\
+\raggedright \texttt{migstock\_wb}, \texttt{migstock\_un}, \texttt{migstock\_oecd} & \raggedright Immigrant stock from the World Bank (1985--2006), the UN (1990--2016) and the OECD (members only) & \% of population \\
+\raggedright \texttt{mignet\_un} & \raggedright Net migration rate, UN (none for 2016) & per 1,000 per year \\
+\raggedright \texttt{migflow\_pct} & \raggedright The same rate in percent & \% per year \\
+\midrule
+\multicolumn{3}{@{}p{0.96\linewidth}}{\textit{Respondent}} \\
+\raggedright \texttt{age} & \raggedright Age & years \\
+\raggedright \texttt{female} & \raggedright Female & 0/1 \\
+\raggedright \texttt{employed} & \raggedright In paid work & 0/1 \\
+\raggedright \texttt{educ} & \raggedright Highest completed education, harmonized (1996--2016) & 0--5 \\
+\raggedright \texttt{topbot} & \raggedright Self-placement from the bottom to the top of society (2006--2016) & 1--10 \\
+\midrule
+\multicolumn{3}{@{}p{0.96\linewidth}}{\textit{Country controls (module year)}} \\
+\raggedright \texttt{gdp\_wb}, \texttt{log\_gdp} & \raggedright GDP per capita and its logarithm & current US\$ \\
+\raggedright \texttt{pop\_wb} & \raggedright Population & persons \\
+\raggedright \texttt{ginid\_solt} & \raggedright Gini index of disposable household income (SWIID) & 0--1 \\
+\raggedright \texttt{gini\_wb} & \raggedright Gini index (World Bank; sparse) & 0--100 \\
+\raggedright \texttt{wdi\_unempilo} & \raggedright Unemployment rate (ILO; from 1991) & \% of labor force \\
+\raggedright \texttt{socx\_oecd} & \raggedright Public social expenditure (OECD members) & \% of GDP \\
+\raggedright \texttt{al\_ethnic} & \raggedright Ethnic fractionalization & 0--1 \\
+\midrule
+\multicolumn{3}{@{}p{0.96\linewidth}}{\textit{Identifiers}} \\
+\raggedright \texttt{wave}, \texttt{year} & \raggedright Survey module: 1985, 1990, 1996, 2006, 2016 &  \\
+\raggedright \texttt{iso\_country}, \texttt{cntry\_wave} & \raggedright Country (ISO code) and country-wave &  \\
+\bottomrule
+\end{tabular}

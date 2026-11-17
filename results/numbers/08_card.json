@@ -1,0 +1,302 @@
+[
+ {
+  "id": "card_stores",
+  "main_tex_line": 1221,
+  "quote": "collected survey data from 410 fast-food restaurants",
+  "value": 410
+ },
+ {
+  "id": "card_min_wage_before",
+  "main_tex_line": 1221,
+  "quote": "an increase in the minimum wage from \\$4.25",
+  "value": 4.25
+ },
+ {
+  "id": "card_min_wage_after",
+  "main_tex_line": 1221,
+  "quote": "to \\$5.05 there",
+  "value": 5.05
+ },
+ {
+  "id": "card_replays",
+  "main_tex_line": 1223,
+  "quote": "replay it on 3,000 random subsamples",
+  "value": 3000
+ },
+ {
+  "id": "card_subset_size",
+  "main_tex_line": 1223,
+  "quote": "random subsamples of 150 restaurants",
+  "value": 150
+ },
+ {
+  "id": "card_tail_replays",
+  "main_tex_line": 1223,
+  "quote": "1,142 in the tail",
+  "value": 1142
+ },
+ {
+  "id": "card_body_replays",
+  "main_tex_line": 1223,
+  "quote": "1,858 in the body",
+  "value": 1858
+ },
+ {
+  "id": "card_fact_classified",
+  "main_tex_line": 1223,
+  "quote": "The match review classifies 2,985 of these replays",
+  "value": 2985
+ },
+ {
+  "id": "card_fact_unresolved",
+  "main_tex_line": 1223,
+  "quote": "(15 remain unresolved)",
+  "value": 15
+ },
+ {
+  "id": "card_display_replays",
+  "main_tex_line": 1223,
+  "quote": "the displays of the replays' programs use the 2,983",
+  "value": 2983
+ },
+ {
+  "id": "card_activity_replays",
+  "main_tex_line": 1223,
+  "quote": "the 2,944 with a purpose code for every step",
+  "value": 2944
+ },
+ {
+  "id": "card_original_estimate",
+  "main_tex_line": 1227,
+  "quote": "The estimate it reported for the New-Jersey DiD coefficient was $2.97$",
+  "value": 2.9656505083391833
+ },
+ {
+  "id": "card_original_estimate_employees",
+  "main_tex_line": 1227,
+  "quote": "raised employment by about 2.97 employees per restaurant",
+  "value": 2.9656505083391833
+ },
+ {
+  "id": "card_original_p",
+  "main_tex_line": 1227,
+  "quote": "was $2.97$ ($p=0.025$)",
+  "value": 0.02516931664290065
+ },
+ {
+  "id": "card_ck_estimate",
+  "main_tex_line": 1227,
+  "quote": "and find an increase of 2.30 employees",
+  "value": 2.3038595094333236
+ },
+ {
+  "id": "card_ck_p",
+  "main_tex_line": 1227,
+  "quote": "2.30 employees ($p=0.055$)",
+  "value": 0.05477938413884328
+ },
+ {
+  "id": "card_ck_stores",
+  "main_tex_line": 1227,
+  "quote": "restrict their main analysis to the 357 restaurants with data on employment and starting wages",
+  "value": 357
+ },
+ {
+  "id": "card_tail_reselection",
+  "main_tex_line": 1229,
+  "quote": "reselecting it in 12.6\\% of tail replays",
+  "value": 0.12599118942731277
+ },
+ {
+  "id": "card_body_reselection",
+  "main_tex_line": 1229,
+  "quote": "but only in 7.2\\% of body replays",
+  "value": 0.0718918918918919
+ },
+ {
+  "id": "card_lambda",
+  "main_tex_line": 1229,
+  "quote": "This corresponds to a selection multiplier of 1.72",
+  "value": 1.7199332527980362
+ },
+ {
+  "id": "card_lambda_lower",
+  "main_tex_line": 1229,
+  "quote": "multiplier of 1.72 with a one-sided 95\\% lower bound of 1.43",
+  "value": 1.4261929228681023
+ },
+ {
+  "id": "card_lambda_005",
+  "main_tex_line": 1229,
+  "quote": "the multiplier increases further to $1.90$",
+  "value": 1.8980997242167807
+ },
+ {
+  "id": "card_lambda_005_lower",
+  "main_tex_line": 1229,
+  "quote": "$1.90$, with a one-sided 95\\% lower bound of 1.55",
+  "value": 1.552772315096247
+ },
+ {
+  "id": "card_u",
+  "main_tex_line": 1229,
+  "quote": "the original $p$-value of $0.0252$",
+  "value": 0.02516931664290065
+ },
+ {
+  "id": "card_p_corrected",
+  "main_tex_line": 1229,
+  "quote": "gets corrected upward to $0.0433$",
+  "value": 0.04328954464432786
+ },
+ {
+  "id": "card_p_upper",
+  "main_tex_line": 1229,
+  "quote": "cannot reject the null anymore at $0.052$",
+  "value": 0.0521392822265625
+ },
+ {
+  "id": "card_sound_reviewer",
+  "main_tex_line": 1231,
+  "quote": "judges 98.5\\% of GPT-6-Luna's analyses to be methodologically sound",
+  "value": 0.9845792826014079
+ },
+ {
+  "id": "card_sound_after_audit",
+  "main_tex_line": 1231,
+  "quote": "and 99.5\\% after a second model (Claude Opus 5.5, at high effort) audits its verdicts",
+  "value": 0.9953067381830372
+ },
+ {
+  "id": "card_tail_matches",
+  "main_tex_line": 1240,
+  "quote": "Matching replays: 143 of 1,135 in the tail",
+  "value": 143
+ },
+ {
+  "id": "card_tail_classified",
+  "main_tex_line": 1240,
+  "quote": "143 of 1,135 in the tail",
+  "value": 1135
+ },
+ {
+  "id": "card_body_matches",
+  "main_tex_line": 1240,
+  "quote": "and 133 of 1,850 in the body",
+  "value": 133
+ },
+ {
+  "id": "card_body_classified",
+  "main_tex_line": 1240,
+  "quote": "133 of 1,850 in the body",
+  "value": 1850
+ },
+ {
+  "id": "card_employment_options",
+  "main_tex_line": 1246,
+  "quote": "For each of the 4 employment options",
+  "value": 4
+ },
+ {
+  "id": "card_choice_ratio_min",
+  "main_tex_line": 1246,
+  "quote": "choosing it at least 2$\\times$",
+  "value": 2.164831014682647
+ },
+ {
+  "id": "card_choice_ratio_max",
+  "main_tex_line": 1246,
+  "quote": "and up to 12.6$\\times$ as frequently",
+  "value": 12.607652243589742
+ },
+ {
+  "id": "card_nonmanager_default",
+  "main_tex_line": 1246,
+  "quote": "being chosen 39\\% of the time even when it is not the most significant",
+  "value": 0.38928210313447925
+ },
+ {
+  "id": "card_sound_up_to",
+  "main_tex_line": 1246,
+  "quote": "up to 99.5\\% of replay agents' analyses were methodologically sound",
+  "value": 0.9953067381830372
+ },
+ {
+  "id": "card_activity_categories",
+  "main_tex_line": 1258,
+  "quote": "We classify agent actions into 8 categories",
+  "value": 8
+ },
+ {
+  "id": "card_first_bin_inspect_steps",
+  "main_tex_line": 1260,
+  "quote": "85\\% of all steps in the first out of ten bins involve data inspection",
+  "value": 0.8506090868
+ },
+ {
+  "id": "card_first_bin_inspect_replays",
+  "main_tex_line": 1260,
+  "quote": "with 94\\% of all replay agents inspecting the data at least once in that first bin",
+  "value": 0.9446331521739131
+ },
+ {
+  "id": "card_first_bin_setup_only",
+  "main_tex_line": 1260,
+  "quote": "the remaining 6\\% of agents spending the entire first bin setting up the computing environment",
+  "value": 0.05536684782608696
+ },
+ {
+  "id": "card_estimate_before_script",
+  "main_tex_line": 1264,
+  "quote": "97.9\\% of replay agents ran an analysis before writing any external scripts",
+  "value": 0.9792798913043478
+ },
+ {
+  "id": "card_edit_after_report",
+  "main_tex_line": 1264,
+  "quote": "about 23.5\\% of agents edit the \\texttt{analysis.R} script",
+  "value": 0.23539402173913043
+ },
+ {
+  "id": "card_activity_parts",
+  "main_tex_line": 1270,
+  "quote": "divided by chronological position into ten equal parts",
+  "value": 10
+ },
+ {
+  "id": "card_activity_tail",
+  "main_tex_line": 1270,
+  "quote": "Coded from 1,113 tail",
+  "value": 1113
+ },
+ {
+  "id": "card_activity_body",
+  "main_tex_line": 1270,
+  "quote": "and 1,831 body replays",
+  "value": 1831
+ },
+ {
+  "id": "card_stores_table",
+  "main_tex_line": 2190,
+  "quote": "for 410 restaurants total surveyed",
+  "value": 410
+ },
+ {
+  "id": "card_min_wage_before_table",
+  "main_tex_line": 2190,
+  "quote": "minimum wage rose from \\$4.25",
+  "value": 4.25
+ },
+ {
+  "id": "card_min_wage_after_table",
+  "main_tex_line": 2190,
+  "quote": "to \\$5.05 on April 1",
+  "value": 5.05
+ },
+ {
+  "id": "card_replay_significance_n",
+  "main_tex_line": 2209,
+  "quote": "Based on 2,983 classified replays",
+  "value": 2983
+ }
+]

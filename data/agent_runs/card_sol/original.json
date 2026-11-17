@@ -1,0 +1,18 @@
+{
+  "session_id": "01a188e9-846d-7e90-8aa2-06bffecaeec4",
+  "cohort": "card_sol",
+  "role": "original",
+  "model": "gpt-6.1-sol",
+  "effort": "high",
+  "route": "chatgpt_subscription",
+  "p_value": 0.0269251960652278,
+  "estimate": 2.96788577078284,
+  "commitment": {
+    "model": "The selected working additive model is ΔY_i = α + τ NJ_i + γ_chain(i) + δ company_owned_i + ε_i. The estimand τ is the chain- and ownership-adjusted New Jersey-minus-Pennsylvania difference in within-store employment changes. NJ equals 1 for New Jersey and 0 for Pennsylvania; baseline chain is categorical and baseline company ownership is binary. Store changes are treated as independent conditional on these covariates. No parametric observation distribution, known population variance, or equality restriction on population variances was specified. Regression coefficients and error variances are unknown. The fixed part-time weight is 0.5, and permanent closures have post-period employment fixed at zero. Causal interpretation requires conditional parallel counterfactual trends, no consequential spillovers or anticipation, and missingness that does not distort differential changes.",
+    "null": "H0: τ = 0, with the other regression coefficients and error variances unrestricted; the alternative is τ ≠ 0.",
+    "population": "Baseline stores represented by the supplied survey frame: Burger King, KFC, Roy Rogers, and Wendy’s restaurants in New Jersey and eastern Pennsylvania. The analysis concerns employment changes at existing baseline stores, including permanent exits, with complete-case identification limitations; it does not cover employment from new store entry or the entire restaurant industry.",
+    "outcome": "Within-store change from the February–March 1992 wave to the November–December 1992 wave in worker full-time equivalents: Y_t = full-time workers_t + 0.5 × part-time workers_t. Managers and assistant managers are excluded. The outcome is a level difference, without logarithmic or proportional transformation.",
+    "sample_restrictions": "Beyond the supplied design’s geographic, chain, and survey-wave eligibility, require observed state, baseline chain, baseline company ownership, and complete full-time and part-time worker counts in both waves after closure coding. Assign zero post-period worker counts to permanent closures (status2 = 3). Refusals (status2 = 0) and unknown follow-up status have unavailable post outcomes and are excluded. Temporary closures (status2 = 2, 4, or 5) are not assigned zero; they contribute only if the required counts are observed. Missing manager counts do not exclude a store. No additional geographic subgroup, chain subgroup, wage threshold, trimming, or respondent-only restriction was imposed."
+  },
+  "final_report": "Saved the reusable function in [analysis.R](workspace/analysis.R).\n\nThe selected DID estimates **+2.97 worker FTEs per store**, excluding managers and adjusting for chain and ownership: SE **1.34**, ordinary 95% CI **[0.34, 5.60]**, p **0.0269**.\n\nAfter accounting for selection among 26 analyses, Holm-adjusted p = **0.700**. The evidence is therefore suggestive, with substantial uncertainty from specification selection and the two-state design.\n\nThe [report and abstract](workspace/report.md) include all alternatives and limitations; [complete results](workspace/artifacts/all_analyses.csv) are also saved. Verification passed, and supplied files remain unchanged."
+}

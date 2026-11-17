@@ -1,0 +1,236 @@
+[
+ {
+  "id": "issp_intro_lambda",
+  "main_tex_line": 147,
+  "quote": "yet it reselects its analysis 2.42 times as often when the analysis is significant",
+  "value": 2.424794
+ },
+ {
+  "id": "issp_respondents",
+  "main_tex_line": 1199,
+  "quote": "which has 154,921 respondents in 46 countries",
+  "value": 154921
+ },
+ {
+  "id": "issp_countries",
+  "main_tex_line": 1199,
+  "quote": "which has 154,921 respondents in 46 countries",
+  "value": 46
+ },
+ {
+  "id": "issp_subsample_countries",
+  "main_tex_line": 1201,
+  "quote": "subsamples of 16 out of 46 countries ($m/n=0.35$)",
+  "value": 16
+ },
+ {
+  "id": "issp_m_over_n",
+  "main_tex_line": 1201,
+  "quote": "subsamples of 16 out of 46 countries ($m/n=0.35$)",
+  "value": 0.347826
+ },
+ {
+  "id": "issp_replays_per_stratum",
+  "main_tex_line": 1201,
+  "quote": "replay the agent on $500$ subsamples in each stratum",
+  "value": "500/500"
+ },
+ {
+  "id": "issp_outcome_coding",
+  "main_tex_line": 1203,
+  "quote": "(1 = definitely should not be [its responsibility], 4 = definitely should be, rescaled to a $[0,100]$ scale)",
+  "value": "raw ISSP code of 'definitely should not be': 4"
+ },
+ {
+  "id": "issp_original_estimate",
+  "main_tex_line": 1203,
+  "quote": "a 10 percentage-point higher immigrant stock was associated with 4.6 points lower support",
+  "value": -4.592288
+ },
+ {
+  "id": "issp_original_p",
+  "main_tex_line": 1203,
+  "quote": "with $p=0.0123$ based on standard errors clustered at the country level",
+  "value": 0.012342
+ },
+ {
+  "id": "issp_original_outcomes_tried",
+  "main_tex_line": 1205,
+  "quote": "it estimated the same regression specification for each of the six welfare-related outcomes in the data",
+  "value": 6
+ },
+ {
+  "id": "issp_quote_clearest",
+  "main_tex_line": 1205,
+  "quote": "because ``it has the clearest negative estimate''",
+  "value": true
+ },
+ {
+  "id": "issp_original_six_negative",
+  "main_tex_line": 1205,
+  "quote": "among the six specifications it tried, all estimates were negative",
+  "value": 6
+ },
+ {
+  "id": "issp_original_analyses_logged",
+  "main_tex_line": 1205,
+  "quote": "among the six specifications it tried ... and it did not search further",
+  "value": 14
+ },
+ {
+  "id": "issp_quote_breadth",
+  "main_tex_line": 1205,
+  "quote": "``breadth check, not a result-driven decision to stop or change the model''",
+  "value": true
+ },
+ {
+  "id": "issp_lambda",
+  "main_tex_line": 1207,
+  "quote": "$\\widehat \\lambda = 2.42$",
+  "value": 2.424794
+ },
+ {
+  "id": "issp_lambda_lower_one95",
+  "main_tex_line": 1207,
+  "quote": "with the 95\\% one-sided confidence band excluding $1$",
+  "value": 1.748744
+ },
+ {
+  "id": "issp_original_p_again",
+  "main_tex_line": 1207,
+  "quote": "the agent's original $p$-value of $0.0123$",
+  "value": 0.012342
+ },
+ {
+  "id": "issp_corrected_p",
+  "main_tex_line": 1207,
+  "quote": "gets corrected upward to $p=0.0299$",
+  "value": 0.029928
+ },
+ {
+  "id": "issp_corrected_p_upper_one95",
+  "main_tex_line": 1207,
+  "quote": "the one-sided confidence band for the corrected $p$-value still excludes $0.05$",
+  "value": 0.04203
+ },
+ {
+  "id": "issp_tail_matches",
+  "main_tex_line": 1213,
+  "quote": "Matching replays: 79 of 500 in the tail and 32 of 500 in the body",
+  "value": "79/500"
+ },
+ {
+  "id": "issp_body_matches",
+  "main_tex_line": 1213,
+  "quote": "Matching replays: 79 of 500 in the tail and 32 of 500 in the body",
+  "value": "32/500"
+ },
+ {
+  "id": "issp_leads_pro",
+  "main_tex_line": 1217,
+  "quote": "13/20 reruns of the original agent on the full dataset lead with the same original analysis",
+  "value": "14/20"
+ },
+ {
+  "id": "issp_leads_anti",
+  "main_tex_line": 1217,
+  "quote": "11/20 runs with an analogous anti-immigration prompt arrive at the same analysis",
+  "value": "12/20"
+ },
+ {
+  "id": "issp_reference_runs",
+  "main_tex_line": 1217,
+  "quote": "all 20 runs of the pro- and anti-immigration agents, as well as 20 neutral agents",
+  "value": [
+   20,
+   20,
+   20
+  ]
+ },
+ {
+  "id": "issp_mvalue_analyses",
+  "main_tex_line": 1217,
+  "quote": "Among the 811 analyses considered across all the runs, approximately 12\\%",
+  "value": 811
+ },
+ {
+  "id": "issp_mvalue_share",
+  "main_tex_line": 1217,
+  "quote": "Among the 811 analyses considered across all the runs, approximately 12\\%",
+  "value": 0.117139
+ },
+ {
+  "id": "issp_original_z",
+  "main_tex_line": 1217,
+  "quote": "less than or equal to the original's $z=-2.63$",
+  "value": -2.630867
+ },
+ {
+  "id": "issp_mvalue",
+  "main_tex_line": 1217,
+  "quote": "their $m$-value is $0.23$",
+  "value": 0.234279
+ },
+ {
+  "id": "issp_table_respondents",
+  "main_tex_line": 2148,
+  "quote": "154,921 respondents in 46 countries and 107 country-waves",
+  "value": 154921
+ },
+ {
+  "id": "issp_table_countries",
+  "main_tex_line": 2148,
+  "quote": "154,921 respondents in 46 countries and 107 country-waves",
+  "value": 46
+ },
+ {
+  "id": "issp_table_country_waves",
+  "main_tex_line": 2148,
+  "quote": "154,921 respondents in 46 countries and 107 country-waves",
+  "value": 107
+ },
+ {
+  "id": "issp_reference_sessions",
+  "main_tex_line": 2162,
+  "quote": "uses 60 full-data GPT-6-Luna sessions",
+  "value": 60
+ },
+ {
+  "id": "issp_reference_per_prompt",
+  "main_tex_line": 2162,
+  "quote": "20 with the original request, 20 with the team described as pushing for lower immigration",
+  "value": [
+   20,
+   20,
+   20
+  ]
+ },
+ {
+  "id": "issp_reference_analyses",
+  "main_tex_line": 2162,
+  "quote": "Their logs hold 811 estimated analyses",
+  "value": 811
+ },
+ {
+  "id": "issp_reference_clustered",
+  "main_tex_line": 2162,
+  "quote": "nearly all with standard errors clustered by country",
+  "value": {
+   "analyses": {
+    "country_clustered": 749,
+    "country_wave_clustered": 62
+   },
+   "plan_events": {
+    "country_clustered": 512,
+    "country_wave_clustered": 38,
+    "other_or_unstated": 2
+   }
+  }
+ },
+ {
+  "id": "issp_mvalue_sessions_weighted",
+  "main_tex_line": 2162,
+  "quote": "weighting sessions equally gives 0.25",
+  "value": 0.251756
+ }
+]

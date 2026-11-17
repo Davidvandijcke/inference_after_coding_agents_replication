@@ -1,0 +1,1 @@
+Use the supplied packet as the sole research data source. Internet access may be used for technical documentation, software and package installation. Do not replace or augment research observations with downloaded datasets. Keep supplied packet files unchanged and write analysis artifacts separately.

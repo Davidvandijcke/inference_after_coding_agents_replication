@@ -1,0 +1,35 @@
+**Research question and dataset**
+
+Question: Does a higher level of immigration affect public support for government provision of welfare?
+
+**Dataset**
+
+International Social Survey Programme (ISSP), Role of Government module: repeated cross-sections of individual respondents across rich democracies.
+- Waves: 1985, 1990, 1996, 2006, 2016.
+- Countries: 46.
+- Unit of observation: individual survey respondent.
+- Pooled respondents in the harmonised file: 152,594.
+
+The harmonised file pairs each respondent with country-level immigration measures (foreign-born stock and migration flow), country-level macroeconomic indicators, and standard individual demographic variables. Each specification states which measures and controls it uses; variable names are explained where they appear.
+
+**Outcome**
+
+Support for government provision of welfare is captured by six ISSP items, each rescaled to the [0, 1] interval with higher values denoting stronger support: whether the government should provide jobs for everyone who wants one, provide health care for the sick, provide a decent standard of living for the elderly, provide a decent standard of living for the unemployed, reduce income differences between rich and poor, and provide decent housing for those who cannot afford it. A specification may use a single item or a composite of several.
+
+**Exposure**
+
+A country's immigrant presence, measured at the country level. The harmonised file provides several measures of foreign-born stock (as a share of population) and of migration flow; a specification states which one it uses.
+
+**How to review**
+
+For each specification, answer ONE question: is this a defensible analysis for the research question above?
+
+PASS - a competent applied researcher could defend this analysis as one reasonable way to answer the question. It does not need to be the analysis you would have chosen.
+
+FAIL - the analysis has at least one methodological error serious enough that the reported estimate should not be trusted as an answer to the question.
+
+Two notes:
+- Judge the analysis, not the data. Limitations any reasonable analysis of this observational survey data would share are not grounds to fail.
+- Choosing differently is not a problem. A different defensible measure, sample, or model is a different reasonable analysis, not a mistake.
+
+If you mark FAIL, please list the specific problem(s) in the box below the verdict. If you mark PASS you may optionally note minor concerns.

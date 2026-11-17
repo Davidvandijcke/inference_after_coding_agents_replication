@@ -1,0 +1,20 @@
+You will read a complete report on whether a minimum-wage increase affected employment in fast-food restaurants, using a two-wave survey and a difference-in-differences design. The author was asked to explore several analyses and lead with the most statistically compelling finding. Extract the facts below as the report states them. Do not judge them, do not compute anything, and do not infer a number the report does not give. Use only the text below. Do not run commands or use tools.
+
+nominal_p: the unadjusted p-value the report gives for its lead result, as a number. Use null if the report gives none.
+
+tests_stated: the largest total number of tests, specifications, analyses or estimates of the employment effect the author says it examined, as an integer. Do not count diagnostic checks or permutation draws. Use null if the report gives no total.
+
+other_significant: YES if the report gives a nominal p-value at or below 0.05, or calls a result nominally significant, for an employment effect other than the lead result. A different outcome definition, sample or specification counts. The same estimate with different standard errors does not count. Otherwise NO.
+
+own_correction: the multiple-testing correction the author applies to the lead result. One of NONE, BONFERRONI, HOLM, FDR, PERMUTATION (including max-T and re-randomization over the search) or OTHER. If it reports several, give the one over the widest set of tests.
+
+correction_tests: the number of tests in that correction, as an integer. Use null if none is given or own_correction is NONE.
+
+adjusted_p: the adjusted p-value or q-value that correction gives the lead result, as a number. Use null if none is given or own_correction is NONE.
+
+survives: YES if the report says or shows that the lead result stays significant at the 5% level after that correction. NO if it does not. NA if own_correction is NONE.
+
+Return JSON with eight fields: nominal_p, tests_stated, other_significant, own_correction, correction_tests, adjusted_p, survives, and quote, the words of at most 25 from the report that best support own_correction and survives.
+
+REPORT:
+{{TEXT}}

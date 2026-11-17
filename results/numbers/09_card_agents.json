@@ -1,0 +1,116 @@
+[
+ {
+  "id": "card_sol_lambda_intro",
+  "main_tex_line": 147,
+  "quote": "GPT-6.1-Sol is nearly 2 times more likely to report its chosen analysis when it looks statistically favorable",
+  "value": 1.9752905511544316
+ },
+ {
+  "id": "card_terra_lambda",
+  "main_tex_line": 1231,
+  "quote": "with $\\widehat \\lambda = 1.79, 1.98$",
+  "value": 1.7949449345481963
+ },
+ {
+  "id": "card_sol_lambda",
+  "main_tex_line": 1231,
+  "quote": "with $\\widehat \\lambda = 1.79, 1.98$",
+  "value": 1.9752905511544316
+ },
+ {
+  "id": "card_terra_p",
+  "main_tex_line": 1231,
+  "quote": "$\\widehat p^{\\mathrm{sel}} = 0.051, 0.053$, respectively",
+  "value": 0.05103402944253224
+ },
+ {
+  "id": "card_sol_p",
+  "main_tex_line": 1231,
+  "quote": "$\\widehat p^{\\mathrm{sel}} = 0.051, 0.053$, respectively",
+  "value": 0.053185085375624955
+ },
+ {
+  "id": "card_sonnet_lambda",
+  "main_tex_line": 1231,
+  "quote": "the estimated multipliers for Claude Sonnet 5.5 are almost exactly equal to 1",
+  "value": 0.997870667482581
+ },
+ {
+  "id": "card_sonnet_quote",
+  "main_tex_line": 1233,
+  "quote": "``I did not lead with the most statistically compelling result, because picking the smallest p-value from about 30 looks would overstate the evidence.''",
+  "value": "I did not lead with the most statistically compelling result, because picking the smallest p-value from about 30 looks would overstate the evidence."
+ },
+ {
+  "id": "card_sonnet_names_text",
+  "main_tex_line": 1235,
+  "quote": "explicitly mentioning the paper in its logs 18.7\\% of the time",
+  "value": 0.18666666666666668
+ },
+ {
+  "id": "card_sol_names_text",
+  "main_tex_line": 1235,
+  "quote": "compared to none of GPT-6.1-Sol's replays",
+  "value": 0
+ },
+ {
+  "id": "card_sonnet_masked_lambda",
+  "main_tex_line": 1235,
+  "quote": "On the masked data, Claude's estimated $\\lambda$ is slightly higher ($1.01$)",
+  "value": 1.0052758876965604
+ },
+ {
+  "id": "card_sonnet_masked_not_significant",
+  "main_tex_line": 1235,
+  "quote": "but remains insignificantly different from $1$",
+  "value": 0.9730864107401864
+ },
+ {
+  "id": "card_sonnet_declines",
+  "main_tex_line": 2217,
+  "quote": "in its visible reasoning or messages in 97.1\\% of replays",
+  "value": 0.9706666666666667
+ },
+ {
+  "id": "card_sonnet_masked_declines",
+  "main_tex_line": 2217,
+  "quote": "(masked data: 97.9\\%)",
+  "value": 0.979
+ },
+ {
+  "id": "card_luna_declines",
+  "main_tex_line": 2217,
+  "quote": "against 3 of GPT-6-Luna's 3,000",
+  "value": 3
+ },
+ {
+  "id": "card_sol_declines",
+  "main_tex_line": 2217,
+  "quote": "3,000 and none of GPT-6.1-Sol's",
+  "value": 0
+ },
+ {
+  "id": "card_sonnet_names",
+  "main_tex_line": 2217,
+  "quote": "names Card and Krueger somewhere in the session in 18.7\\%",
+  "value": 0.18666666666666668
+ },
+ {
+  "id": "card_sonnet_masked_names",
+  "main_tex_line": 2217,
+  "quote": "(masked data: 10.6\\%)",
+  "value": 0.10566666666666667
+ },
+ {
+  "id": "card_luna_names",
+  "main_tex_line": 2217,
+  "quote": "against 1 of GPT-6-Luna's",
+  "value": 1
+ },
+ {
+  "id": "card_sol_names",
+  "main_tex_line": 2217,
+  "quote": "against 1 of GPT-6-Luna's and none of GPT-6.1-Sol's",
+  "value": 0
+ }
+]

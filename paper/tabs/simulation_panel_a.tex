@@ -1,0 +1,13 @@
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lccccccc@{}}
+\toprule
+\multicolumn{8}{@{}l}{\rlap{\textit{Panel A. Fixed-rule selector: 400 datasets, $n = 1{,}000$, $m = 31$, replays per stratum}}} \\
+\addlinespace[2pt]
+ & \multicolumn{5}{c}{Replay test and corrected $p$-value} & \multicolumn{2}{c}{Multiplier $\widehat\lambda$} \\
+\cmidrule(lr){2-6}\cmidrule(l){7-8}
+Replays & Reject 5\% & Same as oracle & Coverage & RMSE & Width & Median & 95\% interval \\
+\midrule
+25 & 2.5\% & 96.2\% & 97.2\% & 0.153 & 0.439 & 3.4 & [1.8, 5.5] \\
+100 & 4.2\% & 98.0\% & 94.0\% & 0.065 & 0.218 & 3.5 & [2.5, 4.6] \\
+400 & 5.8\% & 99.5\% & 93.5\% & 0.031 & 0.109 & 3.5 & [3.0, 4.1] \\
+1,000 & 6.0\% & 99.8\% & 92.0\% & 0.019 & 0.069 & 3.6 & [3.2, 4.0] \\
+\end{tabular*}

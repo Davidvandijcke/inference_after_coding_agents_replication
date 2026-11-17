@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["nominal_p", "returned_p", "returned_p_kind", "outcome_construction", "target_exposure", "target_population", "status_missing_rules", "restricted_population", "heterogeneity_null", "controls", "scientific_model", "exact_null", "tests_stated", "own_correction", "correction_tests", "adjusted_p", "survives", "lead_decision", "alternative_headline_present", "alternative_headline_summary", "alternative_nominal_p", "quotes"],
+  "properties": {
+    "nominal_p": {"type": ["string", "null"], "pattern": "^[+-]?(?:[0-9]+(?:\\.[0-9]*)?|\\.[0-9]+)(?:[eE][+-]?[0-9]+)?$"},
+    "returned_p": {"type": ["string", "null"], "pattern": "^[+-]?(?:[0-9]+(?:\\.[0-9]*)?|\\.[0-9]+)(?:[eE][+-]?[0-9]+)?$"},
+    "returned_p_kind": {"type": "string", "enum": ["RAW_UNADJUSTED", "ADJUSTED", "UNCLEAR"]},
+    "outcome_construction": {"type": "string", "enum": ["WORKER_FTE", "FTE_WITH_MANAGERS", "HEADCOUNT", "FULL_TIME", "PART_TIME", "MANAGERS", "GROWTH_INDEX", "OTHER"]},
+    "target_exposure": {"type": "string", "enum": ["RANDOMIZED_STATE", "WAGE_BASED", "OTHER", "UNCLEAR"]},
+    "target_population": {"type": "string"},
+    "status_missing_rules": {"type": "string"},
+    "restricted_population": {"type": "string", "enum": ["YES", "NO"]},
+    "heterogeneity_null": {"type": "string", "enum": ["YES", "NO"]},
+    "controls": {"type": "string"},
+    "scientific_model": {"type": "string"},
+    "exact_null": {"type": "string"},
+    "tests_stated": {"type": ["integer", "null"], "minimum": 1},
+    "own_correction": {"type": "string", "enum": ["NONE", "BONFERRONI", "HOLM", "FDR", "PERMUTATION", "OTHER"]},
+    "correction_tests": {"type": ["integer", "null"], "minimum": 1},
+    "adjusted_p": {"type": ["string", "null"], "pattern": "^[+-]?(?:[0-9]+(?:\\.[0-9]*)?|\\.[0-9]+)(?:[eE][+-]?[0-9]+)?$"},
+    "survives": {"type": "string", "enum": ["YES", "NO", "NA"]},
+    "lead_decision": {"type": "string", "enum": ["SIGNIFICANT", "NOT_SIGNIFICANT", "UNCLEAR"]},
+    "alternative_headline_present": {"type": "string", "enum": ["YES", "NO"]},
+    "alternative_headline_summary": {"type": "string"},
+    "alternative_nominal_p": {"type": ["string", "null"], "pattern": "^[+-]?(?:[0-9]+(?:\\.[0-9]*)?|\\.[0-9]+)(?:[eE][+-]?[0-9]+)?$"},
+    "quotes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["outcome_population", "correction_decision"],
+      "properties": {"outcome_population": {"type": "string", "maxLength": 500}, "correction_decision": {"type": "string", "maxLength": 500}}
+    }
+  }
+}

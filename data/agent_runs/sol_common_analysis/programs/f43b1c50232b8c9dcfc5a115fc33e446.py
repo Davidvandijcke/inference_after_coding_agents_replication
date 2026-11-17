@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+"""Estimate the full-sample effect on employment at 12 months.
+
+Usage: python score.py --data data.csv --output result.json
+Dependencies: pandas, statsmodels (and their dependencies).
+
+The treatment coefficient is in probability units, not percentage points.
+Model: employed_m12 ~ treatment + C(site) + employed_baseline.
+Inference: HC2 covariance, two-sided Student t test, residual degrees of freedom.
+"""
+
+import argparse
+import json
+from pathlib import Path
+
+import pandas as pd
+import statsmodels.formula.api as smf
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--data", required=True, type=Path)
+    parser.add_argument("--output", required=True, type=Path)
+    args = parser.parse_args()
+
+    if args.data.resolve() == args.output.resolve():
+        parser.error("--output must differ from --data")
+
+    columns = ["employed_m12", "treatment", "site", "employed_baseline"]
+    data = pd.read_csv(args.data, usecols=columns)
+    if data.empty or data[columns].isna().any().any():
+        parser.error("The analysis requires nonempty, fully observed data")
+    for column in ["employed_m12", "treatment", "employed_baseline"]:
+        if not data[column].isin([0, 1]).all():
+            parser.error(f"{column} must contain only 0 and 1")
+    if data["treatment"].nunique() != 2:
+        parser.error("Both treatment and control observations are required")
+
+    model = smf.ols(
+        "employed_m12 ~ treatment + C(site) + employed_baseline",
+        data=data,
+        missing="raise",
+    ).fit(cov_type="HC2", use_t=True)
+
+    result = {
+        "estimate": float(model.params["treatment"]),
+        "std_error": float(model.bse["treatment"]),
+        "p_value": float(model.pvalues["treatment"]),
+    }
+    # Serialize before opening the output so invalid inference cannot leave a
+    # partly written JSON file. Nonfinite results are rejected.
+    payload = json.dumps(result, indent=2, allow_nan=False) + "\n"
+    args.output.write_text(payload, encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

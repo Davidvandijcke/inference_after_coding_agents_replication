@@ -1,0 +1,185 @@
+[
+ {
+  "id": "power_datasets_per_effect",
+  "main_tex_line": 1137,
+  "quote": "into 200 new simulated randomized control trials from the open-ended agent design above, 100 for each effect size",
+  "value": [
+   100,
+   100
+  ]
+ },
+ {
+  "id": "power_effect_moderate_pp",
+  "main_tex_line": 1137,
+  "quote": "by 6.2 and 9.6 percentage points in two sets of simulations",
+  "value": 6.233106233106233
+ },
+ {
+  "id": "power_effect_strong_pp",
+  "main_tex_line": 1137,
+  "quote": "by 6.2 and 9.6 percentage points in two sets of simulations",
+  "value": 9.567359567359567
+ },
+ {
+  "id": "power_target_moderate",
+  "main_tex_line": 1137,
+  "quote": "chosen to target 80\\% and 99\\% power for a pre-specified test",
+  "value": 0.8026669088809163
+ },
+ {
+  "id": "power_target_strong",
+  "main_tex_line": 1137,
+  "quote": "chosen to target 80\\% and 99\\% power for a pre-specified test",
+  "value": 0.991063641176327
+ },
+ {
+  "id": "power_cohens_d_moderate",
+  "main_tex_line": 1137,
+  "quote": "Cohen's d (effect over outcome standard deviation) of 0.127 and 0.190",
+  "value": 0.12703188610551502
+ },
+ {
+  "id": "power_cohens_d_strong",
+  "main_tex_line": 1137,
+  "quote": "Cohen's d (effect over outcome standard deviation) of 0.127 and 0.190",
+  "value": 0.18990662002600778
+ },
+ {
+  "id": "power_spillover_outcomes",
+  "main_tex_line": 1137,
+  "quote": "The employment effect spills over into three other outcomes at 12 months",
+  "value": 3
+ },
+ {
+  "id": "power_errors_moderate",
+  "main_tex_line": 1157,
+  "quote": "on 100 datasets per effect size in Panel D; in each set, the original agent's code produced an error on one dataset",
+  "value": 1
+ },
+ {
+  "id": "power_errors_strong",
+  "main_tex_line": 1157,
+  "quote": "on 100 datasets per effect size in Panel D; in each set, the original agent's code produced an error on one dataset",
+  "value": 1
+ },
+ {
+  "id": "power_new_datasets",
+  "main_tex_line": 1162,
+  "quote": "share of 4,000 new simulated datasets, drawn with the same effect",
+  "value": 4000
+ },
+ {
+  "id": "power_null_reject_min",
+  "main_tex_line": 1162,
+  "quote": "the same programs reject 4.1 to 5.9\\% of new datasets",
+  "value": 0.04075
+ },
+ {
+  "id": "power_null_reject_max",
+  "main_tex_line": 1162,
+  "quote": "the same programs reject 4.1 to 5.9\\% of new datasets",
+  "value": 0.05925
+ },
+ {
+  "id": "power_tail_replays",
+  "main_tex_line": 1183,
+  "quote": "We run 40+200 replays on each of 99 datasets",
+  "value": 0
+ },
+ {
+  "id": "power_body_replays",
+  "main_tex_line": 1183,
+  "quote": "We run 40+200 replays on each of 99 datasets",
+  "value": 200
+ },
+ {
+  "id": "power_usable_datasets",
+  "main_tex_line": 1183,
+  "quote": "We run 40+200 replays on each of 99 datasets",
+  "value": [
+   99,
+   99
+  ]
+ },
+ {
+  "id": "power_excluded",
+  "main_tex_line": 1183,
+  "quote": "excluding the two datasets where the original agents' code produced an error",
+  "value": 2
+ },
+ {
+  "id": "power_replay_moderate",
+  "main_tex_line": 1183,
+  "quote": "the replay test rejects 49.5\\% of the time for the smaller effect",
+  "value": 0.494949494949495
+ },
+ {
+  "id": "power_replay_strong",
+  "main_tex_line": 1183,
+  "quote": "and 87.9\\% of the time for the larger one",
+  "value": 0.8787878787878788
+ },
+ {
+  "id": "power_prespecified_moderate",
+  "main_tex_line": 1183,
+  "quote": "reject 78.8\\% and 67.9\\% of the time under the smaller effect",
+  "value": 0.7878787878787878
+ },
+ {
+  "id": "power_new_data_moderate",
+  "main_tex_line": 1183,
+  "quote": "reject 78.8\\% and 67.9\\% of the time under the smaller effect",
+  "value": 0.6785151515151515
+ },
+ {
+  "id": "power_agent_p",
+  "main_tex_line": 1183,
+  "quote": "The agent's own $p$-value rejects 100\\% of the time",
+  "value": 1.0
+ },
+ {
+  "id": "power_null_leads_moderate",
+  "main_tex_line": 1183,
+  "quote": "doing so on 12 out of 99 datasets for the smaller effect",
+  "value": 12
+ },
+ {
+  "id": "power_null_leads_strong",
+  "main_tex_line": 1183,
+  "quote": "and 1 out of 99 for the larger effect",
+  "value": 1
+ },
+ {
+  "id": "power_replay_given_true_moderate",
+  "main_tex_line": 1183,
+  "quote": "rejection frequencies rise to 56.3 and 88.8\\%",
+  "value": 0.5632183908045977
+ },
+ {
+  "id": "power_replay_given_true_strong",
+  "main_tex_line": 1183,
+  "quote": "rejection frequencies rise to 56.3 and 88.8\\%",
+  "value": 0.8877551020408163
+ },
+ {
+  "id": "power_tau_moderate",
+  "main_tex_line": 2123,
+  "quote": "with $\\tau=0.28$ on 100 datasets",
+  "value": 0.28
+ },
+ {
+  "id": "power_tau_strong",
+  "main_tex_line": 2123,
+  "quote": "and $\\tau=0.43$ on the other 100",
+  "value": 0.43
+ },
+ {
+  "id": "power_tau_datasets",
+  "main_tex_line": 2123,
+  "quote": "with $\\tau=0.28$ on 100 datasets and $\\tau=0.43$ on the other 100",
+  "value": [
+   100,
+   100
+  ]
+ }
+]

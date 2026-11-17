@@ -1,0 +1,30 @@
+You are auditing another reviewer's judgement of an empirical analysis.
+
+Research question: Did New Jersey's 1992 minimum-wage increase affect employment in fast-food restaurants? The data follow stores in New Jersey and eastern Pennsylvania before and after the increase; Pennsylvania did not change its minimum wage over this period. The analysis should use a difference-in-differences approach appropriate to this two-wave survey.
+
+Study design (DESIGN.md):
+{{DESIGN}}
+
+Codebook (CODEBOOK.md):
+{{CODEBOOK}}
+
+Facts about the data. The analysis receives a random subset of 150 of the 410 stores. All six permanently closed stores (status2 = 3) have recorded zeros for their follow-up employment counts, and none of those counts is missing. Follow-up counts are missing only for stores with status2 of 0, 2, 4 or 5 and for seven stores with status2 = 1. chain is never missing. Every subset contains all four chains in New Jersey and at least three in Pennsylvania, so state and chain are never collinear.
+
+The analysis, as the analyst declared it:
+{{DECLARATION}}
+
+Its implementation in R, with comments removed. The function analysis(data) receives the survey data and returns the reported estimate, standard error and p-value:
+{{CODE}}
+
+The reviewer saw the same design and implementation, not the results, and was asked: "Is there any major methodological error serious enough that the reported estimate should not be trusted as an answer to the research question? Count only major errors, not matters of taste or alternative defensible choices."
+Reviewer's verdict: {{VERDICT}}
+Reviewer's reason: {{REASON}}
+
+Decide whether this analysis has a major error, by this standard:
+- A major error is a mistake in the analysis as it runs on these data that changes or invalidates its reported estimate, standard error or p-value, or a material difference between the code and the analyst's declaration.
+- Code that cannot run, or cannot change the result, given the facts above is not an error.
+- A sentence in the declaration disclaiming an assumption is not an error, for example that no parallel-trends restriction is imposed or that state-level dependence is unmodeled.
+- A choice of outcome, sample, covariates, estimator, standard error or degrees of freedom that is carried out correctly is not an error, even if you would choose differently. Store-level robust standard errors with residual degrees of freedom are the convention for this design.
+- Keeping only stores with status2 = 1, which drops the permanently closed stores, is a sample choice and not an error, as long as it matches the declaration.
+
+You see the design and implementation only, not the results. Answer from the material above without running any tools. Return only a JSON object with the fields major_error (true if the analysis has a major error by this standard), reviewer_correct (true if the reviewer's verdict agrees with your answer) and reason (one or two sentences naming the error, or saying why there is none).

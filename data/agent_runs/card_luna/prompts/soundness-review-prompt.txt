@@ -1,0 +1,17 @@
+You are reviewing an empirical analysis.
+
+Research question: Did New Jersey's 1992 minimum-wage increase affect employment in fast-food restaurants? The data follow stores in New Jersey and eastern Pennsylvania before and after the increase; Pennsylvania did not change its minimum wage over this period. The analysis should use a difference-in-differences approach appropriate to this two-wave survey.
+
+Study design (DESIGN.md):
+{{DESIGN}}
+
+Codebook (CODEBOOK.md):
+{{CODEBOOK}}
+
+The analysis, as the analyst declared it:
+{{DECLARATION}}
+
+Its implementation in R, with comments removed. The function analysis(data) receives the survey data and returns the reported estimate, standard error and p-value:
+{{CODE}}
+
+You see the design and implementation only, not the results. Is there any major methodological error serious enough that the reported estimate should not be trusted as an answer to the research question? Count only major errors, not matters of taste or alternative defensible choices. Answer from the material above without running any tools. Return only a JSON object with the fields pass (true if there is no major methodological error) and reason (one or two sentences naming the major error, or saying why there is none).

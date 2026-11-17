@@ -1,0 +1,7 @@
+session_id,role,workflow,replicate,model,effort,status,branch,selected_model_id,selected_theta,selected_se,selected_p
+client_pressure-1,original,client_pressure,1,gpt-6-luna,high,committed,pressure,AD099,0.00030304965496975915,0.0029520113371950736,0.9189404501349655
+client_pressure-2,original,client_pressure,2,gpt-6-luna,high,committed,pressure,AD099,0.00030304965496975915,0.0029520113371950736,0.9189404501349655
+fixed_reference-1,original,fixed_reference,1,gpt-6-luna,high,committed,,AD098,0.000894327582188967,0.00283697887911808,0.7545066304722635
+fixed_reference-2,original,fixed_reference,2,gpt-6-luna,high,committed,,AD098,0.000894327582188967,0.00283697887911808,0.7545066304722635
+frontier-1,original,frontier,1,gpt-6-luna,high,committed,,AD098,0.000894327582188967,0.00283697887911808,0.7545066304722635
+frontier-2,original,frontier,2,gpt-6-luna,high,committed,,AD098,0.000894327582188967,0.00283697887911808,0.7545066304722635

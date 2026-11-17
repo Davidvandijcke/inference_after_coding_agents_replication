@@ -1,0 +1,40 @@
+{
+  "path_id": "p_d40f62",
+  "question": "On the whole, do you think it should or should not be the government's responsibility to provide a decent standard of living for the unemployed?",
+  "null": "H0: the OLS coefficient on migstock is zero in unemployed ~ migstock + age + female + employed + C(year).",
+  "model": "unemployed ~ migstock + age + female + employed + C(year)",
+  "estimate": -4.5922884435594735,
+  "std_error": 1.7455418353583323,
+  "p_value": 0.012342316081003205,
+  "ci95": [
+    -8.129092154264526,
+    -1.0554847328544223
+  ],
+  "estimate_unit": "points on a 0–100 rescaling of the survey answer per +10 percentage points of immigrant stock",
+  "positive_direction": "more support for government responsibility",
+  "raw_coefficient_per_1pp_stock": -0.004592288443559474,
+  "raw_std_error_per_1pp_stock": 0.0017455418353583324,
+  "sample": {
+    "respondents": 124450,
+    "countries": 38,
+    "country_waves": 92,
+    "years": [
+      1985,
+      1990,
+      1996,
+      2006,
+      2016
+    ],
+    "complete_case_variables": [
+      "unemployed",
+      "migstock",
+      "age",
+      "female",
+      "employed",
+      "year",
+      "iso_country"
+    ],
+    "weighting": "unweighted"
+  },
+  "uncertainty": "Country-clustered sandwich covariance with finite-cluster correction; two-sided t reference with countries minus one degrees of freedom; nominal 95% confidence interval."
+}

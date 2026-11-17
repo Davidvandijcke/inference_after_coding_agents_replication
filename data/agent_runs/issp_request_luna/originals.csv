@@ -1,0 +1,4 @@
+session_id,role,slot,model,effort,route,status,data_sha256,program_p,selected_as_original
+7737e9064880f41217902b7cce1562f6,original,0,gpt-6-luna,high,api,completed,ea90082ed4bf8621a9892813df41a1317a69dfed65f5e6e5d47c6dcacfb63d91,0.012342316081003205,1
+f71e13df3424daef977e9e2e31bd8ec3,original,1,gpt-6-luna,high,api,completed,9bcd363035c6c27f9b123ba3f043f5ef749754d86c921bb079c5431c92e4910e,0.012342316081003704,0
+928a3ceb1b4b33cde3e765b89b7e103c,original,2,gpt-6-luna,high,api,completed,d281efb9d7f18399bf1827b3770e8d5e5a5e0f5204c057110c55645c7e3bbada,0.01234231608100295,0
